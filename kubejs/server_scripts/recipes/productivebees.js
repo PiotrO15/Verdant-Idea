@@ -1,7 +1,3 @@
-ServerEvents.tags('item', event => {
-  event.add('wasteland:bee_flowering/coal', ['minecraft:torchflower'])
-})
-
 let quarry_flowers = [
   'dirt',
   'stone',
@@ -22,11 +18,22 @@ let quarry_flowers = [
   'netherrack'
 ]
 
-ServerEvents.tags('block', event => {
+ServerEvents.tags('item', event => {
+  event.add('wasteland:bee_flowering/coal', ['minecraft:torchflower'])
+
   event.removeAll('productivebees:flowers/quarry')
   quarry_flowers.forEach(item => {
     event.add('productivebees:flowers/quarry', `minecraft:${item}`)
-  });
+  })
+})
+
+ServerEvents.tags('block', event => {
+  event.add('wasteland:bee_flowering/coal', ['minecraft:torchflower'])
+  
+  event.removeAll('productivebees:flowers/quarry')
+  quarry_flowers.forEach(item => {
+    event.add('productivebees:flowers/quarry', `minecraft:${item}`)
+  })
 })
 
 ServerEvents.recipes(event => {

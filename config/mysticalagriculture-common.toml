@@ -24,7 +24,7 @@
 	#Should the Ender Dragon drop essence when killed with an essence weapon?
 	dragonDropsEssence = true
 	#Should right clicking on Farmland with an Essence create Essence Farmland?
-	essenceFarmlandConversion = true
+	essenceFarmlandConversion = false
 	#Should crops have a chance of dropping a second seed when harvested?
 	secondarySeedDrops = true
 	#The percentage chance that harvesting a Resource Crop will drop a Fertilized Essence.

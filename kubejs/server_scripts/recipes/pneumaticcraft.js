@@ -107,7 +107,7 @@ ServerEvents.recipes(event => {
   event.remove({id: 'pncepcb:pressure_chamber/crystal_clear_empty_pcb'})
 
   // High Temperature PCB
-  pressure_chamber("pncepcb:high_temp_empty_pcb", 2.5, ['2x thermal:cured_rubber', '2x immersiveengineering:graphite_electrode', '#forge:plates/copper', 'pneumaticcraft:unassembled_pcb'])
+  pressure_chamber("pncepcb:high_temp_empty_pcb", 2.5, ['2x thermal:cured_rubber', '3x immersiveengineering:ingot_hop_graphite', '#forge:plates/copper', 'pneumaticcraft:unassembled_pcb'])
   assembly("pncepcb:high_temp_unassembled_pcb", 'pncepcb:high_temp_empty_pcb', 'laser')
 
   // High Power PCB

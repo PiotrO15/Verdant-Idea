@@ -2102,6 +2102,7 @@
 				type: "item"
 			}]
 			size: 1.25d
+			subtitle: "Unlocks new quests in How Engineering Works"
 			tasks: [{
 				icon: {
 					Count: 1
@@ -3017,6 +3018,7 @@
 				type: "item"
 			}]
 			size: 1.25d
+			subtitle: "Unlocks new quests in The Energy of Flora"
 			tasks: [{
 				icon: {
 					Count: 1

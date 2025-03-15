@@ -188,6 +188,7 @@
 				type: "item"
 			}]
 			size: 1.25d
+			subtitle: "Unlocks new quests in The Power of Mekanics"
 			tasks: [{
 				id: "3F34F197FCA47F30"
 				item: "thermal:upgrade_augment_3"

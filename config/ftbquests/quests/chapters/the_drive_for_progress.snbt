@@ -289,6 +289,8 @@
 				item: "productivebees:bee_cage"
 				type: "item"
 			}]
+			size: 1.25d
+			subtitle: "Unlocks new quests in Bounties of the Land"
 			tasks: [{
 				dimension: "minecraft:the_nether"
 				id: "040F91F213674422"

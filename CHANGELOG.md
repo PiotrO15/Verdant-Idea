@@ -1,3 +1,34 @@
+Changes in 0.5.5:
+- added Oculus (shaders support)
+- added FerriteCore and ModernFix, which should make the game run smoother
+- added Controlling (search bar for key binds)
+- updated Wasteland Things
+- fixed some of the quests accepting wrong patchouli books
+- writable and lucky modifiers are now easier to obtain
+- high power PCB now uses 3 HOP graphite ingots instead of 2 graphite electrodes
+- quadrupled the chance of getting sky stone from orechid
+- coke dust can now be created in a pulverizer
+- removed the ability to get blazing blood from bartering
+- quadrupled the chance to get a bee nest when growing a tree with flowers nearby (5% -> 20%)
+- mystical flowers can no longer be used to spawn bee nests (that was never meant to be a thing)
+- essence can no longer be used on farmland to create essence farmland
+- added an additional quest related to early tinkers’ construct
+- fel pumpkin can now be obtained through witch’s cauldron
+- clarified some of the early quest descriptions
+- engineer’s hammer recipe now requires industrial hemp instead of string
+- new daily offers message should no longer display when holding an amadron table
+- anointing paste recipe is now included in the quest
+- bumble bee can now spawn in ruined plains
+- skybee, milky, blazing and coal bees now correctly pathfind to their flower blocks
+- fixed quarry bees still making items that were removed from the pool
+- all types of shears now work on grass and ferns
+- botania should now work with shaders by default
+- horn of the wild should now always work
+- harvesting drones should now harvest AgriCraft plants
+- harvesting drones should now accept clipper as a tool
+- fixed inferium infusion crystal quest not being started by Safe and Sound quest
+- added additional subtitles to quests that unlock new quest lines
+
 Changes in 0.5.4:
 - updated EMI, which should fix an error with tinker station
 - updated Immersive Engineering, Farmer’s Delight, Map Atlases, Applied Energistics 2, FTB Quests, FTB Teams and FTB Library

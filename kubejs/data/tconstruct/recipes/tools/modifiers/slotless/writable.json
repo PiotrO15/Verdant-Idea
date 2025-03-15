@@ -1,0 +1,17 @@
+{
+  "type": "tconstruct:modifier",
+  "allow_crystal": true,
+  "inputs": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:black_dye"
+    }
+  ],
+  "level": 1,
+  "result": "tconstruct:writable",
+  "tools": {
+    "tag": "tconstruct:modifiable/bonus_slots"
+  }
+}

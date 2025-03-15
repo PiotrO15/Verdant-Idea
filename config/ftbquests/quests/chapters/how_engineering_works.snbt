@@ -309,6 +309,7 @@
 				type: "item"
 			}]
 			size: 1.25d
+			subtitle: "Unlocks new quests in What Sparks Innovation"
 			tasks: [{
 				id: "765896F201A8C5F0"
 				item: "pneumaticcraft:printed_circuit_board"
@@ -404,7 +405,9 @@
 						"patchouli:book": "pneumaticcraft:book"
 					}
 				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "How Not To Explode"
 			x: 2.5d
@@ -684,6 +687,7 @@
 				type: "item"
 			}]
 			size: 1.25d
+			subtitle: "Unlocks new quests in The Power of Mekanics"
 			tasks: [
 				{
 					id: "777A3F32FD903661"

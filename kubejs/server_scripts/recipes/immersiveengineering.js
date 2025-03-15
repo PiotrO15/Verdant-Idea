@@ -53,6 +53,9 @@ ServerEvents.recipes(event => {
   for (let type in plate_types) {
     mold(plate_types[type])
   }
+
+  // Replace string with industrial hemp in engineer's hammer recipe
+  event.replaceInput({id: "immersiveengineering:crafting/hammer"}, "minecraft:string", "immersiveengineering:hemp_fiber")
   
   // Make Engineer's Manual require iron, so players don't start IE too early
   event.replaceInput({id: "immersiveengineering:crafting/manual"}, "minecraft:lever", "immersiveengineering:hammer")
@@ -85,4 +88,7 @@ ServerEvents.recipes(event => {
 
   // Update crafting components blueprint recipe
   event.replaceInput({id: 'immersiveengineering:crafting/blueprint_components'}, "#forge:ingots/aluminum", "pneumaticcraft:printed_circuit_board")
+
+  // Add a recipe for coke dust in a pulverizer
+  event.recipes.thermal.pulverizer('immersiveengineering:dust_coke', '#forge:coal_coke')
 })

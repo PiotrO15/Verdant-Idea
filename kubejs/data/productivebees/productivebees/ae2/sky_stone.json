@@ -1,6 +1,6 @@
 {
     "primaryColor": "#aaaaaa",
     "secondaryColor": "#555555",
-    "flowerItem": "ae2:sky_stone_block",
+    "flowerBlock": "ae2:sky_stone_block",
     "createComb": true
 }

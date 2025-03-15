@@ -13,6 +13,8 @@
 			description: [
 				"Anointing paste used on a cauldron will transform it into a witch's cauldron. For the cauldron to work, a campfire must be placed under it."
 				""
+				"To make annoying paste, mix belladonna seeds, mandrake seeds, water artichoke seeds and snowbell seeds in a crafting table."
+				""
 				"A witch's cauldron can be used to brew multiple items. First, fill it with 4 buckets of water. After that, throw all the ingredients in the correct order. When the item finishes brewing, it can be taken out of the cauldron."
 			]
 			icon: "enchanted:witch_cauldron"
@@ -247,7 +249,9 @@
 						"patchouli:book": "enchanted:getting_started"
 					}
 				}
+				match_nbt: true
 				type: "item"
+				weak_nbt_match: true
 			}]
 			title: "The Art of Witchcraft"
 			x: -2.0d
@@ -369,6 +373,7 @@
 				type: "item"
 			}]
 			size: 1.25d
+			subtitle: "Unlocks new quests in What Sparks Innovation"
 			tasks: [{
 				id: "20B0E0E3BDAE1FDC"
 				item: "thermal:rubberwood_sapling"

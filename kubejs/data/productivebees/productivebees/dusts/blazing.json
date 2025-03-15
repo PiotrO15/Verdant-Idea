@@ -2,7 +2,7 @@
   "primaryColor": "#fcd979",
   "particleColor": "#fcd979",
   "particleType": "lava",
-  "flowerItem": "botania:blaze_block",
+  "flowerBlock": "botania:blaze_block",
   "beeTexture": "productivebees:textures/entity/bee/blazing/bee",
   "attackResponse": "fire",
   "fireproof": true
