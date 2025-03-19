@@ -28,6 +28,20 @@ ServerEvents.recipes(event => {
     )
   }
 
+  function row(input, output) {
+    event.shaped(
+      output, 
+      [
+        "   ", 
+        "EEE", 
+        "   "
+      ], 
+      {
+        E: input,
+      }
+    )
+  }
+
   // Add uses for elemental essences
   checked_2x2('mysticalagriculture:air_essence', 'mysticalagriculture:fire_essence', '12x minecraft:sand')
   checked_2x2('mysticalagriculture:earth_essence', 'mysticalagriculture:fire_essence', '16x minecraft:cobblestone')
@@ -67,4 +81,8 @@ ServerEvents.recipes(event => {
       S: 'mysticalagriculture:blank_skull'
     }
   )
+
+  // fix crafting arrows from skeleton essence
+  event.remove({ id: "mysticalagriculture:essence/minecraft/arrow"})
+  row("mysticalagriculture:skeleton_essence", "8x minecraft:arrow")
 })
