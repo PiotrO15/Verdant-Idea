@@ -123,6 +123,12 @@ ServerEvents.recipes(event => {
   event.remove({ id: "mysticalagriculture:essence/minecraft/gunpowder"})
   row("mysticalagriculture:creeper_essence", "6x minecraft:gunpowder")
 
+  event.remove({ id: "mysticalagriculture:essence/minecraft/string"})
+  row("mysticalagriculture:spider_essence", "8x minecraft:string")
+
+  event.remove({ id: "mysticalagriculture:essence/appliedenergetics2/certus_quartz_dust"})
+  row("mysticalagriculture:certus_quartz_essence", "3x ae2:certus_quartz_dust")
+
   // music discs
   event.remove({ id: "mysticalagriculture:essence/minecraft/music_disc_13"})
   music_disc("#forge:dyes/yellow", "minecraft:music_disc_13")
