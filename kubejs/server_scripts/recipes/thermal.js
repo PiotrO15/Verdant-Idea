@@ -169,10 +169,37 @@ ServerEvents.recipes(event => {
   event.recipes.thermal.chiller('thermal:enderium_ingot', [Fluid.of('thermal:ender', 1000), 'kubejs:ender_alloy'])
 
   // Replace unused gears
-  event.replaceInput({id: 'thermal:device_xp_condenser'}, '#forge:gears/lapis', '#forge:gears/iron')
-  event.replaceInput({id: 'thermal:press_gear_die'}, '#forge:gears/diamond', '#forge:gears/steel')
+  event.remove({id: 'thermal:device_xp_condenser'})
+  event.shaped('thermal:device_xp_condenser', 
+    [
+      "SIS",
+      "GCG",
+      "SRS"
+    ], 
+    {
+      C: 'thermal:xp_crystal',
+      G: '#forge:glass',
+      I: '#forge:gears/iron',
+      R: 'thermal:redstone_servo',
+      S: '#forge:ingots/silver'
+    })
+
+  event.remove({id: 'thermal:press_gear_die'})
+  event.shaped('thermal:press_gear_die', 
+    [
+      " P ",
+      "PXP",
+      " P "
+    ], 
+    {
+      P: '#forge:plates/invar',
+      X: '#forge:gears/steel'
+    })
 
   // Remove slag from smelting
   event.remove({id: 'thermal:smelting/slag_from_smelting'})
   event.remove({id: 'thermal:machines/smelter/smelter_gravel'})
+
+  // Prismarine crystals to prismarine shards
+  event.recipes.thermal.pulverizer(['minecraft:prismarine_shard'], 'minecraft:prismarine_crystals')
 })

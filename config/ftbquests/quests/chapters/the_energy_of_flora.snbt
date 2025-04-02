@@ -13,7 +13,7 @@
 			description: [
 				"Anointing paste used on a cauldron will transform it into a witch's cauldron. For the cauldron to work, a campfire must be placed under it."
 				""
-				"To make annoying paste, mix belladonna seeds, mandrake seeds, water artichoke seeds and snowbell seeds in a crafting table."
+				"To make anointing paste, mix belladonna seeds, mandrake seeds, water artichoke seeds and snowbell seeds in a crafting table."
 				""
 				"A witch's cauldron can be used to brew multiple items. First, fill it with 4 buckets of water. After that, throw all the ingredients in the correct order. When the item finishes brewing, it can be taken out of the cauldron."
 			]
@@ -391,6 +391,7 @@
 				"Because of that, every resource seed has a rite to max it. It uses 2 different pure 10/10 seeds (both dominant and recessive genes need to be maxed, and the species has to be the same). This should make maxing resource seeds much easier."
 			]
 			id: "0AAF1EF435A60AFC"
+			optional: true
 			rewards: [{
 				count: 16
 				id: "7A2E5C0D3E50C061"

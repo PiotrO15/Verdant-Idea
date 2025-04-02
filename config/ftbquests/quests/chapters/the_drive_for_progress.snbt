@@ -188,17 +188,9 @@
 			description: ["Centrifuge is an essential tool for any beekeper. It allows you to process honeycombs into different resources, based on their type. Keep in mind that some comb blocks may have different drops than their comb counterparts."]
 			id: "2AF13477EEAE0930"
 			rewards: [{
-				count: 8
+				count: 4
 				id: "78CCE57CF3939682"
-				item: {
-					Count: 1
-					id: "productivebees:configurable_honeycomb"
-					tag: {
-						EntityTag: {
-							type: "productivebees:iron"
-						}
-					}
-				}
+				item: "minecraft:iron_ingot"
 				type: "item"
 			}]
 			tasks: [{
@@ -273,33 +265,6 @@
 			title: "Beexpansion"
 			x: -2.5d
 			y: -2.0d
-		}
-		{
-			dependencies: ["62CF3B3B6E63FB1E"]
-			description: [
-				"Now that you have an effective way to catch bees, it's time to get some useful ones! Many bees originate from the nether, so it's a good idea to get there."
-				""
-				"Please note that nests do &eNOT&r spawn in the nether. You need to craft some yourself."
-			]
-			icon: "minecraft:netherrack"
-			id: "1692E52F82EDDF27"
-			rewards: [{
-				count: 4
-				id: "47EF3B2E86C5D246"
-				item: "productivebees:bee_cage"
-				type: "item"
-			}]
-			size: 1.25d
-			subtitle: "Unlocks new quests in Bounties of the Land"
-			tasks: [{
-				dimension: "minecraft:the_nether"
-				id: "040F91F213674422"
-				title: "Visit the Nether"
-				type: "dimension"
-			}]
-			title: "Bees You've Nether Seen Before"
-			x: -4.0d
-			y: -5.0d
 		}
 		{
 			dependencies: ["5F8393C6C51EFCD5"]
@@ -711,7 +676,7 @@
 			rewards: [{
 				count: 4
 				id: "2AA4171D1A148AA8"
-				item: "minecraft:emerald"
+				item: "minecraft:gold_ingot"
 				type: "item"
 			}]
 			tasks: [{
@@ -894,26 +859,6 @@
 			}]
 			title: "Beenetics"
 			x: -0.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["64B96D52C20E63B2"]
-			description: ["Leashing bees to move them is not only risky, but it's also annoying. Bee cages are the best way to move bees, just keep in mind they break after use."]
-			id: "62CF3B3B6E63FB1E"
-			rewards: [{
-				count: 8
-				id: "06B5E31E29EA0A8B"
-				item: "productivebees:bee_cage"
-				type: "item"
-			}]
-			tasks: [{
-				count: 8L
-				id: "67CA406023E1C7A7"
-				item: "productivebees:bee_cage"
-				type: "item"
-			}]
-			title: "Moving Bees"
-			x: -4.5d
 			y: -4.0d
 		}
 		{
@@ -1174,6 +1119,26 @@
 			title: "Bee Diner"
 			x: -3.0d
 			y: -1.0d
+		}
+		{
+			dependencies: ["64B96D52C20E63B2"]
+			description: ["Leashing bees to move them is not only risky, but it's also annoying. Bee cages are the best way to move bees, just keep in mind they break after use."]
+			id: "62CF3B3B6E63FB1E"
+			rewards: [{
+				count: 8
+				id: "06B5E31E29EA0A8B"
+				item: "productivebees:bee_cage"
+				type: "item"
+			}]
+			tasks: [{
+				count: 8L
+				id: "67CA406023E1C7A7"
+				item: "productivebees:bee_cage"
+				type: "item"
+			}]
+			title: "Moving Bees"
+			x: -4.5d
+			y: -4.0d
 		}
 	]
 	title: "The Drive for Progress"

@@ -1,0 +1,9 @@
+{
+  "name": "minecraft:chests/woodland_mansion",
+  "pools": [
+    {
+      "entries": [],
+      "name": "main"
+    }
+  ]
+}

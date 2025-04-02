@@ -89,6 +89,11 @@ ServerEvents.recipes(event => {
   // Amadron
   event.remove({id: 'pneumaticcraft:amadron/emerald_to_oil'})
   event.remove({id: 'pneumaticcraft:amadron/emerald_to_lubricant'})
+  event.remove({id: 'pneumaticcraft:amadron/oil_to_emerald'})
+  event.remove({id: 'pneumaticcraft:amadron/gasoline_to_emerald'})
+  event.remove({id: 'pneumaticcraft:amadron/lpg_to_emerald'})
+  event.remove({id: 'pneumaticcraft:amadron/kerosene_to_emerald'})
+  event.remove({id: 'pneumaticcraft:amadron/diesel_to_emerald'})
   
   // Remove default PCB recipes
   event.remove({id: 'pncepcb:pressure_chamber/high_temp_empty_pcb'})
@@ -114,5 +119,10 @@ ServerEvents.recipes(event => {
   pressure_chamber("pncepcb:high_power_empty_pcb", 3.5, ['3x mekanism:alloy_infused', '2x mekanism:basic_control_circuit', '#forge:plates/enderium', 'pncepcb:high_temp_unassembled_pcb'])
   assembly("pncepcb:high_power_unassembled_pcb", 'pncepcb:high_power_empty_pcb', 'laser')
 
-
+  // Hide diesel recipes
+  event.remove({id: 'pneumaticcraft:thermo_plant/plastic_from_lpg'})
+  event.remove({id: 'pneumaticcraft:thermo_plant/lubricant_from_diesel'})
+  event.remove({id: 'pneumaticcraft:thermo_plant/lpg'})
+  event.remove({id: 'pneumaticcraft:thermo_plant/gasoline'})
+  event.remove({id: 'pneumaticcraft:thermo_plant/kerosene'})
 })

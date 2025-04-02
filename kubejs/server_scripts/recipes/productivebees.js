@@ -20,6 +20,8 @@ let quarry_flowers = [
 
 ServerEvents.tags('item', event => {
   event.add('wasteland:bee_flowering/coal', ['minecraft:torchflower'])
+  event.add('productivebees:flowers/sulfur', ['minecraft:deepslate_coal_ore'])
+  event.add('productivebees:flowers/powdery', ['minecraft:deepslate_coal_ore'])
 
   event.removeAll('productivebees:flowers/quarry')
   quarry_flowers.forEach(item => {
@@ -29,6 +31,8 @@ ServerEvents.tags('item', event => {
 
 ServerEvents.tags('block', event => {
   event.add('wasteland:bee_flowering/coal', ['minecraft:torchflower'])
+  event.add('productivebees:flowers/sulfur', ['minecraft:deepslate_coal_ore'])
+  event.add('productivebees:flowers/powdery', ['minecraft:deepslate_coal_ore'])
   
   event.removeAll('productivebees:flowers/quarry')
   quarry_flowers.forEach(item => {
@@ -208,4 +212,10 @@ ServerEvents.recipes(event => {
   // Simplify the recipe for quartz nest
   event.replaceInput({id: 'productivebees:nests/nether_quartz_nest_quartz_netherrack'}, 'minecraft:iron_sword', 'minecraft:stone_sword')
   event.replaceInput({id: 'productivebees:nests/nether_quartz_nest'}, 'minecraft:iron_sword', 'minecraft:stone_sword')
+
+  // Remove the need for eggs in inactive dragon egg recipe
+  event.replaceInput({id: 'productivebees:inactive_dragon_egg'}, 'minecraft:egg', 'botania:dragonstone_block')
+
+  // Update heated centrifuge recipe
+  event.replaceInput({id: 'productivebees:heated_centrifuge'}, 'minecraft:copper_block', 'mekanism:block_osmium')
 })

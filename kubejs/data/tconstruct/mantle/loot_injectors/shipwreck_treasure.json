@@ -1,0 +1,9 @@
+{
+  "name": "minecraft:chests/shipwreck_treasure",
+  "pools": [
+    {
+      "entries": [],
+      "name": "main"
+    }
+  ]
+}

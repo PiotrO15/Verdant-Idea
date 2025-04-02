@@ -1,0 +1,35 @@
+{
+  "type": "productivebees:centrifuge",
+  "ingredient": {
+    "type": "forge:nbt",
+    "item": "productivebees:configurable_honeycomb",
+    "nbt": {
+      "EntityTag": {
+        "type": "productivebees:prismarine"
+      }
+    }
+  },
+  "outputs": [
+    {
+      "item": {
+        "item": "minecraft:prismarine_shard"
+      },
+      "min": 2,
+      "max": 4,
+      "chance": 100
+    },
+    {
+      "item": {
+        "item": "minecraft:prismarine_crystals"
+      },
+      "min": 1,
+      "max": 2,
+      "chance": 20
+    },
+    {
+      "item": {
+        "tag": "forge:wax"
+      }
+    }
+  ]
+}

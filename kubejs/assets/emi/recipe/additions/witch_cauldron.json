@@ -1,0 +1,6 @@
+{
+  "type": "emi:world_interaction",
+  "left": "item:minecraft:cauldron",
+  "right": "item:enchanted:anointing_paste",
+  "output": "item:enchanted:witch_cauldron"
+}

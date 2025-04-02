@@ -1,5 +1,7 @@
 ClientEvents.lang('en_us', (event) => {
     event.add("rite.wasteland.rubberwood_sapling", "Rite of Rubberwood")
+    event.add("rite.wasteland.warp_stone", "Rite of Otherwhere")
+
     event.add("rite.wasteland.upgrade_inferium_seeds", "Inferium Seeds Upgrade Rite")
     event.add("rite.wasteland.upgrade_coal_seeds", "Coal Seeds Upgrade Rite")
     event.add("rite.wasteland.upgrade_copper_seeds", "Copper Seeds Upgrade Rite")

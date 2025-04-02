@@ -1,3 +1,45 @@
+Changes in 0.5.6:
+- added Comforts (sleeping bags and hammocks)
+- added Akashic Tome (book that can collect all the guide books)
+- added FancyMenu (for now it only replaces the realms button, but there’s a lot more to come!)
+- added quests about the end and wither to The Force of Nature
+- AgriCraft crops no longer need to be planted on crop sticks (crop sticks are still required for cross breeding and spreading plants)
+- facades are no longer displayed in the JEI
+- dead logs now have a 20% chance to drop charcoal instead of tree bark
+- tree bark can no longer be smelted for charcoal
+- inventory sorter is now disabled inside tinker station, tinker’s anvil and advanced beehive to prevent items getting deleted 
+- infusion crystals now explicitly say they have infinite uses to avoid confusion
+- expanded How Engineering works with additional introductory quests
+- diamond, emerald seed/bee, zombee, skeletal and crystalline bee quests now include additional information
+- fixed missing translations for some of the soils
+- removed iron and obsidian crop sticks from EMI and recipes
+- sponge bees can now be fished in ruined deep ocean biomes
+- added anointing paste usage to world interaction recipes
+- removed unused loot tables from EMI
+- increased the chance and the amount of prismarine shards and crystals from prismarine combs
+- fixed gearworkind die and insightful condenser being uncraftable
+- flugel tiara no longer requires feathers (for now)
+- Expanded Trade Routes now requires 8 -> 16 elementium ingots and 16 -> 8 pixie dust
+- marked some quests as optional
+- decreased bee spawn times from 20 to 5 minutes
+- removed oil from the JEI to avoid confusion
+- warp stone from waystones is now crafted with a rite
+- sulfur bee and creebee can now flower deepslate coal ores
+- quest progression is now flexible, meaning tasks can be completed before getting unlocked
+- repair kit quest now uses stone repair kits instead of rock repair kits
+- bee nests don’t spawn in the nether (now for real)
+- some dye essence recipes were changed
+- essence recipes should now properly work (QuakyCZ)
+- seed quests now have soil requirements colored
+- MA resource seeds now have a tooltip about their use
+- configuration tool no longer requires emeralds
+- configuration tool quest no longer rewards emeralds
+- added a quest about pipe pressurizer and updated its recipe
+- inactive dragon egg recipe now uses a dragonstone block instead of an egg
+- heated centrifuge recipe now uses osmium blocks instead of copper
+- comb processing now rewards 4 iron ingots instead of 8 iron combs
+- enchanter recipe now uses experience essence
+
 Changes in 0.5.5:
 - added Oculus (shaders support)
 - added FerriteCore and ModernFix, which should make the game run smoother

@@ -1,0 +1,9 @@
+{
+  "name": "minecraft:chests/igloo_chest",
+  "pools": [
+    {
+      "entries": [],
+      "name": "main"
+    }
+  ]
+}

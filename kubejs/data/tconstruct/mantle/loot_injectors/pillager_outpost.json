@@ -1,0 +1,9 @@
+{
+  "name": "minecraft:chests/pillager_outpost",
+  "pools": [
+    {
+      "entries": [],
+      "name": "main"
+    }
+  ]
+}

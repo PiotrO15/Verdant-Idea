@@ -88,4 +88,7 @@ ServerEvents.recipes(event => {
       "item": "botania:fel_pumpkin"
     }
   })
+
+  // Replace feathers with manaweave cloth in flugel tiara recipe
+  event.replaceInput({id: 'botania:flighttiara_0'}, 'minecraft:feather', 'botania:manaweave_cloth')
 })

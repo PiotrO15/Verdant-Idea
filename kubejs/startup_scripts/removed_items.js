@@ -7,7 +7,9 @@ global.removed_items = {
     'netherite_sliver',
     'amathyllis_petal',
     'wooden_rake',
-    'iron_rake'
+    'iron_rake',
+    'iron_crop_sticks',
+    'obsidian_crop_sticks'
   ],
   botania: [
     'living_root',
@@ -116,6 +118,10 @@ global.removed_items = {
     'radiation_hardened_failed_pcb',
     'radiation_hardened_finished_pcb',
     'radiation_hardened_empty_pcb'
+  ],
+  pneumaticcraft: [
+    'refinery',
+    'refinery_output'
   ],
   productivebees: [
     'bamboo_hive',

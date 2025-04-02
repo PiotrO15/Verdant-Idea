@@ -83,4 +83,21 @@ ServerEvents.recipes(event => {
       I: 'minecraft:iron_ingot'
     }
   )
+
+  // Add experience essence to enchanter recipe
+  event.remove({id: 'mysticalagriculture:enchanter'})
+  event.shaped(
+    'mysticalagriculture:enchanter',
+    [
+      'ETE',
+      ' I ',
+      'SSS'
+    ],
+    {
+      E: 'mysticalagriculture:experience_essence',
+      I: 'mysticalagriculture:soulium_ingot',
+      S: 'mysticalagriculture:soulstone',
+      T: 'minecraft:enchanting_table'
+    }
+  )
 })

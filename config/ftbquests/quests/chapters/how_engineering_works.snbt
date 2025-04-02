@@ -1010,6 +1010,344 @@
 			x: -2.0d
 			y: 1.0d
 		}
+		{
+			dependencies: ["4CDBF245C03D44B6"]
+			description: ["&eRaw metals&r can be smelted into &eingots&r, but there are many more uses for them. Placing a &eseared melter&r on a &eseared heater&r or a &efuel tank&r lets you melt them for &aadditional 3 nuggets&r per raw metal."]
+			icon: "tconstruct:seared_melter"
+			id: "7D016ED5CD6DD2FF"
+			rewards: [{
+				count: 32
+				id: "7C9234E716C05F48"
+				item: "minecraft:gravel"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "798B518C43403209"
+					item: "tconstruct:seared_melter"
+					type: "item"
+				}
+				{
+					id: "7A9505C9F007B17C"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "tconstruct:seared_heater"
+								}
+								{
+									Count: 1b
+									id: "itemfilters:and"
+									tag: {
+										items: [
+											{
+												Count: 1b
+												id: "tconstruct:seared_fuel_tank"
+											}
+											{
+												Count: 1b
+												id: "itemfilters:strong_nbt"
+											}
+										]
+									}
+								}
+							]
+						}
+					}
+					title: "Seared Heater or Fuel Tank"
+					type: "item"
+				}
+			]
+			title: "Melting Metals"
+			x: -5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["384EEE897525F58C"]
+			description: [
+				"&eTinker's anvil&r is an upgrade to tinkering station which allows you to make &ebigger tools&r that can break &emultiple blocks&r at once!"
+				""
+				"What's more, it also has more slots, meaning you can add &abetter modifiers&r such as &esilky&r, which works just like &esilk touch&r enchantment."
+			]
+			icon: {
+				Count: 1
+				id: "tconstruct:tinkers_anvil"
+				tag: {
+					texture: "tconstruct:amethyst_bronze_block"
+				}
+			}
+			id: "7A72AA3D7AFC39E9"
+			rewards: [{
+				count: 3
+				id: "1215023F929EDA08"
+				item: "tconstruct:silky_cloth"
+				type: "item"
+			}]
+			tasks: [{
+				id: "61742D679408FEED"
+				item: "tconstruct:tinkers_anvil"
+				type: "item"
+			}]
+			title: "Advanced Tinkering"
+			x: -3.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3EE5547E018DFE21"]
+			description: [
+				"&eSeared melter&r is useful, but it becomes &etoo small&r quite quickly. Because of that, it will be worth &ebuilding&r a proper &esmeltery multiblock&r."
+				""
+				"Each smeltery requires a &erectangular base&r out of seared bricks. The walls must include a &asmeltery controller&r and at least a single &aseared fuel tank&r. &eFaucets&r only work when placed on &aseared drains&r, so make sure to include at least one of them."
+			]
+			icon: "tconstruct:smeltery_controller"
+			id: "08ABEAC72111FA33"
+			rewards: [{
+				count: 32
+				id: "6A05426877F8BAA9"
+				item: "tconstruct:seared_brick"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3A7A3B0CC9C0802E"
+					item: "tconstruct:smeltery_controller"
+					type: "item"
+				}
+				{
+					id: "018DF6464CF2CA07"
+					item: "tconstruct:seared_drain"
+					type: "item"
+				}
+				{
+					id: "0E1463C4321F972D"
+					item: "tconstruct:seared_fuel_tank"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "6E1A003F476CAE2C"
+					item: "tconstruct:seared_bricks"
+					type: "item"
+				}
+			]
+			title: "Melting More Metals"
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["08ABEAC72111FA33"]
+			description: [
+				"The main benefit of making a &esmeltery&r is the ability to &ealloy metals&r."
+				""
+				"A simple &ealloy&r that can be made from &acopper&r and &aamethyst&r is &damethyst bronze&r, known of its &estrength&r."
+			]
+			id: "384EEE897525F58C"
+			rewards: [{
+				count: 8
+				id: "213105CD40D56C91"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			tasks: [{
+				count: 3L
+				id: "1A15CAA65B6C0E69"
+				item: "tconstruct:amethyst_bronze_ingot"
+				type: "item"
+			}]
+			title: "Mixing Metals"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["08ABEAC72111FA33"]
+			description: ["&eMelter&r (yes, that's a different melter) can be used to &emelt cobblestone&r into &alava&r! For it to work, a &atorch&r or &asome lava&r must be placed &eunder&r it."]
+			hide_dependency_lines: true
+			id: "24C1F5AE9B7D5826"
+			optional: true
+			rewards: [{
+				id: "458756A2A0EC7143"
+				item: {
+					Count: 1
+					id: "ceramicbucket:ceramic_bucket"
+					tag: {
+						Fluid: {
+							Amount: 1000
+							FluidName: "minecraft:lava"
+						}
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "1B02758C0023B0D0"
+				item: "melter:melter"
+				type: "item"
+			}]
+			title: "A Different Melter"
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["384EEE897525F58C"]
+			description: ["&eTools&r made from &damethyst bronze&r should be capable of &ebreaking obsidian&r. Because of that, it might finally be possible to get to &ethe nether&r. Who knows what's left out there?"]
+			icon: "minecraft:netherrack"
+			id: "1692E52F82EDDF27"
+			rewards: [{
+				count: 4
+				id: "47EF3B2E86C5D246"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3D0E4DE3E24BC5C3"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "tconstruct:flint_and_brick"
+									tag: {
+										Damage: 0
+										tic_broken: 0b
+										tic_modifiers: [
+											{
+												level: 1
+												name: "tconstruct:firestarter"
+											}
+											{
+												level: 1
+												name: "tconstruct:fiery"
+											}
+											{
+												level: 1
+												name: "tconstruct:scorching"
+											}
+										]
+										tic_persistent: { }
+										tic_stats: {
+											"tconstruct:durability": 100.0f
+										}
+										tic_volatile_data: {
+											upgrades: 1
+										}
+									}
+								}
+								{
+									Count: 1b
+									id: "minecraft:flint_and_steel"
+									tag: {
+										Damage: 0
+									}
+								}
+							]
+						}
+					}
+					title: "Any Firestarter"
+					type: "item"
+				}
+				{
+					dimension: "minecraft:the_nether"
+					id: "205C89A63E848F24"
+					title: "Visit the Nether"
+					type: "dimension"
+				}
+			]
+			title: "A Nether-ending Adventure"
+			x: -5.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["1692E52F82EDDF27"]
+			description: [
+				"There are &cno bee nests&r in sight. It might be worth creating a few, perhaps &ebees still live&r in &ethe nether&r?"
+				""
+				"Making a &equartz nest&r doesn't actually require silk touch, as &aquartz in netherrack&r can be used &einstead of nether quartz ore&r."
+			]
+			id: "4E64B2FC0904D639"
+			rewards: [{
+				count: 4
+				id: "74ED384A28FCA085"
+				item: "productivebees:bee_cage"
+				type: "item"
+			}]
+			size: 1.25d
+			subtitle: "Unlocks new quests in Bounties of the Land"
+			tasks: [{
+				id: "10777DF8D98CEA6B"
+				item: "productivebees:nether_quartz_nest"
+				type: "item"
+			}]
+			title: "Looking for Bees"
+			x: -5.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7D016ED5CD6DD2FF"]
+			description: [
+				"Now that the metals are molten, it's time to think about &esolidifying&r them. First, place a &eseared faucet&r on the wall of the melter. Then, place a &ecasting table&r or a &ecasting basin&r under it."
+				""
+				"Most items made with a casting table require a &ecast&r. Casts made from &egold&r have &ainfinite uses&r, but &esingle-use&r casts made from &esand&r should be enough early on. To make them, place &esand&r in a &epart builder&r in the &eslot for patterns&r. Casts can be placed on a casting table."
+			]
+			icon: "tconstruct:seared_table"
+			id: "3EE5547E018DFE21"
+			rewards: [{
+				count: 16
+				id: "39DA0E73D9874C49"
+				item: "tconstruct:seared_brick"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "068E20296E7615C7"
+					item: "tconstruct:seared_table"
+					type: "item"
+				}
+				{
+					id: "6CF8F8977AC5D5A7"
+					item: "tconstruct:seared_basin"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5600AE5BF5C1EEE3"
+					item: { Count: 2, id: "tconstruct:seared_faucet" }
+					type: "item"
+				}
+				{
+					id: "3C6C86400174218D"
+					item: "tconstruct:ingot_sand_cast"
+					type: "item"
+				}
+			]
+			title: "Casting Metals"
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7DA224400E742DF8"]
+			description: ["Pipes are kinda &eslow&r, but that doesn't need to be the case! &ePipe pressurizer&r will &adrastically speed up&r the travel time inside &econnected pipes&r for the small cost of &epower&r!"]
+			id: "6B9C39EEBAD662B6"
+			rewards: [{
+				count: 8
+				id: "7B8E0088AADBF412"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
+			tasks: [{
+				id: "41A6FD93639077AC"
+				item: "prettypipes:pressurizer"
+				type: "item"
+			}]
+			title: "Pretty Quick Pipes"
+			x: 0.5d
+			y: 2.0d
+		}
 	]
 	title: "How Engineering Works"
 }

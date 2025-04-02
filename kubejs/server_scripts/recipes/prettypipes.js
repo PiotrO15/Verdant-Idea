@@ -38,4 +38,7 @@ ServerEvents.recipes(event => {
       T: 'prettypipes:item_terminal'
     }
   )
+
+  // Update pipe pressurizer recipe
+  event.replaceInput({id: 'prettypipes:pressurizer'}, 'minecraft:iron_ingot', 'pneumaticcraft:plastic')
 })

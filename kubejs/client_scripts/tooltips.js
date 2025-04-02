@@ -24,4 +24,10 @@ ItemEvents.tooltip(event => {
     event.addAdvanced('farmersdelight:tree_bark', (item, advanced, text) => {
         text.add(1, Text.gray('Can be used as planks!'))
       })
+
+    event.addAdvanced(/mysticalagriculture:.*_seeds/, (item, advanced, text) => {
+        text.add(2, Text.red('These seeds can only be used in seed upgrade rites! For other uses, check the AgriCraft variant.'))
+    })
+
+    event.add(/matc:.*_crystal/, Text.gray('Infinite uses'))
 })

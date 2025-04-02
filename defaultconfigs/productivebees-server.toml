@@ -46,7 +46,7 @@
 	nestLocatorDistance = 100
 	#Initial tick cooldown when repopulating a nest.
 	#Range: > 0
-	nestSpawnCooldown = 24000
+	nestSpawnCooldown = 6000
 	#Centrifuges will pick up items thrown on it
 	centrifugeHopperMode = true
 	#Having a lot of bees (or bee cages in an inventory) in a single chunk can overload the chunk with data. A lot of data is already stripped from the bees as they are saved, but this will also remove all Forge capabilities, which is data added to the bees by other mods. Turn off to keep the data.
@@ -119,11 +119,11 @@
 	#Range: 0.0 ~ 1.0
 	glowstone_nest = 0.0
 	#Range: 0.0 ~ 1.0
-	soul_sand_nest = 0.1
+	soul_sand_nest = 0.0
 	#Range: 0.0 ~ 1.0
-	nether_quartz_nest = 0.2
+	nether_quartz_nest = 0.0
 	#Range: 0.0 ~ 1.0
-	nether_brick_nest = 0.9
+	nether_brick_nest = 0.0
 	#Range: 0.0 ~ 1.0
 	end_stone_nest = 0.15
 	#Range: 0.0 ~ 1.0
@@ -143,7 +143,7 @@
 	#Range: 0.0 ~ 1.0
 	acacia_wood_nest = 0.0
 	#Range: 0.0 ~ 1.0
-	nether_bee_nest = 0.02
+	nether_bee_nest = 0.0
 	#Range: 0.0 ~ 1.0
 	sugarbag_nest = 0.0
 	#Chance for a nest to spawn when growing a tree or fungus.

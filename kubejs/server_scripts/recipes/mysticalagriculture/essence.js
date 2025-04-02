@@ -174,4 +174,70 @@ ServerEvents.recipes(event => {
     "mysticalagriculture:netherite_essence",
     "minecraft:music_disc_pigstep"
   )
+
+  // Fix dye essence recipes
+  event.remove({ id: "mysticalagriculture:essence/minecraft/white_dye"})
+  event.shaped(
+    '6x minecraft:white_dye', 
+    [
+      " E ", 
+      "E  ", 
+      "  E"
+    ], 
+    {
+      E: 'mysticalagriculture:dye_essence',
+    }
+  )
+
+  event.remove({ id: "mysticalagriculture:essence/minecraft/orange_dye"})
+  event.shaped(
+    '6x minecraft:orange_dye', 
+    [
+      "E  ", 
+      "  E", 
+      " E "
+    ], 
+    {
+      E: 'mysticalagriculture:dye_essence',
+    }
+  )
+  
+  event.remove({ id: "mysticalagriculture:essence/minecraft/green_dye"})
+  event.shaped(
+    '6x minecraft:green_dye', 
+    [
+      "  E", 
+      "E  ", 
+      "E  "
+    ], 
+    {
+      E: 'mysticalagriculture:dye_essence',
+    }
+  )
+  
+  event.remove({ id: "mysticalagriculture:essence/minecraft/cyan_dye"})
+  event.shaped(
+    '6x minecraft:cyan_dye', 
+    [
+      "E  ", 
+      "E  ", 
+      "  E"
+    ], 
+    {
+      E: 'mysticalagriculture:dye_essence',
+    }
+  )
+  
+  event.remove({ id: "mysticalagriculture:essence/minecraft/light_blue_dye"})
+  event.shaped(
+    '6x minecraft:light_blue_dye', 
+    [
+      "  E", 
+      "   ", 
+      "EE "
+    ], 
+    {
+      E: 'mysticalagriculture:dye_essence',
+    }
+  )
 })

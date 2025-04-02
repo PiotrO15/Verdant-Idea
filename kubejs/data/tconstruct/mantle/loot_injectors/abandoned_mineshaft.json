@@ -1,0 +1,9 @@
+{
+  "name": "minecraft:chests/abandoned_mineshaft",
+  "pools": [
+    {
+      "entries": [],
+      "name": "main"
+    }
+  ]
+}

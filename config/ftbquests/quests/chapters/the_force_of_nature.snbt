@@ -141,6 +141,7 @@
 			dependencies: ["7CE69D3568675BD8"]
 			description: ["Drum of the wild works just like the horn, except it needs a mana pulse. Guess what a pulse mana spreader can be used for?"]
 			id: "199EF69AA140EF29"
+			optional: true
 			rewards: [{
 				count: 8
 				id: "5325798C99CBE22E"
@@ -324,6 +325,7 @@
 			description: ["Sometimes it's not worth sending mana all the time. Pulse mana spreader will only send a pulse when powered by redstone, and hovering hourglass will send a signal every so often, depending on how much sand or soul sand has been placed in it."]
 			icon: "botania:hourglass"
 			id: "7CE69D3568675BD8"
+			optional: true
 			rewards: [{
 				count: 4
 				id: "552789DFC95C103F"
@@ -376,7 +378,7 @@
 		}
 		{
 			dependencies: ["76859CD938E06888"]
-			description: ["The portal seems to be too weak to transfer any living being. That's too bad. Fortunately, it looks like items can transfered, making contact with the elves possible. Hopefully, sending them Lexica Botania will make them share some of their knowledge. "]
+			description: ["The portal seems to be too weak to transfer any living being. Fortunately, it looks like items can be transfered, making contact with the elves possible. Hopefully, sending them Lexica Botania will make them share some of their knowledge. "]
 			id: "4EA204B2488F20C1"
 			rewards: [{
 				count: 2
@@ -491,13 +493,13 @@
 			}]
 			tasks: [
 				{
-					count: 8L
+					count: 16L
 					id: "3B19C964FB6A011C"
 					item: "botania:elementium_ingot"
 					type: "item"
 				}
 				{
-					count: 16L
+					count: 8L
 					id: "0F6C5EC1DCBE46F0"
 					item: "botania:pixie_dust"
 					type: "item"
@@ -509,7 +511,7 @@
 					type: "item"
 				}
 			]
-			title: "Expanding Trade Routes"
+			title: "Expanded Trade Routes"
 			x: 3.0d
 			y: -1.5d
 		}
@@ -533,7 +535,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["4845C3814D5F3B29"]
+			dependencies: ["637F2B86FAFF8458"]
 			description: [
 				"Elven materials are good, but there is something better. Gaia spirits can be used to craft even more powerful spreaders and artifacts."
 				""
@@ -558,13 +560,13 @@
 					entity: "botania:doppleganger"
 					icon: "botania:life_essence"
 					id: "3E19F3DD55CF0498"
-					title: "Kill Guardian of Gaia"
+					title: "Kill the Guardian of Gaia"
 					type: "kill"
 					value: 1L
 				}
 			]
 			title: "Fighting the Spirits"
-			x: 4.5d
+			x: 5.5d
 			y: -0.5d
 		}
 		{
@@ -590,9 +592,9 @@
 					type: "item"
 				}
 			]
-			title: "Full Power of Gaia"
-			x: 5.5d
-			y: -0.5d
+			title: "The Full Power of Gaia"
+			x: 6.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["26A166A99959A8ED"]
@@ -646,7 +648,7 @@
 					type: "item"
 				}
 			]
-			title: "Enchanting With Mana"
+			title: "Enchanting with Mana"
 			x: 2.5d
 			y: 1.5d
 		}
@@ -668,6 +670,97 @@
 			title: "Enchanting with Essence"
 			x: 1.5d
 			y: 1.5d
+		}
+		{
+			dependencies: ["6A87706B9FF0A830"]
+			description: [
+				"&eThe end&r is a strange dimension beyond human comprehension. Who knows, maybe there is at least &esome life&r there?"
+				""
+				"&eEnd portal frames&r are &edirectional&r, meaning the portal &cwill only open&r if they are placed in the &eright direction&r. To make sure they are placed well, &astand in the middle&r of the portal while placing them."
+			]
+			hide_dependency_lines: true
+			icon: "minecraft:end_portal_frame"
+			id: "2EFF071AF3FEE318"
+			rewards: [{
+				id: "6FD90457B6BE0F14"
+				item: "minecraft:dragon_head"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 12L
+					id: "70A24C8EC81DA7A1"
+					item: "minecraft:end_portal_frame"
+					type: "item"
+				}
+				{
+					count: 12L
+					id: "759E31E6319860EE"
+					item: { Count: 12, id: "minecraft:ender_eye" }
+					type: "item"
+				}
+			]
+			title: "An Unsettling Space"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"2EFF071AF3FEE318"
+				"209F12591250D16F"
+			]
+			description: ["&eFlügel tiara&r crafted from &agaia spirits&r and &aender air&r seems to have an interesting ability: &eflight&r. Flying costs &bmana&r and is &elimited in time&r, but it's still a very useful item."]
+			id: "1D6D0DED53F66C1F"
+			rewards: [{
+				count: 8
+				id: "14941EB6FACD96DC"
+				item: "botania:elementium_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "05546305BB6CB329"
+				item: {
+					Count: 1
+					id: "botania:flight_tiara"
+					tag: {
+						variant: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Fly High"
+			x: 6.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4845C3814D5F3B29"]
+			description: ["In order to take the full advantage of &bmana&r, you need to get &egaia spirits&r. To do that, however, you must &efight&r a &eWither&r first."]
+			icon: "minecraft:nether_star"
+			id: "637F2B86FAFF8458"
+			rewards: [{
+				count: 2
+				id: "6E81D5C379EA3993"
+				item: "minecraft:wither_skeleton_skull"
+				type: "item"
+			}]
+			tasks: [
+				{
+					entity: "minecraft:wither"
+					icon: "minecraft:nether_star"
+					id: "1D54857A3DACC975"
+					title: "Kill the Wither"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "630ED13727AA4294"
+					item: "minecraft:beacon"
+					type: "item"
+				}
+			]
+			title: "What a Star"
+			x: 4.5d
+			y: -0.5d
 		}
 	]
 	title: "The Force of Nature"

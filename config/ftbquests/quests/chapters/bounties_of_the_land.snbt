@@ -927,6 +927,7 @@
 		}
 		{
 			dependencies: ["704B30E0C6BFCE49"]
+			description: ["You can get your first diamonds by &ecompressing coal&r in a &epressure chamber&r or &dexploring end cities&r."]
 			hide_dependent_lines: true
 			id: "730DCD31B4C279DA"
 			rewards: [
@@ -1004,6 +1005,7 @@
 		}
 		{
 			dependencies: ["704B30E0C6BFCE49"]
+			description: ["The first few emeralds can be &etraded&r on &eamadron&r, created with an &eorechid&r or &dfound in an end city&r."]
 			id: "62CB9F3EE930201E"
 			rewards: [
 				{
@@ -1119,6 +1121,11 @@
 		}
 		{
 			dependencies: ["6A6C96BB37FB3C52"]
+			description: [
+				"&eAdvanced beehives&r left at &enight&r in &etotal darkness&r might attract &ezombees&r and &eskeletal bees&r."
+				""
+				"Skeletal bees are attracted to &abone blocks&r and work at &anight&r."
+			]
 			hide_dependent_lines: true
 			id: "5A4364A25810C697"
 			rewards: [{
@@ -1153,6 +1160,11 @@
 		}
 		{
 			dependencies: ["6A6C96BB37FB3C52"]
+			description: [
+				"&eAdvanced beehives&r left at &enight&r in &etotal darkness&r might attract &ezombees&r and &eskeletal bees&r."
+				""
+				"Zombees are attracted to &aflowers&r and work at &anight&r."
+			]
 			hide_dependent_lines: true
 			id: "62876657520D3483"
 			rewards: [{
@@ -1186,7 +1198,12 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["1692E52F82EDDF27"]
+			dependencies: ["4E64B2FC0904D639"]
+			description: [
+				"&eQuartz nests&r filled with &enether quartz&r that are placed in &ethe nether&r will attract &ecrystalline bees&r."
+				""
+				"Crystalline bees are attracted to &aquartz blocks&r and are very useful for &ebee breeding&r."
+			]
 			hide_dependent_lines: true
 			id: "1261E6D048DE0810"
 			rewards: [{
@@ -1220,7 +1237,7 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["1692E52F82EDDF27"]
+			dependencies: ["4E64B2FC0904D639"]
 			hide_dependent_lines: true
 			id: "1DE46ED98516CB80"
 			rewards: [{
@@ -1288,7 +1305,7 @@
 			y: -4.0d
 		}
 		{
-			dependencies: ["1692E52F82EDDF27"]
+			dependencies: ["4E64B2FC0904D639"]
 			hide_dependent_lines: true
 			id: "09E10BE4F4D077E6"
 			rewards: [{
@@ -1430,6 +1447,7 @@
 				"047706296E9D39E8"
 				"2D0D45D315124C7C"
 			]
+			description: ["You can get your first diamonds by &ecompressing coal&r in a &epressure chamber&r or &dexploring end cities&r."]
 			hide_dependent_lines: true
 			id: "355D2000A9ECFDD0"
 			rewards: [{
@@ -1467,6 +1485,7 @@
 				"355D2000A9ECFDD0"
 				"30F9794702BBF241"
 			]
+			description: ["The first few emeralds can be &etraded&r on &eamadron&r, created with an &eorechid&r or &dfound in an end city&r."]
 			hide_dependent_lines: true
 			id: "415BBAE21AB85F8A"
 			rewards: [{
@@ -1691,7 +1710,7 @@
 			y: -5.0d
 		}
 		{
-			dependencies: ["1692E52F82EDDF27"]
+			dependencies: ["4E64B2FC0904D639"]
 			hide_dependent_lines: true
 			id: "5247EBABF2552934"
 			rewards: [{
