@@ -17,6 +17,17 @@ def maxed_seed(species):
         }
     }
 
+def partial_seed(species):
+    return {
+        "id": "agricraft:seed",
+        "Count": 1,
+        "tag": {
+            "genes": {
+                "species": {"dom": species, "rec": species}
+            }
+        }
+    }
+
 def parse_input_item(item):
     if isinstance(item, str):
         count = 1
@@ -47,8 +58,8 @@ def generate_rite(input_items, output_items, shapes, power):
 
     output_filename = "output.json"
     if parsed_input_items:
-        first_input_id = parsed_input_items[0]["id"].split(":")[1]
-        output_filename = f"upgrade_{first_input_id}.json"
+        first_input_id = parsed_input_items[0]["tag"]["genes"]["species"]["dom"].split(":")[1]
+        output_filename = f"upgrade_{first_input_id}_seeds.json"
 
     with open(output_filename, "w") as json_file:
         json.dump(data, json_file, indent=4)
@@ -57,15 +68,13 @@ def generate_rite(input_items, output_items, shapes, power):
     return data
 
 def upgrade_seed_rite(seed_type, parent1, parent2, shapes, power):
-    generate_rite([f'{seed_type}_seeds', maxed_seed(parent1), maxed_seed(parent2)], [maxed_seed(seed_type)], shapes, power)
+    generate_rite([partial_seed(seed_type), maxed_seed(parent1), maxed_seed(parent2)], [maxed_seed(seed_type)], shapes, power)
 
 
 if __name__ == "__main__":
     power = 1000
     shapes = {
-        "enchanted:small_circle": "enchanted:ritual_chalk",
-        "enchanted:medium_circle": "enchanted:ritual_chalk"
-        # "wasteland:flower": "enchanted:ritual_chalk"
+        "wasteland:basic_flower": "enchanted:ritual_chalk"
     }
 
     upgrade_seed_rite('mysticalagriculture:inferium', 'minecraft:sugar_cane', 'minecraft:pumpkin', shapes, power)
@@ -81,9 +90,10 @@ if __name__ == "__main__":
     upgrade_seed_rite('mysticalagriculture:zombie', 'minecraft:cactus', 'immersiveengineering:hemp', shapes, power)
     
     power = 3500
-    # shapes = {
-        # "wasteland:flower": "enchanted:nether_chalk"
-    # }
+    shapes = {
+        "wasteland:basic_flower": "enchanted:ritual_chalk",
+        "wasteland:advanced_flower": "enchanted:nether_chalk"
+    }
     
     upgrade_seed_rite('mysticalagriculture:air', 'minecraft:oxeye_daisy', 'minecraft:dandelion', shapes, power)
     upgrade_seed_rite('mysticalagriculture:earth', 'farmersdelight:onion', 'minecraft:bamboo', shapes, power)
@@ -109,9 +119,11 @@ if __name__ == "__main__":
     upgrade_seed_rite('mysticalagriculture:silver', 'mysticalagriculture:iron', 'botania:light_gray_mystical_flower', shapes, power)
 
     power = 7000
-    # shapes = {
-        # "wasteland:flower": "enchanted:otherwhere_chalk"
-    # }
+    shapes = {
+        "wasteland:basic_flower": "enchanted:ritual_chalk",
+        "wasteland:advanced_flower": "enchanted:nether_chalk",
+        "wasteland:master_flower": "enchanted:otherwhere_chalk"
+    }
 
     upgrade_seed_rite('mysticalagriculture:aluminum', 'botania:white_mystical_flower', 'botania:light_gray_mystical_flower', shapes, power)
     upgrade_seed_rite('mysticalagriculture:certus_quartz', 'botania:light_blue_mystical_flower', 'enchanted:snowbell', shapes, power)
