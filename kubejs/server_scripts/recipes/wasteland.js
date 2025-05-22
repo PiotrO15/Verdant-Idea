@@ -1,10 +1,5 @@
-ServerEvents.tags('block', event => {
+ServerEvents.tags('item', event => {
   event.add('minecraft:logs', ['wasteland:dead_log'])
-
-  Ingredient.of("#minecraft:logs").itemIds.forEach(item => {
-    if (item != 'wasteland:dead_log')
-      event.add('wasteland:alive_logs', item)
-  })
 })
 
 ServerEvents.recipes(event => {

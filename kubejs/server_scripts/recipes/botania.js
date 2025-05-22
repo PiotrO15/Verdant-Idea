@@ -94,5 +94,12 @@ ServerEvents.recipes(event => {
 
   // Update livingwood recipe
   event.remove({id: 'botania:pure_daisy/livingwood'})
-  event.recipes.botania.pure_daisy("botania:livingwood_log", '#wasteland:alive_logs')
+  event.custom({
+    "type": "botania:state_copying_pure_daisy",
+    "input": {
+      "type": "tag",
+      "tag": "wasteland:alive_logs"
+    },
+    "output": "botania:livingwood_log"
+  })
 })

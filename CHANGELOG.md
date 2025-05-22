@@ -1,3 +1,9 @@
+Changes in 0.6.1:
+- livingwood recipe now always works
+- wood changed into livingwood keeps its rotation again
+- dead logs can now be used in crafting just like other logs
+- improved the tooltip under disabled items
+
 Changes in 0.6:
 - removed Melter mod (existing melters will disappear)
 - removed Map Atlases and MoonlightLib (this means map atlases will disappear)

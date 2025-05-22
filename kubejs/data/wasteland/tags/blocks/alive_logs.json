@@ -1,0 +1,8 @@
+{
+  "values": [
+    "#minecraft:logs"
+  ],
+  "remove": [
+    "wasteland:dead_log"
+  ]
+}

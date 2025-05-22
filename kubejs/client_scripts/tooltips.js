@@ -22,4 +22,10 @@ ItemEvents.tooltip(event => {
     })
 
     event.add(/matc:.*_crystal/, Text.gray('Infinite uses'))
+
+    global.disabled_tools.forEach(item => {
+        event.addAdvanced(item, (item, advanced, text) => {
+            text.add(1, Text.red("This item breaks instantly! Only use as a crafting ingredient."))
+        })
+    })
 })
