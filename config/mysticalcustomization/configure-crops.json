@@ -20,8 +20,8 @@
     "mysticalagriculture:lapis_lazuli": {
         "tier": "mysticalagriculture:3"
     },
-    "mysticalagriculture:nickel": {
-        "tier": "mysticalagriculture:4"
+    "mysticalagriculture:silver": {
+        "tier": "mysticalagriculture:3"
     },
     "mysticalagriculture:creeper": {
         "tier": "mysticalagriculture:4"
@@ -32,7 +32,10 @@
     "mysticalagriculture:emerald": {
         "tier": "mysticalagriculture:4"
     },
-    "mysticalagriculture:silver": {
+    "mysticalagriculture:tin": {
+        "tier": "mysticalagriculture:4"
+    },
+    "mysticalagriculture:aluminum": {
         "tier": "mysticalagriculture:4"
     },
     "mysticalagriculture:certus_quartz": {
@@ -44,9 +47,6 @@
     "mysticalagriculture:lead": {
         "tier": "mysticalagriculture:5"
     },
-    "mysticalagriculture:aluminum": {
-        "tier": "mysticalagriculture:5"
-    },
     "mysticalagriculture:osmium": {
         "tier": "mysticalagriculture:5"
     },
@@ -54,6 +54,9 @@
         "tier": "mysticalagriculture:5"
     },
     "mysticalagriculture:fluorite": {
+        "tier": "mysticalagriculture:5"
+    },
+    "mysticalagriculture:nickel": {
         "tier": "mysticalagriculture:5"
     },
     "mysticalagriculture:nature": {

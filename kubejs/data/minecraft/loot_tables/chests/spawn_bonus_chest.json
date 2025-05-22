@@ -1,0 +1,214 @@
+{
+  "type": "minecraft:chest",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:tag",
+          "name": "comforts:sleeping_bags",
+          "expand": true
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "tconstruct:add_tool_data",
+                  "materials": [
+                    {
+                      "type": "tconstruct:fixed",
+                      "material": "tconstruct:rock#stone"
+                    },
+                    {
+                      "type": "tconstruct:fixed",
+                      "material": "tconstruct:wood"
+                    },
+                    {
+                      "type": "tconstruct:random",
+                      "tier": 1
+                    }
+                  ]
+                }
+              ],
+              "name": "tconstruct:hand_axe"
+            },
+            {
+              "type": "minecraft:item",
+              "functions": [
+                {
+                  "function": "tconstruct:add_tool_data",
+                  "materials": [
+                    {
+                      "type": "tconstruct:fixed",
+                      "material": "tconstruct:rock#stone"
+                    },
+                    {
+                      "type": "tconstruct:fixed",
+                      "material": "tconstruct:wood"
+                    },
+                    {
+                      "type": "tconstruct:random",
+                      "tier": 1
+                    }
+                  ]
+                }
+              ],
+              "name": "tconstruct:mattock"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "functions": [
+            {
+              "function": "tconstruct:add_tool_data",
+              "materials": [
+                {
+                  "type": "tconstruct:fixed",
+                  "material": "tconstruct:rock#stone"
+                },
+                {
+                  "type": "tconstruct:fixed",
+                  "material": "tconstruct:wood"
+                },
+                {
+                  "type": "tconstruct:random",
+                  "tier": 1
+                }
+              ]
+            }
+          ],
+          "name": "tconstruct:pickaxe"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "farmersdelight:dumplings"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": {
+            "type": "minecraft:uniform",
+            "min": 6,
+            "max": 12
+          }
+        }
+      ]
+    },
+    {
+      "rolls": 7,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:charcoal",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 4
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "wasteland:dead_planks",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 6
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 4,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "botania:black_lotus",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 5,
+                "max": 7
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:repair_kit",
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:rock#stone\"}"
+            },
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 2,
+                "max": 3
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:travelers_helmet"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:travelers_boots"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:travelers_chestplate"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:travelers_leggings"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+	"variants": {
+    "crop=plant": [{"model": "agricraft:block/crop"}],
+
+    "crop=single_sticks,variant=wooden": [{"model": "agricraft:block/crop_sticks_particles"}],
+    "crop=single_sticks,variant=iron": [{"model": "agricraft:block/iron_crop_sticks_particles"}],
+    "crop=single_sticks,variant=obsidian": [{"model": "agricraft:block/obsidian_crop_sticks_particles"}],
+
+    "crop=double_sticks,variant=wooden": [{"model": "agricraft:block/crop_sticks_particles"}],
+    "crop=double_sticks,variant=iron": [{"model": "agricraft:block/iron_crop_sticks_particles"}],
+    "crop=double_sticks,variant=obsidian": [{"model": "agricraft:block/obsidian_crop_sticks_particles"}],
+
+    "crop=plant_sticks,variant=wooden": [{"model": "agricraft:block/crop_sticks_particles"}],
+    "crop=plant_sticks,variant=iron": [{"model": "agricraft:block/iron_crop_sticks_particles"}],
+    "crop=plant_sticks,variant=obsidian": [{"model": "agricraft:block/obsidian_crop_sticks_particles"}]
+  }
+}

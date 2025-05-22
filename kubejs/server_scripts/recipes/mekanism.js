@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
     ],
     {
       L: 'minecraft:lapis_lazuli',
-      T: '#forge:ingots/tin',
+      T: '#forge:ingots/silver',
       S: 'minecraft:stick'
     }
   )
@@ -69,4 +69,32 @@ ServerEvents.recipes(event => {
       R: 'thermal:rf_coil'
     }
   )
+
+  // Update Antimatter pellet cost
+  event.remove({id: 'mekanism:processing/lategame/antimatter/from_pellet'})
+  event.custom({
+    "type": "mekanism:oxidizing",
+    "input": {
+      "ingredient": {
+        "tag": "forge:pellets/antimatter"
+      }
+    },
+    "output": {
+      "amount": 100,
+      "gas": "mekanism:antimatter"
+    }
+  })
+
+  event.remove({id: 'mekanism:processing/lategame/antimatter_pellet/from_gas'})
+  event.custom({
+    "type": "mekanism:crystallizing",
+    "chemicalType": "gas",
+    "input": {
+      "amount": 100,
+      "gas": "mekanism:antimatter"
+    },
+    "output": {
+      "item": "mekanism:pellet_antimatter"
+    }
+  })
 })

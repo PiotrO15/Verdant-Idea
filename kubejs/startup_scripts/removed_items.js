@@ -25,6 +25,9 @@ global.removed_items = {
   farmersdelight: [
     'organic_compost'
   ],
+  mekanismgenerators: [
+    'wind_generator'
+  ],
   mysticalagriculture: [
     'prosperity_ore',
     'deepslate_prosperity_ore',
@@ -73,7 +76,43 @@ global.removed_items = {
     'soulium_dagger',
     'passive_soulium_dagger',
     'hostile_soulium_dagger',
-    'creative_soulium_dagger'
+    'creative_soulium_dagger',
+    'inferium_seeds',
+    'coal_seeds',
+    'copper_seeds',
+    'dye_seeds',
+    'iron_seeds',
+    'nether_seeds',
+    'skeleton_seeds',
+    'zombie_seeds',
+    'experience_seeds',
+    'lapis_lazuli_seeds',
+    'nether_quartz_seeds',
+    'redstone_seeds',
+    'tin_seeds',
+    'spider_seeds',
+    'air_seeds',
+    'earth_seeds',
+    'fire_seeds',
+    'water_seeds',
+    'diamond_seeds',
+    'emerald_seeds',
+    'end_seeds',
+    'gold_seeds',
+    'nickel_seeds',
+    'silver_seeds',
+    'blaze_seeds',
+    'creeper_seeds',
+    'enderman_seeds',
+    'aluminum_seeds',
+    'certus_quartz_seeds',
+    'fluorite_seeds',
+    'lead_seeds',
+    'netherite_seeds',
+    'osmium_seeds',
+    'ghast_seeds',
+    'slime_seeds',
+    'wither_skeleton_seeds'
   ],
   pncepcb: [
     'primitive_unassembled_pcb',
@@ -121,7 +160,9 @@ global.removed_items = {
   ],
   pneumaticcraft: [
     'refinery',
-    'refinery_output'
+    'refinery_output',
+    'glycerol',
+    'bandage'
   ],
   productivebees: [
     'bamboo_hive',
@@ -129,7 +170,8 @@ global.removed_items = {
     'sugarbag_nest',
     'warped_bee_nest',
     'crimson_bee_nest',
-    'nest_locator'
+    'nest_locator',
+    'honey_generator'
   ],
   thermal: [
     'apatite_ore',

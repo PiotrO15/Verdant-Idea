@@ -117,6 +117,22 @@ ServerEvents.recipes(event => {
     })
 
   // Change machine recipes
+  event.remove({id: 'thermal:machine_pyrolyzer'})
+  event.shaped('thermal:machine_pyrolyzer',
+    [
+      'PEP',
+      'GFG',
+      'CCC'
+    ],
+    {
+      C: 'immersiveengineering:cokebrick',
+      E: 'immersiveengineering:graphite_electrode',
+      F: 'thermal:machine_frame',
+      G: 'thermal:constantan_gear',
+      P: '#forge:plates/iron'
+    }
+  )
+
   event.replaceInput({id: 'thermal:machine_crafter'}, 'thermal:machine_frame', 'thermal:upgrade_augment_1')
   event.replaceInput({id: 'thermal:machine_crafter'}, 'minecraft:crafting_table', 'botania:crafty_crate')
 
@@ -157,8 +173,7 @@ ServerEvents.recipes(event => {
         "fluid": "minecraft:lava",
         "amount": 125
       }
-    ],
-    "energy": 16000
+    ]
   })
 
   // Reinforced Tier - Signalum, Electrum
@@ -202,4 +217,44 @@ ServerEvents.recipes(event => {
 
   // Prismarine crystals to prismarine shards
   event.recipes.thermal.pulverizer(['minecraft:prismarine_shard'], 'minecraft:prismarine_crystals')
+
+  // Replace thermal creosote with IE creosote
+  event.remove({id: 'thermal:machines/pyrolyzer/pyrolyzer_logs'})
+  event.custom({
+    "type": "thermal:pyrolyzer",
+    "ingredient": {
+      "tag": "minecraft:logs"
+    },
+    "result": [
+      {
+        "item": "minecraft:charcoal"
+      },
+      {
+        "fluid": "immersiveengineering:creosote",
+        "amount": 125
+      }
+    ],
+    "experience": 0.15
+  })
+
+  // Pyrolyzer coal coke recipe
+  event.custom({
+    "type": "thermal:pyrolyzer",
+    "ingredient": {
+      "item": "mekanism:enriched_carbon"
+    },
+    "result": [
+      {
+        "item": "thermal:coal_coke"
+      },
+      {
+        "fluid": "immersiveengineering:creosote",
+        "amount": 25
+      }
+    ],
+    "energy": 16000
+  })
+
+  // Fire essence to lava
+  event.recipes.thermal.crucible(Fluid.of('minecraft:lava', 250), 'mysticalagriculture:fire_essence').energyMod(2.5)
 })

@@ -44,7 +44,6 @@ let compost_growable = [
     "minecraft:mangrove_propagule",
     "minecraft:cherry_sapling",
     "minecraft:fern",
-    "minecraft:pink_petals",
     "minecraft:moss_carpet",
     "farmersdelight:sandy_shrub"
 ]

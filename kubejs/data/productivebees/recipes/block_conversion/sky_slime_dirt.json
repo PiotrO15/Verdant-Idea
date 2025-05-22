@@ -1,0 +1,17 @@
+{
+  "type": "productivebees:block_conversion",
+  "bee": "productivebees:sky_stone",
+  "from": {
+    "Name": "botania:infused_grass"
+  },
+  "to": {
+    "Name": "tconstruct:sky_vanilla_slime_grass"
+  },
+  "chance": 100,
+  "conditions": [
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "productivebees:sky_stone"
+    }
+  ]
+}

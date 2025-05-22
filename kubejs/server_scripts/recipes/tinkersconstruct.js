@@ -11,4 +11,33 @@ ServerEvents.recipes(event => {
   // Remove skeletons to milk recipes
   event.remove({id: 'tconstruct:smeltery/entity_melting/skeletons'})
   event.remove({id: 'tconstruct:smeltery/entity_melting/heads/skeleton'})
+
+  // Lava melting
+  event.custom({
+    "type": "tconstruct:melting",
+    "ingredient": {
+      "item": "minecraft:cobblestone"
+    },
+    "result": {
+      "amount": 250,
+      "fluid": "minecraft:lava"
+    },
+    "temperature": 800,
+    "time": 480
+  })
+
+  event.custom({
+    "type": "tconstruct:melting",
+    "ingredient": {
+      "item": "mysticalagriculture:fire_essence"
+    },
+    "result": {
+      "amount": 250,
+      "fluid": "minecraft:lava"
+    },
+    "temperature": 800,
+    "time": 240
+  })
+
+  event.remove({id: 'mysticalagriculture:essence/minecraft/lava_bucket'})
 })

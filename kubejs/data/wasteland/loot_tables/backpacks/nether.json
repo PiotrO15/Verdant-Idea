@@ -55,253 +55,102 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_helmet",
+          "name": "tconstruct:helmet_plating",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 5,
-                "max": 12
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0.5,
-                "max": 0.8
-              },
-              "add": false
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:cobalt\"}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_chestplate",
+          "name": "tconstruct:chestplate_plating",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 5,
-                "max": 12
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0.5,
-                "max": 0.8
-              },
-              "add": false
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:cobalt\"}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_leggings",
+          "name": "tconstruct:leggings_plating",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 5,
-                "max": 12
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0.5,
-                "max": 0.8
-              },
-              "add": false
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:cobalt\"}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_boots",
+          "name": "tconstruct:boots_plating",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 5,
-                "max": 12
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0.5,
-                "max": 0.8
-              },
-              "add": false
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:cobalt\"}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_sword",
+          "name": "tconstruct:maille",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 5,
-                "max": 12
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            },
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:cobalt\"}"
+            }
+          ],
+          "weight": 4
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:small_blade",
+          "functions": [
             {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0.5,
-                "max": 0.8
-              },
-              "add": false
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:cobalt\"}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_pickaxe",
+          "name": "tconstruct:pick_head",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 5,
-                "max": 12
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0.5,
-                "max": 0.8
-              },
-              "add": false
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:cobalt\"}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_axe",
+          "name": "tconstruct:small_axe_head",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 5,
-                "max": 12
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0.5,
-                "max": 0.8
-              },
-              "add": false
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:cobalt\"}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_shovel",
+          "name": "tconstruct:adze_head",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 5,
-                "max": 12
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0.5,
-                "max": 0.8
-              },
-              "add": false
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:cobalt\"}"
             }
           ]
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diamond_hoe",
+          "name": "tconstruct:tool_binding",
           "functions": [
             {
-              "function": "minecraft:enchant_with_levels",
-              "levels": {
-                "type": "minecraft:uniform",
-                "min": 5,
-                "max": 12
-              },
-              "conditions": [
-                {
-                  "condition": "minecraft:random_chance",
-                  "chance": 0.5
-                }
-              ]
-            },
-            {
-              "function": "minecraft:set_damage",
-              "damage": {
-                "min": 0.5,
-                "max": 0.8
-              },
-              "add": false
+              "function": "minecraft:set_nbt",
+              "tag": "{Material:\"tconstruct:cobalt\"}"
             }
           ]
         },

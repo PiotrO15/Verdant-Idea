@@ -1162,35 +1162,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["08ABEAC72111FA33"]
-			description: ["&eMelter&r (yes, that's a different melter) can be used to &emelt cobblestone&r into &alava&r! For it to work, a &atorch&r or &asome lava&r must be placed &eunder&r it."]
-			hide_dependency_lines: true
-			id: "24C1F5AE9B7D5826"
-			optional: true
-			rewards: [{
-				id: "458756A2A0EC7143"
-				item: {
-					Count: 1
-					id: "ceramicbucket:ceramic_bucket"
-					tag: {
-						Fluid: {
-							Amount: 1000
-							FluidName: "minecraft:lava"
-						}
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "1B02758C0023B0D0"
-				item: "melter:melter"
-				type: "item"
-			}]
-			title: "A Different Melter"
-			x: -2.0d
-			y: -3.0d
-		}
-		{
 			dependencies: ["384EEE897525F58C"]
 			description: ["&eTools&r made from &damethyst bronze&r should be capable of &ebreaking obsidian&r. Because of that, it might finally be possible to get to &ethe nether&r. Who knows what's left out there?"]
 			icon: "minecraft:netherrack"
@@ -1347,6 +1318,33 @@
 			title: "Pretty Quick Pipes"
 			x: 0.5d
 			y: 2.0d
+		}
+		{
+			dependencies: ["64269BEAA28956F7"]
+			description: [
+				"The infrastructure needed to bring life back requires &ea lot of power&r."
+				""
+				"Simple water wheels won't be enough, but a &ediesel generator&r can be a &agood start&r."
+			]
+			hide_dependency_lines: true
+			id: "14B37ACCA9937F2B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3C68501DE68F5FFA"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_dieselgen"
+				criterion: ""
+				id: "5327AE2C63E9A174"
+				title: "Build a Diesel Generator"
+				type: "advancement"
+			}]
+			title: "Big Power"
+			x: 2.5d
+			y: -4.0d
 		}
 	]
 	title: "How Engineering Works"

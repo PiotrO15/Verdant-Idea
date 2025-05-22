@@ -1,3 +1,12 @@
+ServerEvents.tags('block', event => {
+  event.add('minecraft:logs', ['wasteland:dead_log'])
+
+  Ingredient.of("#minecraft:logs").itemIds.forEach(item => {
+    if (item != 'wasteland:dead_log')
+      event.add('wasteland:alive_logs', item)
+  })
+})
+
 ServerEvents.recipes(event => {
   // Add a recipe for rich soil so that organic compost doesn't slow down the gameplay
   event.shapeless('farmersdelight:rich_soil', ['minecraft:dirt', 'wasteland:compost'])

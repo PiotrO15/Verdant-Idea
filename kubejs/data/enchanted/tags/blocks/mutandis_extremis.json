@@ -2,8 +2,8 @@
   "replace": true,
   "values": [
     "#wasteland:compost_growable",
-    "#botania:mystical_flowers",
     "minecraft:grass",
+    "minecraft:pink_petals",
     "minecraft:brown_mushroom",
     "minecraft:red_mushroom",
     "enchanted:ember_moss",
@@ -11,6 +11,7 @@
     "enchanted:spanish_moss",
     "enchanted:alder_sapling",
     "enchanted:hawthorn_sapling",
-    "enchanted:rowan_sapling"
+    "enchanted:rowan_sapling",
+    "enchanted:blood_poppy"
   ]
 }

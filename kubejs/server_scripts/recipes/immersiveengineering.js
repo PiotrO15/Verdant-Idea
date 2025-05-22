@@ -67,8 +67,9 @@ ServerEvents.recipes(event => {
   // Leather
   event.replaceInput({input: "minecraft:leather"}, "minecraft:leather", "#forge:leather")
 
-  // Make LV Capacitor possible to make early game
+  // Make LV and MV accumulators accessible earlier
   event.replaceInput({id: "immersiveengineering:crafting/capacitor_lv"}, "#forge:plates/lead", "#forge:plates/gold")
+  event.replaceInput({id: "immersiveengineering:crafting/capacitor_mv"}, "#forge:plates/nickel", "#forge:plates/electrum")
 
   // Change blast brick recipe to require nether
   event.replaceInput({id: 'immersiveengineering:crafting/blastbrick'}, "minecraft:magma_block", "minecraft:blaze_powder")
@@ -87,8 +88,87 @@ ServerEvents.recipes(event => {
   squeezer_plantoil(agri_seed_partial('minecraft:wheat'), 80)
 
   // Update crafting components blueprint recipe
-  event.replaceInput({id: 'immersiveengineering:crafting/blueprint_components'}, "#forge:ingots/aluminum", "pneumaticcraft:printed_circuit_board")
+  event.replaceInput({id: 'immersiveengineering:crafting/blueprint_components'}, "#forge:ingots/aluminum", "pneumaticcraft:plastic")
 
   // Add a recipe for coke dust in a pulverizer
   event.recipes.thermal.pulverizer('immersiveengineering:dust_coke', '#forge:coal_coke')
+
+  // Alternative treated planks recipes
+  event.recipes.thermal.bottler('immersiveengineering:treated_wood_horizontal', [Fluid.of('immersiveengineering:creosote', 125), '#minecraft:planks'])
+  event.custom({
+    "type": "immersiveengineering:bottling_machine",
+    "fluid": {
+      "amount": 125,
+      "tag": "forge:creosote"
+    },
+    "input": {
+      "tag": "minecraft:planks"
+    },
+    "results": [
+      {
+        "item": "immersiveengineering:treated_wood_horizontal"
+      }
+    ]
+  })
+
+  // Remove nickel from radiator and thermoelectric generator recipes
+  event.remove({id: 'immersiveengineering:crafting/radiator'})
+  event.shaped(
+    '4x immersiveengineering:radiator',
+    [
+      'ici',
+      'cbc',
+      'ici'
+    ],
+    {
+      i: '#forge:sheetmetals/steel',
+      c: '#forge:plates/copper',
+      b: {"type": "bucketlib:fluid", "fluid": "minecraft:water"}
+    }
+  )
+  
+  event.replaceInput({id: 'immersiveengineering:crafting/thermoelectric_generator'}, '#forge:plates/constantan', '#forge:plates/bronze')
+
+  // Specialized projectiles blueprint recipe
+  event.shaped(
+    Item.of('immersiveengineering:blueprint', {blueprint: 'specialBullet'}),
+    [
+      ' a ',
+      'aba',
+      ' a '
+    ],
+    {
+      a: '#forge:plates/aluminum',
+      b: {type: 'forge:partial_nbt', item: 'immersiveengineering:blueprint', nbt: {blueprint: 'bullet'}}
+    }
+  )
+
+  // Arc furnace electrodes blueprint recipe
+  event.shaped(
+    Item.of('immersiveengineering:blueprint', {blueprint: 'electrode'}),
+    [
+      ' a ',
+      'ddd',
+      'ppp'
+    ],
+    {
+      a: '#forge:plates/steel',
+      d: '#forge:dyes/blue',
+      p: 'minecraft:paper'
+    }
+  )
+
+  // Industrial hemp seeds from hemp fiber
+  event.custom({
+    "type": "immersiveengineering:crusher",
+    "energy": 1600,
+    "input": {
+      "item": "immersiveengineering:hemp_fiber"
+    },
+    "result": {
+      item: 'agricraft:seed',
+      nbt: {genes:{fertility:{dom:1,rec:1},gain:{dom:1,rec:1},growth:{dom:1,rec:1},mutativity:{dom:1,rec:1},resistance:{dom:10,rec:10},species:{dom:'immersiveengineering:hemp', rec:'immersiveengineering:hemp'},strength:{dom:1,rec:1}}}
+    },
+    "secondaries": []
+  })
 })

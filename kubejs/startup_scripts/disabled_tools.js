@@ -80,9 +80,8 @@ global.disabled_tools = [
   "pneumaticcraft:compressed_iron_boots",
 ]
 
-// ItemEvents.modification(event => {
-//   global.disabled_tools.forEach(tool => event.modify(tool, item => {
-//     item.maxDamage = 1
-//     item.digSpeed = 0.1
-//   }))
-// });
+ItemEvents.modification(event => {
+  global.disabled_tools.forEach(tool => event.modify(tool, item => {
+    item.maxDamage = 1
+  }))
+});

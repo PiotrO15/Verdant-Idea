@@ -1,0 +1,8 @@
+{
+  "type": "productivebees:bee_breeding",
+  "parent1": "productivebees:lumber_bee",
+  "parent2": "productivebees:leafcutter_bee",
+  "offspring": [
+    "productivebees:farmer_bee"
+  ]
+}

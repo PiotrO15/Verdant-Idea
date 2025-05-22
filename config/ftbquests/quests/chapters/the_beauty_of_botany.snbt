@@ -9,46 +9,7 @@
 	quest_links: [ ]
 	quests: [
 		{
-			dependencies: ["58F222B026D82FD4"]
-			description: ["Not that many kinds of seeds survived soil erosion. Hopefully, this will be enough to restore at least some of the old flora."]
-			icon: "minecraft:wheat_seeds"
-			id: "5FE7D72FB427E5EB"
-			rewards: [{
-				count: 16
-				id: "437DA903C7768E84"
-				item: "minecraft:bone_meal"
-				type: "item"
-			}]
-			size: 1.25d
-			tasks: [
-				{
-					id: "74ED66D1D07C3C42"
-					item: "minecraft:wheat"
-					match_nbt: true
-					type: "item"
-					weak_nbt_match: true
-				}
-				{
-					id: "6E34F799018F6DCD"
-					item: "minecraft:potato"
-					match_nbt: true
-					type: "item"
-					weak_nbt_match: true
-				}
-				{
-					id: "44E4CF44A350CAF5"
-					item: "minecraft:beetroot"
-					match_nbt: true
-					type: "item"
-					weak_nbt_match: true
-				}
-			]
-			title: "What Was Left"
-			x: -6.0d
-			y: -1.5d
-		}
-		{
-			dependencies: ["5FE7D72FB427E5EB"]
+			dependencies: ["7ADD5CE18D30F739"]
 			description: [
 				"To create carrot seeds, simply plant &awheat&r and &apotato&r. When both plants mature, &eplace double crop sticks&r between them. After some time, the plants will create an &eoffspring&r, which has a chance to be a &enew plant&r!"
 				""
@@ -266,7 +227,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["5FE7D72FB427E5EB"]
+			dependencies: ["7ADD5CE18D30F739"]
 			description: [
 				"To create sugar cane seeds, simply plant &awheat&r and &abeetroot&r. When both plants mature, &eplace double crop sticks&r between them. After some time, the plants will create an &eoffspring&r, which has a chance to be a &enew plant&r!"
 				""
@@ -902,7 +863,6 @@
 		{
 			dependencies: ["4E9941C3E2412FC3"]
 			description: ["Grown from &acornflower&r and &apoppy&r. Requires &6podzol&r to grow. Wither roses might be needed to create &ewither skeleton seeds&r."]
-			hide_dependent_lines: true
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -1215,7 +1175,6 @@
 		{
 			dependencies: ["5FE104AA67D14E69"]
 			description: ["Grown from &ablue orchid&r and &alily of the valley&r. Requires &6podzol&r to grow."]
-			hide_dependent_lines: true
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -2546,7 +2505,7 @@
 			y: 3.5d
 		}
 		{
-			dependencies: ["5FE7D72FB427E5EB"]
+			dependencies: ["7ADD5CE18D30F739"]
 			description: [
 				"To create tomato seeds, simply plant &awheat&r and &abeetroot&r. When both plants mature, &eplace double crop sticks&r between them. After some time, the plants will create an &eoffspring&r, which has a chance to be a &enew plant&r!"
 				""
@@ -2650,7 +2609,7 @@
 				weak_nbt_match: true
 			}]
 			title: "{seed.agricraft.farmersdelight.tomato}"
-			x: -7.0d
+			x: -6.0d
 			y: -1.5d
 		}
 		{
@@ -3704,6 +3663,7 @@
 		{
 			dependencies: ["2BB0BB9BDBF632FB"]
 			description: ["Grown from &acornflower&r and &awither rose&r. Requires &6rich soil&r to grow."]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1
 				id: "agricraft:seed"
@@ -3808,6 +3768,7 @@
 		{
 			dependencies: ["4E9941C3E2412FC3"]
 			description: ["Grown from &ablue orchid&r and &acornflower&r. Requires &6rich soil&r to grow."]
+			hide_dependency_lines: true
 			icon: {
 				Count: 1
 				id: "agricraft:seed"

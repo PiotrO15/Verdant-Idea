@@ -1,8 +1,16 @@
 {
     "items": [
         {
-            "id": "mysticalagriculture:air_seeds",
-            "Count": 1
+            "id": "agricraft:seed",
+            "Count": 1,
+            "tag": {
+                "genes": {
+                    "species": {
+                        "dom": "mysticalagriculture:air",
+                        "rec": "mysticalagriculture:air"
+                    }
+                }
+            }
         },
         {
             "id": "agricraft:seed",
@@ -78,8 +86,8 @@
         }
     ],
     "shapes": {
-        "enchanted:small_circle": "enchanted:ritual_chalk",
-        "enchanted:medium_circle": "enchanted:ritual_chalk"
+        "wasteland:basic_flower": "enchanted:ritual_chalk",
+        "wasteland:advanced_flower": "enchanted:nether_chalk"
     },
     "factory": {
         "type": "enchanted:create_item",

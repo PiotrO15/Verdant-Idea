@@ -1,0 +1,8 @@
+{
+  "type": "productivebees:bee_breeding",
+  "parent1": "productivebees:netherite",
+  "parent2": "productivebees:sweat_bee",
+  "offspring": [
+    "productivebees:rancher_bee"
+  ]
+}

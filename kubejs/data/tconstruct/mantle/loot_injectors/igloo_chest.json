@@ -2,7 +2,11 @@
   "name": "minecraft:chests/igloo_chest",
   "pools": [
     {
-      "entries": [],
+      "entries": [
+        {
+          "type": "minecraft:empty"
+        }
+      ],
       "name": "main"
     }
   ]

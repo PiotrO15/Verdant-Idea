@@ -33,6 +33,9 @@ ServerEvents.tags('block', event => {
   event.add('wasteland:bee_flowering/coal', ['minecraft:torchflower'])
   event.add('productivebees:flowers/sulfur', ['minecraft:deepslate_coal_ore'])
   event.add('productivebees:flowers/powdery', ['minecraft:deepslate_coal_ore'])
+
+  event.remove('productivebees:flowers/lumber', ['#minecraft:logs'])
+  event.add('productivebees:flowers/lumber', ['#wasteland:alive_logs'])
   
   event.removeAll('productivebees:flowers/quarry')
   quarry_flowers.forEach(item => {
@@ -172,7 +175,9 @@ ServerEvents.recipes(event => {
   )
 
   event.replaceInput({id: 'productivebees:upgrades/productivity'}, 'productivebees:draconic_chunk', 'minecraft:emerald')
+  event.replaceInput({id: 'productivebees:upgrades/productivity_2'}, 'minecraft:nether_star', '#forge:gears/tin')
   event.replaceInput({id: 'productivebees:upgrades/filter'}, 'minecraft:writable_book', 'minecraft:hopper')
+  event.replaceInput({id: 'productivebees:upgrades/comb_block'}, 'minecraft:item_frame', '#forge:gears/enderium')
 
   // Update powered centrifuge recipe
   event.remove({id: 'productivebees:powered_centrifuge/mekanism'})
@@ -217,5 +222,20 @@ ServerEvents.recipes(event => {
   event.replaceInput({id: 'productivebees:inactive_dragon_egg'}, 'minecraft:egg', 'botania:dragonstone_block')
 
   // Update heated centrifuge recipe
-  event.replaceInput({id: 'productivebees:heated_centrifuge'}, 'minecraft:copper_block', 'mekanism:block_osmium')
+  event.remove({id: 'productivebees:heated_centrifuge'})
+  event.shaped(
+    'productivebees:heated_centrifuge',
+    [
+      "CCC",
+      "SES",
+      "OPO"
+    ],
+    {
+      C: '#forge:plates/constantan',
+      E: 'productivebees:inactive_dragon_egg',
+      O: 'mekanism:block_osmium',
+      P: 'productivebees:powered_centrifuge',
+      S: 'mekanism:superheating_element'
+    }
+  )
 })

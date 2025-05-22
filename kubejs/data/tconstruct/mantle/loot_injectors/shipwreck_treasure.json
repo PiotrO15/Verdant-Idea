@@ -2,7 +2,11 @@
   "name": "minecraft:chests/shipwreck_treasure",
   "pools": [
     {
-      "entries": [],
+      "entries": [
+        {
+          "type": "minecraft:empty"
+        }
+      ],
       "name": "main"
     }
   ]

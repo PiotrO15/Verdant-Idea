@@ -19,6 +19,10 @@
         {
             "id": "enchanted:rowan_sapling",
             "Count": 1
+        },
+        {
+            "id": "tconstruct:earth_slime_sapling",
+            "Count": 1
         }
     ],
     "shapes": {

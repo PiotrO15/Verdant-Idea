@@ -1,0 +1,13 @@
+{
+  "name": "minecraft:chests/spawn_bonus_chest",
+  "pools": [
+    {
+      "entries": [
+        {
+          "type": "minecraft:empty"
+        }
+      ],
+      "name": "main"
+    }
+  ]
+}

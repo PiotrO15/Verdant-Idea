@@ -91,4 +91,8 @@ ServerEvents.recipes(event => {
 
   // Replace feathers with manaweave cloth in flugel tiara recipe
   event.replaceInput({id: 'botania:flighttiara_0'}, 'minecraft:feather', 'botania:manaweave_cloth')
+
+  // Update livingwood recipe
+  event.remove({id: 'botania:pure_daisy/livingwood'})
+  event.recipes.botania.pure_daisy("botania:livingwood_log", '#wasteland:alive_logs')
 })

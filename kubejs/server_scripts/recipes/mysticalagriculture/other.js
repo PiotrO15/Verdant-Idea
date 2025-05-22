@@ -6,6 +6,44 @@ ServerEvents.tags('item', event => {
 })
 
 ServerEvents.recipes(event => {
+  function augmentInfusionCheckered(essence, item1, item2, output) {
+    event.custom({
+      "type": "mysticalagriculture:infusion",
+      "input": {
+        "item": "mysticalagriculture:unattuned_augment"
+      },
+      "ingredients": [
+        {
+          "item": item1
+        },
+        {
+          "item": essence
+        },
+        {
+          "item": item2
+        },
+        {
+          "item": essence
+        },
+        {
+          "item": item1
+        },
+        {
+          "item": essence
+        },
+        {
+          "item": item2
+        },
+        {
+          "item": essence
+        }
+      ],
+      "result": {
+        "item": output
+      }
+    })
+  }
+
   function multi(item, count) {
     return Array(count).fill(item)
   }
@@ -63,7 +101,7 @@ ServerEvents.recipes(event => {
     ],
     {
       C: 'ceramicbucket:ceramic_bucket',
-      M: 'mysticalagriculture:mystical_fertilizer',
+      M: 'minecraft:bone_meal',
       P: '#minecraft:planks'
     }
   )
@@ -100,4 +138,11 @@ ServerEvents.recipes(event => {
       T: 'minecraft:enchanting_table'
     }
   )
+
+  // Augment recipe changes 
+  event.remove({id: 'mysticalagriculture:augment/hunger_resistance'})
+  augmentInfusionCheckered('mysticalagriculture:imperium_essence', 'farmersdelight:honey_glazed_ham_block', 'farmersdelight:stuffed_pumpkin_block', 'mysticalagriculture:hunger_resistance_augment')
+  
+  event.remove({id: 'mysticalagriculture:augment/flight'})
+  augmentInfusionCheckered('mysticalagriculture:supremium_essence', 'botania:flight_tiara', 'minecraft:nether_star', 'mysticalagriculture:flight_augment')
 })

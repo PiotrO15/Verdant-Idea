@@ -125,4 +125,20 @@ ServerEvents.recipes(event => {
   event.remove({id: 'pneumaticcraft:thermo_plant/lpg'})
   event.remove({id: 'pneumaticcraft:thermo_plant/gasoline'})
   event.remove({id: 'pneumaticcraft:thermo_plant/kerosene'})
+
+  // Fix speed upgrade recipe
+  event.remove({id: 'pneumaticcraft:speed_upgrade'})
+  event.shaped(
+    'pneumaticcraft:speed_upgrade',
+    [
+      "PSP",
+      "SLS",
+      "PSP"
+    ],
+    {
+      L: 'pneumaticcraft:lubricant_bucket',
+      P: '#pneumaticcraft:upgrade_components',
+      S: 'minecraft:sugar'
+    }
+  )
 })

@@ -1,5 +1,11 @@
+ServerEvents.tags('item', event => {
+  event.remove('minecraft:flowers', ['minecraft:cherry_leaves', 'minecraft:flowering_azalea_leaves', 'minecraft:flowering_azalea', 'minecraft:mangrove_propagule'])
+})
+
 ServerEvents.tags('block', event => {
   event.add('minecraft:enderman_holdable', ['wasteland:cracked_sand'])
+
+  event.remove('minecraft:flowers', ['minecraft:cherry_leaves', 'minecraft:flowering_azalea_leaves', 'minecraft:flowering_azalea', 'minecraft:mangrove_propagule'])
 })
 
 ServerEvents.compostableRecipes(event => {

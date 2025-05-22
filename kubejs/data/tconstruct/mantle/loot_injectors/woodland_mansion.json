@@ -2,7 +2,11 @@
   "name": "minecraft:chests/woodland_mansion",
   "pools": [
     {
-      "entries": [],
+      "entries": [
+        {
+          "type": "minecraft:empty"
+        }
+      ],
       "name": "main"
     }
   ]

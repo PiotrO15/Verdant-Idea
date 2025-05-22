@@ -1,0 +1,17 @@
+{
+  "type": "productivebees:block_conversion",
+  "bee": "productivebees:slimy",
+  "from": {
+    "Name": "minecraft:oak_sapling"
+  },
+  "to": {
+    "Name": "tconstruct:earth_slime_sapling"
+  },
+  "chance": 100,
+  "conditions": [
+    {
+      "type": "productivebees:bee_exists",
+      "bee": "productivebees:slimy"
+    }
+  ]
+}

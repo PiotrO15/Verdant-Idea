@@ -1,3 +1,63 @@
+Changes in 0.6:
+- removed Melter mod (existing melters will disappear)
+- removed Map Atlases and MoonlightLib (this means map atlases will disappear)
+- removed LootJS (it was unused since 0.5.1)
+- added FTB Chunks
+- updated EMI, FancyMenu, Botania, Patchouli, AE2, Compost, Enchanted, Wasteland Things, Simple Backups, Mystical Agriculture, Collective, FTB Quests, FTB XMod Compat, Falling Leaves, PneumaticCraft: Repressurized
+- vanilla tools now have 1 durability
+- swapped vanilla gear with steel/cobalt gear parts in backpack loot tables
+- bonus spawn chest now includes useful early game items
+- updated dead log, cracked sand and dead grass textures
+- added dead planks and their woodset
+- tree bark no longer works as wood
+- removed the custom composter recipe
+- reworked part of The Secret of Life quest line
+- removed resistance stat from AgriCraft seeds
+- reworked the logic behind fertility, which should make spreading and mutating plants with low stats noticeably faster
+- bee nest chance is now based on the amount of unique flowers within 2 blocks from the sapling that grows (5% per, max 40%)
+- cobblestone can now be melted to lava in a smeltery
+- removed lava bucket from fire essence recipe
+- fire essence can now be melted into lava in a smeltery or a magma crucible (requires half the power of cobblestone to lava)
+- terra truncator can now break dead trees as a whole
+- updated heated centrifuge recipe
+- all drawer quests should now accept framed variants
+- antimatter pellets now only require 100mb of antimatter
+- fluid encapsulator and bottling machine can now be used to craft treated wood
+- updated hunger resistance and creative flight augment recipes
+- honey and Mekanism wind generators are no longer obtainable
+- swapped silver and tin seeds in the progression
+- configurator recipe now uses silver instead of tin
+- swapped nickel and aluminum seeds in the progression
+- replaced nickel plates in the following recipes: MV accumulator - electrum plate; thermoelectric generator - bronze plates; radiator block - copper plates
+- skybee can now convert infused grass and rubberwood sapling into skyslime
+- slimy bee can now convert vivid grass and oak sapling into earthslime
+- added an additional late game recipe for coal coke, which uses enriched carbon
+- updated some of the bee upgrades recipes
+- updated seed upgrade rites - they now use AgriCraft seeds instead of MA variants and require new chalk shapes
+- MA variant of resource seeds is now hidden from the JEI and can no longer be crafted (as it’s not used anymore)
+- removed cactus and sugar cane from mutandis extremis spawnables
+- changed bee breeding recipes for farmer and rancher bees
+- end portal frames can now be broken without silk touch
+- crafting components blueprint now uses plastic instead of a PCB
+- arc furnace electrodes and specialized projectiles blueprints can now be crafted
+- added a processing recipe to get industrial hemp seeds from hemp fiber
+- flowering azaleas, cherry and flowering azalea leaves and mangrove propagules are no longer considered flowers
+- pink petals can no longer spawn from compost
+- pyrolyzer apatite recipe is now 8x faster (requires 8x less power)
+- removed all backpack upgrades quests
+- backpack quest now accepts any backpack tier
+- mushrooms can now be planted (they will still change into AgriCraft seeds on AgriCraft soils)
+- updated main manu panorama
+- removed part of the version information from the main manu
+- wooden watering can now uses bone meal instead of mystical fertilizer
+- fixed severing modifier not working
+- blood poppy should now be able to spawn when using mutandis extremis
+- fixed crop sticks particles having missing texture
+- clipper is no longer usable on plants with no clipping drops
+- farmer bee now works with AgriCraft plants
+- fixed errors related to the removal of loot table injectors
+- PNCR speed upgrade now properly uses lubricant in its recipe
+
 Changes in 0.5.6:
 - added Comforts (sleeping bags and hammocks)
 - added Akashic Tome (book that can collect all the guide books)

@@ -286,8 +286,8 @@
 				type: "item"
 			}]
 			title: "Fancy Blocks"
-			x: 5.0d
-			y: -5.0d
+			x: -1.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["5F8393C6C51EFCD5"]
@@ -305,8 +305,8 @@
 				type: "item"
 			}]
 			title: "Fancier Blocks"
-			x: 6.0d
-			y: -5.0d
+			x: 0.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6C9908EA8B380134"]
@@ -454,8 +454,25 @@
 			}]
 			tasks: [
 				{
+					icon: "functionalstorage:storage_controller"
 					id: "77082AF146E085AC"
-					item: "functionalstorage:storage_controller"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "functionalstorage:storage_controller"
+								}
+								{
+									Count: 1b
+									id: "functionalstorage:framed_storage_controller"
+								}
+							]
+						}
+					}
+					title: "Storage Controller"
 					type: "item"
 				}
 				{
@@ -482,30 +499,29 @@
 				type: "item"
 			}]
 			tasks: [{
+				icon: "functionalstorage:compacting_drawer"
 				id: "5E4056CF6FDEE6BD"
-				item: "functionalstorage:compacting_drawer"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "functionalstorage:compacting_drawer"
+							}
+							{
+								Count: 1b
+								id: "functionalstorage:compacting_framed_drawer"
+							}
+						]
+					}
+				}
+				title: "Compacting Drawer"
 				type: "item"
 			}]
 			x: 5.0d
 			y: -3.0d
-		}
-		{
-			dependencies: ["0F6072BA87FF228C"]
-			description: ["Portable storage, quite useful."]
-			id: "0E6201923C4FC79A"
-			rewards: [{
-				count: 4
-				id: "603F8C132CE4F3C2"
-				item: "immersiveengineering:ersatz_leather"
-				type: "item"
-			}]
-			tasks: [{
-				id: "4774AA97E54CAF2C"
-				item: "sophisticatedbackpacks:backpack"
-				type: "item"
-			}]
-			x: -2.5d
-			y: 1.0d
 		}
 		{
 			dependencies: ["7C79D5AC3635BBB6"]
@@ -596,78 +612,6 @@
 			title: "Void Drawer Upgrade"
 			x: 2.0d
 			y: -1.0d
-		}
-		{
-			dependencies: ["0E6201923C4FC79A"]
-			description: ["A bigger backpack."]
-			id: "21742FA169FCD205"
-			rewards: [{
-				count: 4
-				id: "126F11216AC14AB8"
-				item: "minecraft:iron_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				id: "359FD7F21E46263A"
-				item: "sophisticatedbackpacks:iron_backpack"
-				type: "item"
-			}]
-			x: -1.5d
-			y: 1.0d
-		}
-		{
-			dependencies: ["21742FA169FCD205"]
-			description: ["A giant backpack."]
-			id: "108F5FFDCAB757EB"
-			rewards: [{
-				count: 4
-				id: "66E5C2C17C652A15"
-				item: "minecraft:gold_ingot"
-				type: "item"
-			}]
-			tasks: [{
-				id: "7E85CEE05E382F82"
-				item: "sophisticatedbackpacks:gold_backpack"
-				type: "item"
-			}]
-			x: -1.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["108F5FFDCAB757EB"]
-			description: ["A huge backpack."]
-			id: "17010AF6D4CDDED7"
-			rewards: [{
-				count: 4
-				id: "32F7FD7801EB2322"
-				item: "minecraft:diamond"
-				type: "item"
-			}]
-			tasks: [{
-				id: "37A26CA0B00C6FF7"
-				item: "sophisticatedbackpacks:diamond_backpack"
-				type: "item"
-			}]
-			x: 0.0d
-			y: 0.0d
-		}
-		{
-			dependencies: ["17010AF6D4CDDED7"]
-			description: ["An enormous backpack with 7 upgrade slots!"]
-			id: "5959CD4FEE810F3C"
-			rewards: [{
-				count: 2
-				id: "41DA4D0A23B8AED9"
-				item: "minecraft:ancient_debris"
-				type: "item"
-			}]
-			tasks: [{
-				id: "34C709D1C6BC4C07"
-				item: "sophisticatedbackpacks:netherite_backpack"
-				type: "item"
-			}]
-			x: 0.5d
-			y: 1.0d
 		}
 		{
 			dependencies: ["693993DF19CD27C4"]
@@ -1081,8 +1025,8 @@
 				}
 			]
 			title: "Fancy Slabs"
-			x: 4.0d
-			y: -5.0d
+			x: -2.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["3A30098A667E6413"]

@@ -169,13 +169,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["6C563A93CC19034C"]
+			dependencies: ["704B30E0C6BFCE49"]
 			id: "2324DBDF19EF6E81"
 			rewards: [
 				{
 					count: 2
 					id: "31601EEFBE4CED35"
-					item: "mysticalagriculture:supremium_essence"
+					item: "mysticalagriculture:imperium_essence"
 					type: "item"
 				}
 				{
@@ -203,8 +203,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 18.0d
-			y: 1.0d
+			x: 10.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["60AB48169195063E"]
@@ -674,14 +674,14 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["704B30E0C6BFCE49"]
+			dependencies: ["6C563A93CC19034C"]
 			hide_dependent_lines: true
 			id: "6C8256CABC21645C"
 			rewards: [
 				{
 					count: 2
 					id: "47B155560EB45706"
-					item: "mysticalagriculture:imperium_essence"
+					item: "mysticalagriculture:supremium_essence"
 					type: "item"
 				}
 				{
@@ -709,8 +709,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 10.0d
-			y: -1.0d
+			x: 18.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["6C563A93CC19034C"]
@@ -736,13 +736,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["60AB48169195063E"]
+			dependencies: ["704B30E0C6BFCE49"]
 			id: "21EE1D4E50597D64"
 			rewards: [
 				{
 					count: 2
 					id: "10F6114DD3769755"
-					item: "mysticalagriculture:tertium_essence"
+					item: "mysticalagriculture:imperium_essence"
 					type: "item"
 				}
 				{
@@ -770,8 +770,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 6.0d
-			y: 1.0d
+			x: 12.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["60AB48169195063E"]
@@ -888,13 +888,13 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["704B30E0C6BFCE49"]
+			dependencies: ["60AB48169195063E"]
 			id: "675A8D3CBFA93CBB"
 			rewards: [
 				{
 					count: 2
 					id: "4A9C0C402225CEC5"
-					item: "mysticalagriculture:imperium_essence"
+					item: "mysticalagriculture:tertium_essence"
 					type: "item"
 				}
 				{
@@ -922,8 +922,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 12.0d
-			y: -1.0d
+			x: 6.0d
+			y: 1.0d
 		}
 		{
 			dependencies: ["704B30E0C6BFCE49"]

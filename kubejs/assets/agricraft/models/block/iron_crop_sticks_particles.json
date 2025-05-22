@@ -1,0 +1,6 @@
+{
+	"ambientocclusion": false,
+	"textures": {
+		"particle": "minecraft:block/iron_block"
+	}
+}
