@@ -3,7 +3,7 @@ Changes in 0.6:
 - removed Map Atlases and MoonlightLib (this means map atlases will disappear)
 - removed LootJS (it was unused since 0.5.1)
 - added FTB Chunks
-- updated EMI, FancyMenu, Botania, Patchouli, AE2, Compost, Enchanted, Wasteland Things, Simple Backups, Mystical Agriculture, Collective, FTB Quests, FTB XMod Compat, Falling Leaves, PneumaticCraft: Repressurized
+- updated EMI, FancyMenu, Botania, Patchouli, AE2, Compost, Enchanted, Wasteland Things, Simple Backups, Mystical Agriculture, Collective, FTB Quests, FTB XMod Compat, Falling Leaves, PneumaticCraft: Repressurized, Mekanism, Mekanism Generators
 - vanilla tools now have 1 durability
 - swapped vanilla gear with steel/cobalt gear parts in backpack loot tables
 - bonus spawn chest now includes useful early game items
