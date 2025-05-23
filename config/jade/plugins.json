@@ -77,8 +77,8 @@
     "registry_name": "OFF",
     "mod_name": true
   },
-  "melter": {
-    "melter_data": true
+  "balm": {
+    "jade": true
   },
   "ae2": {
     "part_icon": true,

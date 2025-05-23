@@ -1,3 +1,7 @@
+Changes in 0.6.2:
+- updated Corpse, Almost Unified, BucketLib, Wooden Shears, Waystones, Balm, KubeJS Additions, FramedBlocks, FzzyConfig, Jade
+- fixed wrong essences being used in infusion crystals recipes
+
 Changes in 0.6.1:
 - livingwood recipe now always works
 - wood changed into livingwood keeps its rotation again
