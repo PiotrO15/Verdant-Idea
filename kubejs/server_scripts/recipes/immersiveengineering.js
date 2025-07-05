@@ -171,4 +171,20 @@ ServerEvents.recipes(event => {
     },
     "secondaries": []
   })
+
+  // Fix duplicate slag smelting recipes
+  event.remove({id: 'immersiveengineering:smelting/slag_glass'})
+  event.custom({
+    "type": "immersiveengineering:alloy",
+    "input0": {
+      "tag": "forge:glass"
+    },
+    "input1": {
+      "tag": "forge:slag"
+    },
+    "result": {
+      "item": "immersiveengineering:slag_glass"
+    },
+    "time": 200
+  })
 })

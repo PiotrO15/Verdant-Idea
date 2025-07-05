@@ -1,19 +1,4 @@
 ServerEvents.recipes(event => {
-  function agri_seed_partial(name) {
-    return {
-      type: 'forge:partial_nbt',
-      item: 'agricraft:seed',
-      nbt: {
-        genes: {
-          species: {
-            rec: `${name}`, 
-            dom: `${name}`
-          }
-        }
-      }
-    }
-  }
-
   event.custom({
     "type": "enchanted:witch_cauldron",
     "cookingColor": [

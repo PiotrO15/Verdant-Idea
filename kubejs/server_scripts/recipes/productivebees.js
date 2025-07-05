@@ -18,6 +18,42 @@ let quarry_flowers = [
   'netherrack'
 ]
 
+let lumber_flowers = [
+  'minecraft:oak_log',
+  'minecraft:spruce_log',
+  'minecraft:birch_log',
+  'minecraft:jungle_log',
+  'minecraft:dark_oak_log',
+  'minecraft:acacia_log',
+  'minecraft:mangrove_log',
+  'minecraft:cherry_log',
+  'minecraft:crimson_stem',
+  'minecraft:warped_stem',
+  'tconstruct:greenheart_log',
+  'tconstruct:skyroot_log',
+  'tconstruct:bloodshroom_log',
+  'tconstruct:enderbark_log',
+  'enchanted:alder_log',
+  'enchanted:hawthorn_log',
+  'enchanted:rowan_log',
+  'thermal:rubberwood_log',
+  'minecraft:oak_leaves',
+  'minecraft:spruce_leaves',
+  'minecraft:birch_leaves',
+  'minecraft:jungle_leaves',
+  'minecraft:dark_oak_leaves',
+  'minecraft:acacia_leaves',
+  'minecraft:mangrove_leaves',
+  'minecraft:cherry_leaves',
+  'tconstruct:earth_slime_leaves',
+  'tconstruct:sky_slime_leaves',
+  'tconstruct:ender_slime_leaves',
+  'enchanted:alder_leaves',
+  'enchanted:hawthorn_leaves',
+  'enchanted:rowan_leaves',
+  'thermal:rubberwood_leaves'
+]
+
 ServerEvents.tags('item', event => {
   event.add('wasteland:bee_flowering/coal', ['minecraft:torchflower'])
   event.add('productivebees:flowers/sulfur', ['minecraft:deepslate_coal_ore'])
@@ -26,6 +62,11 @@ ServerEvents.tags('item', event => {
   event.removeAll('productivebees:flowers/quarry')
   quarry_flowers.forEach(item => {
     event.add('productivebees:flowers/quarry', `minecraft:${item}`)
+  })
+
+  event.removeAll('productivebees:flowers/lumber')
+  lumber_flowers.forEach(item => {
+    event.add('productivebees:flowers/lumber', item)
   })
 })
 
@@ -40,6 +81,11 @@ ServerEvents.tags('block', event => {
   event.removeAll('productivebees:flowers/quarry')
   quarry_flowers.forEach(item => {
     event.add('productivebees:flowers/quarry', `minecraft:${item}`)
+  })
+
+  event.removeAll('productivebees:flowers/lumber')
+  lumber_flowers.forEach(item => {
+    event.add('productivebees:flowers/lumber', item)
   })
 })
 

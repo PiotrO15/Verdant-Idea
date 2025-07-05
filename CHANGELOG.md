@@ -1,3 +1,26 @@
+0.6.3 changes:
+- updated to Forge 47.4.0
+- added Pretty Pipes: Fluids
+- updated Wasteland Things, SimpleBackups, Corpse, AE2, Enchanted, Farmer’s Delight, FancyMenu, GuideME, Mystical Agriculture, Cucumber Library, JEI
+- fixed Endless Essence not accepting some of the inferium seeds
+- fixed seeds in quests sometimes not opening JEI
+- fixed seeds that are recipe ingredients appearing as missing items in JEI
+- fixed some of the mutations appearing as recessive
+- fixed plants sometimes switching their dominant and recessive genes
+- fixed newly obtained 1/1 seeds not stacking with planted ones
+- updated slag glass recipe (fixes duplicate smelting recipes)
+- hopper recipe can now optionally use a wooden hopper instead of a chest
+- fixed compressed iron gear being cheaper when crafted in a metal press
+- fixed some of the seed upgrade rites being the wrong tier
+- updated lumber bee flowers, livingwood and dreamwood can no longer be farmed using lumber bees
+- tag filter modifier recipe now uses raw iron instead of iron ore
+- chest and sticks can now be crafted directly from logs
+- added a quest about akashic tome
+- Sturdy Tools and Backpacking quests are now considered optional
+- backups should no longer be empty
+- Blooming Blossoms can now be started without poppy/dandelion quests finished
+
+
 Changes in 0.6.2:
 - updated Corpse, Almost Unified, BucketLib, Wooden Shears, Waystones, Balm, KubeJS Additions, FramedBlocks, FzzyConfig, Jade
 - fixed wrong essences being used in infusion crystals recipes

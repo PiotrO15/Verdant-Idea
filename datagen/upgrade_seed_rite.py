@@ -104,7 +104,7 @@ if __name__ == "__main__":
     upgrade_seed_rite('mysticalagriculture:nether_quartz', 'minecraft:white_tulip', 'minecraft:azure_bluet', shapes, power)
     upgrade_seed_rite('mysticalagriculture:redstone', 'minecraft:red_tulip', 'minecraft:poppy', shapes, power)
     upgrade_seed_rite('mysticalagriculture:spider', 'minecraft:white_tulip', 'minecraft:pink_tulip', shapes, power)
-    upgrade_seed_rite('mysticalagriculture:tin', 'minecraft:blue_orchid', 'minecraft:oxeye_daisy', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:silver', 'minecraft:blue_orchid', 'minecraft:oxeye_daisy', shapes, power)
 
     power = 5000
 
@@ -115,8 +115,8 @@ if __name__ == "__main__":
     upgrade_seed_rite('mysticalagriculture:end', 'botania:magenta_mystical_flower', 'botania:yellow_mystical_flower', shapes, power)
     upgrade_seed_rite('mysticalagriculture:enderman', 'botania:purple_mystical_flower', 'botania:magenta_mystical_flower', shapes, power)
     upgrade_seed_rite('mysticalagriculture:gold', 'botania:yellow_mystical_flower', 'botania:orange_mystical_flower', shapes, power)
-    upgrade_seed_rite('mysticalagriculture:nickel', 'botania:pink_mystical_flower', 'botania:brown_mystical_flower', shapes, power)
-    upgrade_seed_rite('mysticalagriculture:silver', 'mysticalagriculture:iron', 'botania:light_gray_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:aluminum', 'botania:pink_mystical_flower', 'botania:brown_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:tin', 'mysticalagriculture:iron', 'botania:light_gray_mystical_flower', shapes, power)
 
     power = 7000
     shapes = {
@@ -125,7 +125,7 @@ if __name__ == "__main__":
         "wasteland:master_flower": "enchanted:otherwhere_chalk"
     }
 
-    upgrade_seed_rite('mysticalagriculture:aluminum', 'botania:white_mystical_flower', 'botania:light_gray_mystical_flower', shapes, power)
+    upgrade_seed_rite('mysticalagriculture:nickel', 'botania:white_mystical_flower', 'botania:light_gray_mystical_flower', shapes, power)
     upgrade_seed_rite('mysticalagriculture:certus_quartz', 'botania:light_blue_mystical_flower', 'enchanted:snowbell', shapes, power)
     upgrade_seed_rite('mysticalagriculture:fluorite', 'botania:purple_mystical_flower', 'botania:light_blue_mystical_flower', shapes, power)
     upgrade_seed_rite('mysticalagriculture:ghast', 'botania:white_mystical_flower', 'minecraft:lily_of_the_valley', shapes, power)

@@ -15,3 +15,35 @@ ServerEvents.compostableRecipes(event => {
   event.add('thermal:sawdust', 0.3)
   event.add('chipped:muddy_mangrove_roots', 0.3)
 })
+
+ServerEvents.recipes(event => {
+  event.shaped('4x minecraft:chest', 
+    [
+    'LLL',
+    'L L',
+    'LLL'
+    ], 
+    {
+      L: '#minecraft:logs'
+    })
+    
+  event.shaped('16x minecraft:stick', 
+    [
+    'L',
+    'L'
+    ], 
+    {
+      L: '#minecraft:logs'
+    })
+    
+  event.shaped('minecraft:hopper', 
+    [
+    'I I',
+    'IHI',
+    ' I '
+    ], 
+    {
+      H: 'woodenhopper:wooden_hopper',
+      I: 'minecraft:iron_ingot'
+    })
+})

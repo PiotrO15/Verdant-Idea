@@ -38,8 +38,8 @@
                         "rec": 10
                     },
                     "species": {
-                        "dom": "botania:white_mystical_flower",
-                        "rec": "botania:white_mystical_flower"
+                        "dom": "botania:pink_mystical_flower",
+                        "rec": "botania:pink_mystical_flower"
                     },
                     "strength": {
                         "dom": 10,
@@ -74,8 +74,8 @@
                         "rec": 10
                     },
                     "species": {
-                        "dom": "botania:light_gray_mystical_flower",
-                        "rec": "botania:light_gray_mystical_flower"
+                        "dom": "botania:brown_mystical_flower",
+                        "rec": "botania:brown_mystical_flower"
                     },
                     "strength": {
                         "dom": 10,
@@ -87,8 +87,7 @@
     ],
     "shapes": {
         "wasteland:basic_flower": "enchanted:ritual_chalk",
-        "wasteland:advanced_flower": "enchanted:nether_chalk",
-        "wasteland:master_flower": "enchanted:otherwhere_chalk"
+        "wasteland:advanced_flower": "enchanted:nether_chalk"
     },
     "factory": {
         "type": "enchanted:create_item",
@@ -131,5 +130,5 @@
             }
         ]
     },
-    "power": 7000
+    "power": 5000
 }

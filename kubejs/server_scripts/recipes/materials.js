@@ -78,7 +78,7 @@ ServerEvents.recipes(event => {
   })
 
   metal_press(
-    {tag: 'forge:ingots/compressed_iron'},
+    {base_ingredient: {tag: 'forge:ingots/compressed_iron'}, count: 4},
     2400,
     "immersiveengineering:mold_gear",
     {item: 'pneumaticcraft:compressed_iron_gear'}

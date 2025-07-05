@@ -38,8 +38,8 @@
                         "rec": 10
                     },
                     "species": {
-                        "dom": "minecraft:blue_orchid",
-                        "rec": "minecraft:blue_orchid"
+                        "dom": "mysticalagriculture:iron",
+                        "rec": "mysticalagriculture:iron"
                     },
                     "strength": {
                         "dom": 10,
@@ -74,8 +74,8 @@
                         "rec": 10
                     },
                     "species": {
-                        "dom": "minecraft:oxeye_daisy",
-                        "rec": "minecraft:oxeye_daisy"
+                        "dom": "botania:light_gray_mystical_flower",
+                        "rec": "botania:light_gray_mystical_flower"
                     },
                     "strength": {
                         "dom": 10,
@@ -130,5 +130,5 @@
             }
         ]
     },
-    "power": 3500
+    "power": 5000
 }

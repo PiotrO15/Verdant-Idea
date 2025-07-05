@@ -41,4 +41,7 @@ ServerEvents.recipes(event => {
 
   // Update pipe pressurizer recipe
   event.replaceInput({id: 'prettypipes:pressurizer'}, 'minecraft:iron_ingot', 'pneumaticcraft:plastic')
+
+  // Remove iron ore from tag filter module recipe
+  event.replaceInput({id: 'prettypipes:tag_filter_modifier'}, '#minecraft:iron_ores', 'minecraft:raw_iron')
 })
