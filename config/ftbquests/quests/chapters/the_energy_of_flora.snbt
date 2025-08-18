@@ -1,22 +1,17 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 250
 	default_quest_shape: ""
 	filename: "the_energy_of_flora"
-	group: ""
+	group: "588E31E1F63967F1"
 	icon: "enchanted:attuned_stone"
 	id: "57E3B0DF48451B31"
-	order_index: 6
+	order_index: 3
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["4FFA2881BDF3F4AE"]
-			description: [
-				"Anointing paste used on a cauldron will transform it into a witch's cauldron. For the cauldron to work, a campfire must be placed under it."
-				""
-				"To make anointing paste, mix belladonna seeds, mandrake seeds, water artichoke seeds and snowbell seeds in a crafting table."
-				""
-				"A witch's cauldron can be used to brew multiple items. First, fill it with 4 buckets of water. After that, throw all the ingredients in the correct order. When the item finishes brewing, it can be taken out of the cauldron."
-			]
+			description: ["&aUsing anointing paste on a cauldron&r will transform it into a &6witch's cauldron&r. For it to work, it must be filled with 3 buckets of water and a &6campfire&r must be placed under it."]
 			icon: "enchanted:witch_cauldron"
 			id: "515943DB22086086"
 			rewards: [{
@@ -27,12 +22,17 @@
 			tasks: [
 				{
 					id: "5F0035901D442590"
-					item: "enchanted:anointing_paste"
+					item: "minecraft:cauldron"
 					type: "item"
 				}
 				{
 					id: "4FE6D4B839709FCA"
-					item: "enchanted:witch_cauldron"
+					item: "enchanted:anointing_paste"
+					type: "item"
+				}
+				{
+					id: "0A081A51DD7C4D85"
+					item: "minecraft:campfire"
 					type: "item"
 				}
 			]
@@ -42,14 +42,31 @@
 		}
 		{
 			dependencies: ["4FFA2881BDF3F4AE"]
-			description: ["Witch's Oven can be used just like a furnace, but in addition, it can capture fumes produced while smelting certain items. To obtain these fumes, you need a &eclay jar&r. Without any upgrades, about 1/3 of the fumes will be captured into clay jars."]
+			description: [
+				"&6Witch's oven&r can be used just like a furnace, with the difference that it can also &acapture fumes&r that are produced while smelting certain items. "
+				""
+				"To obtain these fumes, you need a &aclay jar&r. At first, roughly &61/3 of the fumes&r will be captured into clay jars."
+			]
 			id: "08D256BF0969D5F6"
-			rewards: [{
-				count: 4
-				id: "0DAE19A4E804FF04"
-				item: "enchanted:clay_jar"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 4
+					id: "0DAE19A4E804FF04"
+					item: "enchanted:clay_jar"
+					type: "item"
+				}
+				{
+					id: "1C1CD84C63BD7BE7"
+					item: {
+						Count: 1
+						id: "patchouli:guide_book"
+						tag: {
+							"patchouli:book": "enchanted:extraction"
+						}
+					}
+					type: "item"
+				}
+			]
 			tasks: [{
 				id: "52AB2C5D5147977C"
 				item: "enchanted:witch_oven"
@@ -61,7 +78,7 @@
 		}
 		{
 			dependencies: ["08D256BF0969D5F6"]
-			description: ["Adding a fume funnel on &eboth&r sides of the oven will double the amount of fumes captured!"]
+			description: ["Adding a fume funnel on &6both&r sides of the oven will &adouble&r the amount of fumes captured!"]
 			id: "3691957811B57666"
 			rewards: [{
 				count: 8
@@ -84,7 +101,7 @@
 				"08D256BF0969D5F6"
 				"6CF1983DF3517C40"
 			]
-			description: ["Many magical recipes require energy, which can only be collected with an altar. When placed as a 2x3 structure, it will passively collect the energy from nearby flora. The more plants around it, the greater the power. "]
+			description: ["Many magical recipes require &2altar power&r, which can only be collected by an altar. When placed as a 2x3 table, it will &apassively collect the energy from plants&r up to 16 blocks away. The more plants around it and the bigger the variety, the greater the power!"]
 			id: "3BEDB18AF4386D6C"
 			rewards: [{
 				count: 32
@@ -98,13 +115,17 @@
 				item: "enchanted:altar"
 				type: "item"
 			}]
-			title: "Harnessing Nature"
+			title: "Harnessing Flora"
 			x: -0.5d
 			y: -1.0d
 		}
 		{
-			dependencies: ["3A55B097550F2093"]
-			description: ["Distillery lets you separate certain fumes into their components. It is the only source of some of the fumes required for brewing."]
+			dependencies: ["6CF1983DF3517C40"]
+			description: [
+				"&6Distillery&r allows you to separate certain fumes into their components. "
+				""
+				"It is the &6only way&r to obtain some of the fumes."
+			]
 			id: "76E6ADB613585553"
 			rewards: [{
 				count: 8
@@ -117,16 +138,16 @@
 				item: "enchanted:distillery"
 				type: "item"
 			}]
-			title: "Fumier Fumes"
-			x: 1.5d
-			y: -1.0d
+			title: "Fancy Fumes"
+			x: 1.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["76E6ADB613585553"]
 			description: [
-				"Chalk is used to create circles required for circle magic."
+				"&6Chalk&r can used to &adraw circles&r required for different &6rites&r."
 				""
-				"A single chalk can be used to write 40 symbols, except for golden chalk, which only has 3 uses."
+				"All types of chalk have &a40 uses&r, except for the golden chalk, which can only be used &63 times&r."
 			]
 			icon: {
 				Count: 1
@@ -137,9 +158,14 @@
 			}
 			id: "35DAF111740A8579"
 			rewards: [{
-				count: 8
-				id: "495CE951CAA72ADB"
-				item: "enchanted:clay_jar"
+				id: "579E5F5120E4FF13"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "enchanted:circle_magic"
+					}
+				}
 				type: "item"
 			}]
 			tasks: [
@@ -166,19 +192,28 @@
 					type: "item"
 				}
 			]
-			title: "A Bit Like School"
-			x: 2.5d
-			y: -1.0d
+			title: "Circle Magic"
+			x: 1.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["515943DB22086086"]
-			description: ["It seems that one of the uses of the witch's cauldron is to create mutandis, a powerful mixture of compost and a few magical items. If compost could help saplings grow, what is mutandis capable of?"]
+			description: [
+				"One of the simplest items that can be &6brewed&r in a witch's cauldron is &amutandis&r."
+				""
+				"Mutandis is a powerful mix of compost and a few magical items &acapable of transforming plants&r. Who knows what could it be capable of?"
+			]
 			icon: "enchanted:mutandis"
 			id: "6D85E6821A82CFB5"
 			rewards: [{
-				count: 8
 				id: "6F56EC08D9AF5482"
-				item: "enchanted:mutandis"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "enchanted:herbology"
+					}
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -193,7 +228,7 @@
 		}
 		{
 			dependencies: ["2863C64767ABFA74"]
-			description: ["If storing poppets in your inventory is not an option, you can use a poppet shelf instead. Since it works even when in a different dimension, it can be extremly powerful in some scenarios."]
+			description: ["If storing poppets in your inventory is not an option, you can use a &6poppet shelf&r instead. Since it works even when in a &adifferent dimension&r, it can be extremly powerful in many scenarios."]
 			id: "29844A3D88F6CBB3"
 			rewards: [{
 				count: 8
@@ -207,17 +242,26 @@
 				type: "item"
 			}]
 			title: "Poppet Storage"
-			x: 1.0d
-			y: 2.0d
+			x: 4.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["3A55B097550F2093"]
-			description: ["One of the uses of the plants created by mutandis is to create poppets. These can be used as a protection against different kinds of death when stored in inventory."]
+			description: [
+				"Poppetry is a good way to use plants created by mutandis. &6Poppets&r can protect you from &adifferent kinds of death&r when stored in your inventory."
+				""
+				"For example, the &6void poppet&r will protect you from dying in the void."
+			]
 			id: "2863C64767ABFA74"
 			rewards: [{
-				count: 4
-				id: "2BD1005F7968BE74"
-				item: "enchanted:spanish_moss"
+				id: "09A08A8966823022"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "enchanted:poppetry"
+					}
+				}
 				type: "item"
 			}]
 			tasks: [{
@@ -226,12 +270,16 @@
 				type: "item"
 			}]
 			title: "Poppetry"
-			x: 1.5d
-			y: 1.0d
+			x: 3.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["1ED16F33848B4D9A"]
-			description: ["Some of the magic seems to be a bit darker than the magical flowers... However, witchcraft still relies heavily on nature. It might be worth learning its possibilities."]
+			description: [
+				"Magic is more than just cool flowers."
+				""
+				"&6Witchcraft&r is a darker kind of magic that still relies on &anature&r."
+			]
 			id: "4FFA2881BDF3F4AE"
 			rewards: [{
 				count: 8
@@ -258,50 +306,59 @@
 			y: 0.0d
 		}
 		{
-			dependencies: ["3BEDB18AF4386D6C"]
-			description: [
-				"Decorations sound like something purely cosmetic, but in this case they have incredible power. There are 3 types of decorations you may place."
-				""
-				"Chalice increases the amount of power an altar can store. It can be filled with redstone soup for even greater power."
-				""
-				"Torch, candle or a candelabra increases the speed at which the altar accumulates power."
-				""
-				"Skeleton, wither skeleton or player skull increases both. "
+			dependencies: [
+				"6ABF0BAB5C57A880"
+				"4BC94E0D0EAFC8AE"
 			]
+			description: ["Now that you have your hands on &aa few more metals&r, it might be worth improving the look of your altar."]
 			icon: "enchanted:candelabra"
 			id: "7C65317924FAE6E7"
 			rewards: [{
 				id: "15A3EECA5949A7FF"
-				item: "mysticalagriculture:blank_skull"
+				item: "enchanted:attuned_stone"
 				type: "item"
 			}]
 			tasks: [
-				{
-					id: "1186CA1A116C85DB"
-					item: "enchanted:candelabra"
-					type: "item"
-				}
 				{
 					id: "2837316F9B695E5B"
 					item: "enchanted:chalice"
 					type: "item"
 				}
+				{
+					id: "72B3EC11BA5A35F4"
+					item: "enchanted:candelabra"
+					type: "item"
+				}
 			]
-			title: "Altar Decoration"
-			x: 0.0d
+			title: "Altar Decorator"
+			x: 1.0d
 			y: -2.0d
 		}
 		{
 			dependencies: ["6D85E6821A82CFB5"]
-			description: ["Apparently, not all types of trees are extinct. Somehow mutandis is able to mutate plants into a few more saplings. Maybe they have some magical capabilities?"]
+			description: ["With the power of &6mutandis&r you should be able to access &aalder&r, &ahawthorn&r and &arowan&r wood, which are essential in many recipes."]
 			icon: "enchanted:rowan_sapling"
 			id: "6CF1983DF3517C40"
-			rewards: [{
-				count: 8
-				id: "45C223FBCA088B2A"
-				item: "enchanted:mutandis"
-				type: "item"
-			}]
+			rewards: [
+				{
+					count: 3
+					id: "45C223FBCA088B2A"
+					item: "enchanted:alder_sapling"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "13EEE385FA41B9CF"
+					item: "enchanted:hawthorn_sapling"
+					type: "item"
+				}
+				{
+					count: 3
+					id: "18F43F5B098866C8"
+					item: "enchanted:rowan_sapling"
+					type: "item"
+				}
+			]
 			tasks: [
 				{
 					id: "281FD652D00AE1AA"
@@ -325,7 +382,7 @@
 		}
 		{
 			dependencies: ["3691957811B57666"]
-			description: ["Adding a fume filter to fume funnels will cause the oven to capture &eALL&r fumes! If only we had these before..."]
+			description: ["Adding a fume filter to fume funnels will cause the oven to capture &aALL&r fumes! If only we had these before..."]
 			id: "242A1BDE582940FD"
 			rewards: [{
 				count: 16
@@ -344,8 +401,12 @@
 			y: -2.0d
 		}
 		{
-			dependencies: ["6CF1983DF3517C40"]
-			description: ["These new trees seem to produce different fumes... Whiff of magic, which comes from smelting rowan saplings, is used to make an attuned stone, one of the main items used in the creation of advanced magical tools."]
+			dependencies: ["4BC94E0D0EAFC8AE"]
+			description: [
+				"Fumes created by burning alder, hawthorn and rowan saplings can be used to make a few &anew items&r."
+				""
+				"A good example of that is an &6attuned stone&r, made with whiff of magic, which is one of the main ingredients used in the creation of &aadvanced magical tools&r."
+			]
 			id: "3A55B097550F2093"
 			rewards: [{
 				count: 4
@@ -359,17 +420,17 @@
 				type: "item"
 			}]
 			title: "Infusing Diamonds"
-			x: 1.0d
-			y: 0.0d
+			x: 2.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["35DAF111740A8579"]
-			description: ["One of the rites should be able to make another interesting sapling. Maybe it's worth a try."]
+			description: ["&6Rite of Rubberwood&r can be used to obtain &arubberwood saplings&r."]
 			id: "42D12DACA7AFEC63"
 			rewards: [{
-				count: 16
+				count: 3
 				id: "0E6824771A6F3FE9"
-				item: "minecraft:bone_meal"
+				item: "thermal:rubberwood_sapling"
 				type: "item"
 			}]
 			size: 1.25d
@@ -380,15 +441,15 @@
 				type: "item"
 			}]
 			title: "Sticky Sticks"
-			x: 3.0d
-			y: -2.0d
+			x: 2.5d
+			y: 1.0d
 		}
 		{
 			dependencies: ["35DAF111740A8579"]
 			description: [
-				"Plant mutations make it very easy to pass good genes from one plant to another, but it doesn't really work that well with seeds created in the runic altar."
+				"Maxing &6resource seeds&r can be frustrating and time-consuming."
 				""
-				"Because of that, every resource seed has a rite to max it. It uses 2 different pure 10/10 seeds (both dominant and recessive genes need to be maxed, and the species has to be the same). This should make maxing resource seeds much easier."
+				"Because of that, &aevery resource seed has a rite to max it&r. It uses 2 different pure 10/10 seeds (both dominant and recessive genes need to be maxed, and the species has to be the same). This should make maxing resource seeds much easier."
 			]
 			id: "0AAF1EF435A60AFC"
 			optional: true
@@ -440,28 +501,593 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			title: "Better Than Ever"
+			title: "Empowered Flowers"
+			x: 1.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7C65317924FAE6E7"]
+			description: ["You might think that a mix of &6redstone&r, &6wool&r and &6toxic flowers&r wouldn't be very good for your health, but surprisingly it will grant you &aabsorption&r for a bit. Moreover, it can be used to &afill a chalice&r and is an important &aingredient&r of multiple brews."]
+			icon: "enchanted:redstone_soup"
+			id: "2E7009A872DA508F"
+			rewards: [{
+				id: "772217C3EEAFC044"
+				item: {
+					Count: 1
+					id: "patchouli:guide_book"
+					tag: {
+						"patchouli:book": "enchanted:brewing"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "154F26EA992259D2"
+					item: "enchanted:kettle"
+					type: "item"
+				}
+				{
+					id: "3FB69877486E1C10"
+					item: "enchanted:redstone_soup"
+					type: "item"
+				}
+			]
+			title: "Actually Edible"
+			x: 1.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["35DAF111740A8579"]
+			description: [
+				"&6Warp stones&r can be used to create waystones, which allow you to teleport from one place to another easily. "
+				""
+				"Additionally, warp stones can be used like &aportable waystones&r, meaning you can teleport to any waystone upon use."
+			]
+			hide_dependency_lines: true
+			id: "45A02C3C456FFE5D"
+			rewards: [{
+				id: "62FF5118967D21F2"
+				item: "waystones:waystone"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1ABD308B968BAC6B"
+				item: {
+					Count: 1
+					id: "waystones:warp_stone"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Waystones"
+			x: 1.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3BEDB18AF4386D6C"]
+			description: [
+				"While altar gains power from nearby plants, it can also be &6upgraded&r with various decorations."
+				""
+				"&6Chalice&r increases the amount of power an altar can store. It can be filled with &6redstone soup&r for even greater power."
+				""
+				"A &atorch&r, a &acandle&r or a &acandelabra&r increases the speed at which the altar accumulates power."
+				""
+				"&3Skeleton&r, &3wither skeleton&r and &3player skull&r increase both. "
+			]
+			id: "6ABF0BAB5C57A880"
+			rewards: [{
+				id: "03D006E9BDE0B4F1"
+				item: "mysticalagriculture:blank_skull"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1150958F2E38A6CC"
+				item: "minecraft:candle"
+				type: "item"
+			}]
+			title: "Altar Decoration"
+			x: 0.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["76E6ADB613585553"]
+			description: ["&aSilver nuggets&r can be obtained by processing &6raw copper&r and a &6tear of the goddess&r in a distillery."]
+			icon: "thermal:silver_ingot"
+			id: "4BC94E0D0EAFC8AE"
+			rewards: [{
+				count: 4
+				id: "20509751B1A28571"
+				item: "thermal:silver_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				count: 18L
+				id: "5EB45408B22F18FE"
+				item: "thermal:silver_nugget"
+				type: "item"
+			}]
+			title: "Copper Distillation"
+			x: 1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["61BDCE1A551CB82E"]
+			description: [
+				"In some cases, just source might not be enough for the imbuement process. If that's the case, a few &6additional items&r with magical properties &6must be used&r. "
+				""
+				"These can be placed on &aacrane pedestals&r right next to the imbuement chamber."
+				""
+				"Items do NOT get consumed in the imbuement process."
+			]
+			icon: "ars_nouveau:abjuration_essence"
+			id: "6EE6F89D49EA9D3B"
+			rewards: [{
+				count: 3
+				id: "0950A3F020644584"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 3L
+					id: "73FF6A2BACD9511C"
+					item: "ars_nouveau:arcane_pedestal"
+					type: "item"
+				}
+				{
+					id: "08E4CF3CFAACCFE2"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:water_essence"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:earth_essence"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:air_essence"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:conjuration_essence"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:abjuration_essence"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:fire_essence"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:manipulation_essence"
+								}
+							]
+						}
+					}
+					title: "Any Arcane Essence"
+					type: "item"
+				}
+			]
+			title: "Imbuement Additives"
+			x: 5.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3283A2C96155A2A5"]
+			description: [
+				"Imbuement chamber has the power of imbuing certain items with &dsource&r."
+				""
+				"While it has the power to accumulate source from the environment, creating the proper &6source production&r will &adrastically increase&r the speed of imbuement process."
+			]
+			icon: "ars_nouveau:source_gem"
+			id: "61BDCE1A551CB82E"
+			rewards: [{
+				count: 3
+				id: "451331E1714D708C"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			tasks: [
+				{
+					icon: "ars_nouveau:imbuement_chamber"
+					id: "6BBEA18439538431"
+					item: "ars_nouveau:imbuement_chamber"
+					type: "item"
+				}
+				{
+					id: "6C8D60CD230BA562"
+					item: "ars_nouveau:source_gem"
+					type: "item"
+				}
+			]
+			title: "Source Application"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["34F091DCADD4FE5F"]
+			description: [
+				"&6Ritual brazier&r is an essential part of &aarcane rituals&r."
+				""
+				"All arcane rituals &6require a tablet&r, which must be placed &6on the brazier&r. To start the ritual, &aright-click the brazier&r with an &aempty hand&r."
+			]
+			id: "4355926178283E3F"
+			rewards: [{
+				count: 3
+				id: "4F4DF726BC05E0A4"
+				item: "ars_nouveau:source_gem"
+				type: "item"
+			}]
+			tasks: [{
+				id: "592DCC846AD5A5F9"
+				item: "ars_nouveau:ritual_brazier"
+				type: "item"
+			}]
+			title: "Ritual Ready"
+			x: 7.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4355926178283E3F"]
+			description: [
+				"&6Tablet of awakening&r can be used to awaken powerful creatures, such as an &damethyst golem&r!"
+				""
+				"Amethyst golems are capable of transforming amethyst blocks into &abudding amethyst&r, while also &acollecting amethyst clusters&r."
+				""
+				"To awaken an amethyst golem, a &6budding amethyst block&r must be placed next to the ritual brazier. This block &6will be consumed&r."
+			]
+			icon: "ars_nouveau:amethyst_golem_charm"
+			id: "09DD47A44825062A"
+			rewards: [{
+				count: 16
+				id: "15B75C21019FB17F"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "5A1711BF6C991908"
+					item: "ars_nouveau:ritual_awakening"
+					type: "item"
+				}
+				{
+					id: "5624F314DF42D392"
+					item: {
+						Count: 1
+						id: "ars_nouveau:dominion_wand"
+						tag: { }
+					}
+					type: "item"
+				}
+				{
+					id: "037985D16F7CB955"
+					item: "ars_nouveau:amethyst_golem_charm"
+					type: "item"
+				}
+			]
+			title: "Organically Acquired"
+			x: 7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6EE6F89D49EA9D3B"]
+			description: [
+				"Arcane magic requires &dsource&r, which can be generated using &asourcelinks&r."
+				""
+				"If a recipe requires source, a source jar must be placed within a few blocks."
+				""
+				"&7NOTE: currently agronomic sourcelink does NOT work with crops.&r"
+			]
+			icon: "ars_nouveau:source_jar"
+			id: "61C02A4970F6BC5A"
+			rewards: [{
+				count: 8
+				id: "737DAAD313A8448E"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7E645572CEE6CAB9"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:agronomic_sourcelink"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:volcanic_sourcelink"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:alchemical_sourcelink"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:vitalic_sourcelink"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:mycelial_sourcelink"
+								}
+							]
+						}
+					}
+					title: "Any Sourcelink"
+					type: "item"
+				}
+				{
+					id: "7CB0F711C49B42FC"
+					item: "ars_nouveau:source_jar"
+					type: "item"
+				}
+			]
+			title: "Source Production"
+			x: 4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3A55B097550F2093"]
+			description: [
+				"Back in the day, there was a ton of &6junk&r floating around in &3rivers and oceans&r. "
+				""
+				"While it can't be easily spotted nowadays, equipping a &asmall enough bee&r with a &acarefully crafted visor&r might be just enough to uncover some of it."
+			]
+			id: "7AE3F5F52BB39099"
+			rewards: [{
+				id: "419C4A85A42EB002"
+				item: "kubejs:inconspicuous_visor"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2C5592FB2C68977B"
+				item: "kubejs:inconspicuous_visor"
+				type: "item"
+			}]
+			title: "Bee Observant"
 			x: 3.0d
 			y: 0.0d
 		}
 		{
-			dependencies: ["76E6ADB613585553"]
-			description: ["You might think that a mix of redstone, wool and toxic flowers wouldn't be very good for your health, but it actually grants absorption for a bit. Moreover, it can be used to fill a chalice and is an important ingredient of multiple brews."]
-			id: "2E7009A872DA508F"
+			dependencies: ["7AE3F5F52BB39099"]
+			description: [
+				"&6Suspicious sand&r uncovered by sussy bees in &3river and ocean biomes&r might contain some useful loot!"
+				""
+				"It might be worth crafting a &abrush&r, who knows what can be found?"
+			]
+			icon: "minecraft:sniffer_egg"
+			id: "3F1BC26B5C5A7A61"
 			rewards: [{
-				count: 16
-				id: "772217C3EEAFC044"
-				item: "minecraft:redstone"
+				id: "345E9769FF5372BD"
+				item: "minecraft:sniffer_egg"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0F34C482695313D1"
+					item: {
+						Count: 1
+						id: "minecraft:brush"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3B6D81A98B2201E2"
+					item: "minecraft:sniffer_egg"
+					type: "item"
+				}
+				{
+					id: "216B878B619C2799"
+					item: "minecraft:moss_block"
+					type: "item"
+				}
+			]
+			title: "Not Just Bees?"
+			x: 4.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3F1BC26B5C5A7A61"]
+			description: [
+				"You would think that you already found all the plants that survived, but somehow &6sniffers&r just keep finding new kinds of &afruit&r! "
+				""
+				"These fruits can be used in &6petal apothecary&r to create different &aarchwood saplings&r."
+			]
+			icon: "ars_nouveau:mendosteen_pod"
+			id: "5223436D15C4F92C"
+			rewards: [{
+				count: 8
+				id: "7CF5AF4C2FB9F8A4"
+				item: "minecraft:gold_ingot"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7798CE77DF911356"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:frostaya_pod"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:mendosteen_pod"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:bastion_pod"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:bombegranate_pod"
+								}
+							]
+						}
+					}
+					title: "Any Wizard Fruit"
+					type: "item"
+				}
+				{
+					id: "45CCC1B04E1B399E"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ars_nouveau:blue_archwood_sapling"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:green_archwood_sapling"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:purple_archwood_sapling"
+								}
+								{
+									Count: 1b
+									id: "ars_nouveau:red_archwood_sapling"
+								}
+							]
+						}
+					}
+					title: "Any Archwood Sapling"
+					type: "item"
+				}
+			]
+			title: "Sniff Sniff"
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5223436D15C4F92C"]
+			description: ["Archwood saplings open the path to &6arcane magic&r, which might allow you to cast &3powerful spells&r, while also adding a few new automation options."]
+			id: "3283A2C96155A2A5"
+			rewards: [{
+				count: 8
+				id: "4B467AEB859281D2"
+				item: "minecraft:amethyst_shard"
 				type: "item"
 			}]
 			tasks: [{
-				id: "154F26EA992259D2"
-				item: "enchanted:redstone_soup"
+				id: "36EE50663DDC3B53"
+				item: "ars_nouveau:worn_notebook"
 				type: "item"
 			}]
-			title: "Actually Edible"
-			x: 1.0d
+			title: "Arcane Magic"
+			x: 5.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6EE6F89D49EA9D3B"]
+			description: ["&6Enchanting apparatus&r with an &6arcane core&r placed right under it works almost just like the imbuement chamber, with the exception that &6items placed&r on arcane pedestals &cwill be consumed&r."]
+			icon: "ars_nouveau:enchanting_apparatus"
+			id: "34F091DCADD4FE5F"
+			rewards: [{
+				count: 8
+				id: "00B689A59E043775"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "33A8D3446B12F286"
+					item: "ars_nouveau:arcane_core"
+					type: "item"
+				}
+				{
+					id: "287B001F22DC9050"
+					item: "ars_nouveau:enchanting_apparatus"
+					type: "item"
+				}
+			]
+			title: "Arcane Enchanting"
+			x: 6.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3283A2C96155A2A5"]
+			description: [
+				"&6Spell books&r allow you to create spells from &6glyphs&r and to cast them."
+				""
+				"Glyphs can be unlocked using a &ascribe's table&r."
+				""
+				"With a novice spell book, you will only be able to use &6tier 1 glyphs&r. Higher tiers will become useable once you &aupgrade your spell book&r."
+			]
+			icon: "ars_nouveau:novice_spell_book"
+			id: "5FDCC0825E3E2A99"
+			rewards: [{
+				id: "6C9504EF5AE86C7C"
+				item: "enchanted:attuned_stone"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3DDA89DF65D3F75A"
+					item: "ars_nouveau:novice_spell_book"
+					type: "item"
+				}
+				{
+					id: "263DE2B38D8E411B"
+					item: "ars_nouveau:scribes_table"
+					type: "item"
+				}
+			]
+			title: "Spellcrafting"
+			x: 6.0d
 			y: -2.0d
+		}
+		{
+			dependencies: ["4355926178283E3F"]
+			description: [
+				"&6Tablet of summon animals&r has the ability to summon animals &anative to the biome&r the ritual takes place! "
+				""
+				"Sadly, neither ruined or recovering biomes can be considered home for any animals, but &6throwing a certain item&r into the brazier might invite certain magical beings: a &dbone&r can be used to summon a &ddrygmy&r, &6golden pasture seeds&r will summon a &6starbuncle&r and a &amoss block&r will invite a &awhirlisprig&r into the area!"
+			]
+			icon: {
+				Count: 1
+				id: "ars_nouveau:starbuncle_charm"
+				tag: { }
+			}
+			id: "29BFB12064D30BD9"
+			rewards: [{
+				count: 16
+				id: "32804730865B7AF8"
+				item: "minecraft:amethyst_shard"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1502403640A4F174"
+				item: "ars_nouveau:ritual_animal_summon"
+				type: "item"
+			}]
+			title: "Animals, huh?"
+			x: 7.5d
+			y: 3.0d
 		}
 	]
 	title: "The Energy of Flora"

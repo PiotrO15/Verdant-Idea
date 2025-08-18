@@ -1,3 +1,53 @@
+0.7 changes:
+- added Applied Mekanistics (AE2 support for Mekanism)
+- added Ars Nouveau
+- added Biome Blends
+- added Actually Subtractions (backport of Actually Additions)
+- reverted the update of KubeJS Additions
+- updated Wasteland Things
+- revamped HDPE processing
+- updated the recipes for all types of pipes
+- increased the cost of configurator as it’s no longer needed early on
+- updated a few recipes
+- distillery no longer requires diamond tier items
+- silver nuggets can now be created from raw copper and tear of the goddess using distillery
+- enchanted saplings can now grow in a phytogenic insolator
+- readjusted mutandis and mutandis extremis plant pools
+- witch’s cauldron now consistently uses 3 buckets of water
+- reworked all Mekanism quests
+- added Blazing with Power to The Force of Nature
+- added a clarification about mystical flowers to That’s a Beet Surprising
+- increased the width of quest screens
+- added mushroom seeds to The Beauty of Botany
+- revamped The Energy of Flora: it now includes Ars and the updated Enchanted progression
+- fixed a typo in No Worries Mate (what does security update even mean)
+- What Sparks Innovation now includes quests about Actually Additions and Mekanism pipes
+- A Monument to the Past now rewards sawdust soup instead of cooked rice
+- moved all quest lines to 2 separate groups: main quests and additional
+- centrifuge recipe now uses seared bricks instead of iron
+- nests now use any shears to craft (note that the shears are still consumed)
+- fixed fluid pretty pipes not dropping when broken and not being mined by pickaxes faster
+- Mekanism pipes and cables are now unlocked during Thermal stage
+- cauldron recipe now uses steel plates instead of iron ingots
+- fixed issues with slime saplings in a phytogenic insolator
+- all saplings can now be grown in a phytogenic insolator
+- arrows can now be crafted with petals instead of feathers
+- replaced resonant rod with a dowsing rod, which received an updated recipe and texture
+- added sawdust soup, which can be crafted from a bowl and 2 sawdust
+- removed recipes that use empty tags
+- fixed compost and composting categories looking broken
+- hidden quest rewards, refinery recipes and soulium spawner from EMI
+- improved the interaction between cracked sand and water bottle so it’s better and to make it sound less annoying
+- added verdant essence, which can be applied on the ground to change nearby biomes to their vanilla variants (the recipe is temporary, it won’t use antimatter in 1.0)
+- pretty pipe recipe now creates 8 pipes (was 4)
+- fluid pretty pipes now have a distinct recipe
+- silver is now used in silver seeds recipe
+- decreased essence requirements for most of the infusion crystals
+- added chemical cells
+- removed some of the alchemy catalyst cycles
+- readded the items that can’t be obtained elsewhere to new cycles
+
+
 0.6.3 changes:
 - updated to Forge 47.4.0
 - added Pretty Pipes: Fluids

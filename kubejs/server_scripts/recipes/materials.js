@@ -85,4 +85,18 @@ ServerEvents.recipes(event => {
   )
 
   event.recipes.thermal.press('pneumaticcraft:compressed_iron_gear', ['4x #forge:ingots/compressed_iron', 'thermal:press_gear_die'])
+
+  // Remove recipes using empty tags
+  event.remove({id: 'mysticalagriculture:inferium_essence_smelted'})
+  event.remove({id: 'mysticalagriculture:prosperity_shard_smelted'})
+  event.remove({id: 'thermal:machines/pulverizer/pulverizer_apatite_ore'})
+  event.remove({id: 'thermal:machines/pulverizer/pulverizer_cinnabar_ore'})
+  event.remove({id: 'thermal:machines/pulverizer/pulverizer_niter_ore'})
+  event.remove({id: 'thermal:machines/pulverizer/pulverizer_sulfur_ore'})
+  event.remove({id: 'thermal:machines/smelter/smelter_apatite_ore'})
+  event.remove({id: 'thermal:machines/smelter/smelter_cinnabar_ore'})
+  event.remove({id: 'thermal:machines/smelter/smelter_niter_ore'})
+  event.remove({id: 'thermal:machines/smelter/smelter_sulfur_ore'})
+  event.remove({id: 'actuallyadditions:black_quartz_ore_smelting'})
+  event.remove({id: 'actuallyadditions:black_quartz_ore_blasting'})
 })

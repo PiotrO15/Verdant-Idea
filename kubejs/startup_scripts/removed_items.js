@@ -1,4 +1,38 @@
 global.removed_items = {
+  actuallyadditions: [
+    'crate_small',
+    'crusher',
+    'crusher_double',
+    'powered_furnace',
+    'farmer',
+    'lamp_controller',
+    'wings_of_the_bats',
+    'bio_reactor',
+    'oil_generator',
+    'coal_generator',
+    'leaf_generator',
+    'heat_collector',
+    'crate_keeper',
+    'wooden_aiot',
+    'stone_aiot',
+    'iron_aiot',
+    'gold_aiot',
+    'diamond_aiot',
+    'netherite_aiot',
+    'laser_upgrade_range',
+    'laser_upgrade_invisibility',
+    'rice',
+    'rice_seeds',
+    'flax_seeds',
+    'canola_seeds',
+    'worm',
+    'rice_dough',
+    'rice_slimeball',
+    'ender_star',
+    'lens_of_the_miner',
+    'iron_casing',
+    'black_quartz_ore'
+  ],
   agricraft: [
     'coal_pebble',
     'diamond_shard',
@@ -10,6 +44,10 @@ global.removed_items = {
     'iron_rake',
     'iron_crop_sticks',
     'obsidian_crop_sticks'
+  ],
+  ars_nouveau: [
+    'ritual_conjure_island_desert',
+    'ritual_conjure_island_plains'
   ],
   botania: [
     'living_root',
@@ -148,15 +186,7 @@ global.removed_items = {
     'bio_compatible_unassembled_pcb',
     'bio_compatible_failed_pcb',
     'bio_compatible_finished_pcb',
-    'bio_compatible_empty_pcb',
-    'crystal_clear_unassembled_pcb',
-    'crystal_clear_failed_pcb',
-    'crystal_clear_finished_pcb',
-    'crystal_clear_empty_pcb',
-    'radiation_hardened_unassembled_pcb',
-    'radiation_hardened_failed_pcb',
-    'radiation_hardened_finished_pcb',
-    'radiation_hardened_empty_pcb'
+    'bio_compatible_empty_pcb'
   ],
   pneumaticcraft: [
     'refinery',
@@ -167,7 +197,6 @@ global.removed_items = {
   productivebees: [
     'bamboo_hive',
     'dragon_egg_hive',
-    'sugarbag_nest',
     'warped_bee_nest',
     'crimson_bee_nest',
     'nest_locator',

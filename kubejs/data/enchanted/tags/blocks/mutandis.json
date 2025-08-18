@@ -2,7 +2,6 @@
   "replace": true,
   "values": [
     "#wasteland:compost_growable",
-    "#botania:mystical_flowers",
     "minecraft:grass",
     "minecraft:pink_petals",
     "minecraft:brown_mushroom",

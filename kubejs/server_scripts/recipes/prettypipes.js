@@ -1,7 +1,41 @@
+ServerEvents.tags('block', event => {
+  event.add('minecraft:mineable/pickaxe', ['ppfluids:fluid_pipe'])
+})
+
 ServerEvents.recipes(event => {
   // Update pipe recipe
-  event.replaceInput({id: 'prettypipes:pipe'}, 'minecraft:iron_bars', '#forge:rods/steel')
-  event.replaceInput({id: 'prettypipes:pipe'}, 'minecraft:copper_ingot', '#forge:plates/copper')
+  event.remove({id: 'prettypipes:pipe'})
+  event.shaped(
+    '8x prettypipes:pipe',
+    [
+      ' R ',
+      'SGS',
+      ' C '
+    ],
+    {
+      C: '#forge:plates/copper',
+      G: '#forge:glass',
+      R: 'minecraft:redstone',
+      S: '#forge:rods/steel'
+    }
+  )
+
+  event.remove({id: 'ppfluids:fluid_pipe_to_pipe'})
+  event.remove({id: 'ppfluids:fluid_pipe'})
+  event.shaped(
+    '8x ppfluids:fluid_pipe',
+    [
+      ' L ',
+      'SGS',
+      ' C '
+    ],
+    {
+      C: '#forge:plates/copper',
+      G: '#forge:glass',
+      L: 'minecraft:lapis_lazuli',
+      S: '#forge:rods/steel'
+    }
+  )
 
   // Change item terminal recipe
   event.remove({id: 'prettypipes:item_terminal'})

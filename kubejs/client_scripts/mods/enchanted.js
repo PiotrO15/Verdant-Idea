@@ -38,4 +38,6 @@ ClientEvents.lang('en_us', (event) => {
     event.add("rite.wasteland.upgrade_netherite_seeds", "Netherite Seeds Upgrade Rite")
     event.add("rite.wasteland.upgrade_slime_seeds", "Slime Seeds Upgrade Rite")
     event.add("rite.wasteland.upgrade_wither_skeleton_seeds", "Wither Skeleton Seeds Upgrade Rite")
+    
+    event.add("rite.ars_nouveau.novice_spell_book", "Arcane Infusion Rite")
 })

@@ -1,0 +1,6 @@
+{
+  "chance": 0.5,
+  "child": "actuallyadditions:coffee",
+  "parent1": "immersiveengineering:hemp",
+  "parent2": "minecraft:sweet_berries"
+}

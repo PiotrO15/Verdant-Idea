@@ -1,11 +1,12 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 250
 	default_quest_shape: ""
 	filename: "the_beauty_of_botany"
-	group: ""
+	group: "252DCAF0906EAB55"
 	icon: "agricraft:wooden_crop_sticks"
 	id: "1E7DD40600DA28B4"
-	order_index: 3
+	order_index: 1
 	quest_links: [ ]
 	quests: [
 		{
@@ -5346,6 +5347,118 @@
 			title: "{seed.agricraft.botania.yellow_mystical_flower}"
 			x: 1.5d
 			y: 3.5d
+		}
+		{
+			dependencies: ["0526EEE36B6DC0C4"]
+			description: ["Grown from &aindustrial hemp&r and &acabbage&r."]
+			id: "63C7B5A7CCE6A9CB"
+			rewards: [{
+				count: 4
+				id: "6C71A6353D37CE95"
+				item: "actuallyadditions:canola"
+				type: "item"
+			}]
+			tasks: [{
+				id: "20044E7257C18B82"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "actuallyadditions:canola"
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1BA0D0B893F3F327"]
+			description: ["Grown from &aindustrial hemp&r and &asweet berries&r."]
+			id: "4252502082B0049D"
+			rewards: [{
+				count: 8
+				id: "41FA54A97E27A0BE"
+				item: "actuallyadditions:coffee_beans"
+				type: "item"
+			}]
+			tasks: [{
+				id: "34714C4439892622"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "actuallyadditions:coffee"
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["478452077911973B"]
+			description: ["Grown from &apotato&r and &apumpkin&r."]
+			id: "799F53421144713D"
+			rewards: [{
+				count: 4
+				id: "63FAD229AEF5057F"
+				item: "minecraft:brown_mushroom"
+				type: "item"
+			}]
+			tasks: [{
+				id: "2A5E1B33AAEF8F50"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "minecraft:brown_mushroom"
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -4.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1A4855EEF1FDDD65"]
+			description: ["Grown from &apumpkin&r and &acarrot&r."]
+			id: "7509B88AD657313E"
+			rewards: [{
+				count: 4
+				id: "4832804A5517BA78"
+				item: "minecraft:red_mushroom"
+				type: "item"
+			}]
+			tasks: [{
+				id: "365B8F44E8C33D62"
+				item: {
+					Count: 1
+					id: "agricraft:seed"
+					tag: {
+						genes: {
+							species: {
+								dom: "minecraft:red_mushroom"
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -5.5d
+			y: -2.5d
 		}
 	]
 	title: "The Beauty of Botany"

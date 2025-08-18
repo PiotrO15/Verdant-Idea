@@ -1,11 +1,12 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 250
 	default_quest_shape: ""
 	filename: "the_drive_for_progress"
-	group: ""
+	group: "252DCAF0906EAB55"
 	icon: "functionalstorage:copper_upgrade"
 	id: "2BE92FD1F7221D58"
-	order_index: 4
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -190,7 +191,7 @@
 			rewards: [{
 				count: 4
 				id: "78CCE57CF3939682"
-				item: "minecraft:iron_ingot"
+				item: "productivebees:honey_treat"
 				type: "item"
 			}]
 			tasks: [{

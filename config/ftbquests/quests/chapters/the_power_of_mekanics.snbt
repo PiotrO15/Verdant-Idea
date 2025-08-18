@@ -1,24 +1,36 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 250
 	default_quest_shape: ""
 	filename: "the_power_of_mekanics"
-	group: ""
+	group: "588E31E1F63967F1"
 	icon: "mekanism:advanced_control_circuit"
 	id: "460BC39D649E0D53"
-	order_index: 8
+	order_index: 5
 	quest_links: [ ]
 	quests: [
 		{
 			dependencies: ["7206BF3CB73BECE8"]
+			description: [
+				"After all that engineering work, you can finally recreate the state-of-the-art machinery."
+				""
+				"&6Metallurgic infuser&r is the first part of modern processing."
+			]
 			id: "2D9B18AE4AABF2CD"
+			rewards: [{
+				id: "593FBDC42DE5D4E4"
+				item: "mekanism:metallurgic_infuser"
+				type: "item"
+			}]
 			size: 1.25d
 			tasks: [{
 				id: "0E40ADAFECFB267C"
 				item: "mekanism:metallurgic_infuser"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -6.0d
+			title: "State-of-the-art"
+			x: -6.5d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1D30D62E46B7D1F9"]
@@ -41,14 +53,21 @@
 		}
 		{
 			dependencies: ["2D9B18AE4AABF2CD"]
+			description: ["Base component of many of the modern machines."]
 			id: "333E731A1D9FC6E5"
+			rewards: [{
+				count: 16
+				id: "09905DA5E0FDCD70"
+				item: "thermal:steel_plate"
+				type: "item"
+			}]
 			tasks: [{
 				id: "1EAF7D1B96FDD107"
 				item: "mekanism:steel_casing"
 				type: "item"
 			}]
-			x: -3.5d
-			y: -5.0d
+			x: -6.0d
+			y: -2.0d
 		}
 		{
 			dependencies: ["63C725E4D3A725F0"]
@@ -85,124 +104,44 @@
 		}
 		{
 			dependencies: ["2D9B18AE4AABF2CD"]
+			description: [
+				"Many high-end machines have &6higher tiers&r, which offer &amore processing slots&r."
+				""
+				"While these upgraded machines can be crafted, &6tier installers&r them to be upgraded even when they are placed and working!"
+			]
 			id: "5C09159775734D0F"
+			optional: true
+			rewards: [{
+				id: "205485A8349DDBB7"
+				item: "mekanism:advanced_tier_installer"
+				type: "item"
+			}]
 			tasks: [{
 				id: "7F1B2871086F8ABD"
 				item: "mekanism:basic_tier_installer"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -6.0d
-		}
-		{
-			dependencies: ["5C09159775734D0F"]
-			id: "7868C03EC24B0DE2"
-			tasks: [{
-				id: "34F905C2038F954A"
-				item: "mekanism:advanced_tier_installer"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["7868C03EC24B0DE2"]
-			id: "2C441DE00F6686BF"
-			tasks: [{
-				id: "2B349A7334DE3456"
-				item: "mekanism:elite_tier_installer"
-				type: "item"
-			}]
-			x: -0.5d
-			y: -5.0d
-		}
-		{
-			dependencies: ["2C441DE00F6686BF"]
-			id: "783D3920578BB3AF"
-			tasks: [{
-				id: "025F0BDFE6776DE1"
-				item: "mekanism:ultimate_tier_installer"
-				type: "item"
-			}]
-			x: 0.0d
+			title: "Better Tier Installation"
+			x: -6.0d
 			y: -4.0d
 		}
 		{
-			dependencies: ["2216AA2620D7490E"]
-			id: "34C50BE2C42F49BE"
-			tasks: [{
-				id: "39F28569F5A933E7"
-				item: "mekanism:chemical_dissolution_chamber"
-				type: "item"
-			}]
-			x: -3.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["34C50BE2C42F49BE"]
-			id: "1561A9EA6B5DC7F0"
-			tasks: [{
-				id: "6135BC71E6D16CBA"
-				item: "mekanism:chemical_washer"
-				type: "item"
-			}]
-			x: -4.5d
-			y: -3.0d
-		}
-		{
-			dependencies: ["27BA9AD7C034F12E"]
-			id: "15240F5735247060"
-			tasks: [{
-				id: "67CEE206D7642E92"
-				item: "mekanism:chemical_injection_chamber"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["1561A9EA6B5DC7F0"]
-			id: "1C2875B526B55572"
-			tasks: [{
-				id: "713EEA83EB815C9D"
-				item: "mekanism:chemical_crystallizer"
-				type: "item"
-			}]
-			x: -5.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["4785A9AFD84C5BE3"]
-			id: "1E262BA8351161AA"
-			tasks: [{
-				id: "4057E8A9AAD59C24"
-				item: "mekanism:purification_chamber"
-				type: "item"
-			}]
-			x: -1.5d
-			y: -3.0d
-		}
-		{
 			dependencies: ["333E731A1D9FC6E5"]
+			description: ["&6Enrichment chamber&r offers many processing recipes."]
 			id: "1BC8BC9E122F713E"
+			rewards: [{
+				id: "1695A685646B1D48"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
 			tasks: [{
 				id: "254AD635238895DF"
 				item: "mekanism:enrichment_chamber"
 				type: "item"
 			}]
-			x: -3.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["1E262BA8351161AA"]
-			id: "63590A2FA0591855"
-			tasks: [{
-				id: "763956F75500FE2B"
-				item: "mekanism:crusher"
-				type: "item"
-			}]
-			x: -0.5d
-			y: -3.0d
+			title: "Enrichment"
+			x: -6.5d
+			y: -1.0d
 		}
 		{
 			dependencies: ["736F3BA4ECF46938"]
@@ -629,85 +568,483 @@
 		}
 		{
 			dependencies: ["1BC8BC9E122F713E"]
+			description: ["Complex processes often require &3oxygen&r and &3hydrogen&r. An &6electrolytic separator&r is capable of splitting water into its &aelements&r!"]
 			id: "4785A9AFD84C5BE3"
+			rewards: [{
+				id: "32317A6A1D75C0E3"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5E6DF4EBEFF603E3"
 				item: "mekanism:electrolytic_separator"
 				type: "item"
 			}]
-			x: -2.0d
-			y: -4.0d
-		}
-		{
-			dependencies: ["63590A2FA0591855"]
-			icon: "mekanism:thermal_evaporation_controller"
-			id: "78736404B4525A05"
-			tasks: [
-				{
-					count: 40L
-					id: "30A3519581A0A2C6"
-					item: "mekanism:thermal_evaporation_block"
-					type: "item"
-				}
-				{
-					id: "22BA83A0FAF2B59F"
-					item: "mekanism:thermal_evaporation_controller"
-					type: "item"
-				}
-				{
-					count: 2L
-					id: "68CB36CBD3B05C77"
-					item: { Count: 2, id: "mekanism:thermal_evaporation_valve" }
-					type: "item"
-				}
-			]
-			x: 0.0d
-			y: -2.0d
+			title: "Separation"
+			x: -6.0d
+			y: 0.0d
 		}
 		{
 			dependencies: ["333E731A1D9FC6E5"]
+			description: ["Another &6powered furnace&r, although this one can be upgraded a lot more."]
 			id: "0FCBFDECFD24A5BC"
+			optional: true
+			rewards: [{
+				id: "7AB9FB36C0576BC9"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
 			tasks: [{
 				id: "5F30F5D4B0E5DDC2"
 				item: "mekanism:energized_smelter"
 				type: "item"
 			}]
 			title: "A Powerful Smelter"
-			x: -4.5d
-			y: -5.0d
+			x: -5.0d
+			y: -2.0d
 		}
 		{
-			dependencies: ["78736404B4525A05"]
-			id: "27BA9AD7C034F12E"
-			tasks: [{
-				id: "49AACA16BA949D17"
-				item: "mekanism:chemical_infuser"
+			dependencies: ["4455A05DAB21337B"]
+			description: ["Substrate mixed with molten dense plastic and ethylene creates &6HDPE pellets&r, which can be &apressed into sheets&r."]
+			id: "308E96815535A016"
+			rewards: [{
+				count: 3
+				id: "36009D0030DCA176"
+				item: "mekanism:hdpe_sheet"
 				type: "item"
 			}]
-			x: -0.5d
-			y: -1.0d
+			tasks: [{
+				id: "4DF07EF8F5B3940E"
+				item: "mekanism:hdpe_sheet"
+				type: "item"
+			}]
+			title: "High-density Polyethylene"
+			x: -1.5d
+			y: -3.0d
 		}
 		{
-			dependencies: ["15240F5735247060"]
-			id: "4360650F2979DA3E"
-			tasks: [{
-				id: "2E5AE19AA5478968"
-				item: "mekanism:chemical_oxidizer"
+			dependencies: ["259749A489DA35FF"]
+			description: [
+				"&6Nuclear waste&r isn't as bad as it may sound. It can be processed into &bpolonium&r in a solar neutron activator and into &3plutionium&r using isotopic centrifuge."
+				""
+				"Both of these will be useful later on."
+			]
+			id: "38CBB6ED575405C3"
+			rewards: [{
+				count: 8
+				id: "64C23FC8A282FBD1"
+				item: "mekanism:hdpe_sheet"
 				type: "item"
 			}]
+			tasks: [{
+				id: "28866911185BAB54"
+				item: "mekanism:solar_neutron_activator"
+				type: "item"
+			}]
+			title: "Waste Management"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"38CBB6ED575405C3"
+				"308E96815535A016"
+			]
+			description: ["&6Supercritical Phase Shifter&r is suprisingly similar to a simple pressure chamber. It uses a &cLOT&r of power to transform &bpolonium&r into &dantimatter&r. "]
+			icon: "mekanism:sps_casing"
+			id: "6C7AA34DE5186630"
+			rewards: [{
+				count: 16
+				id: "664419EE79B61696"
+				item: "mekanism:hdpe_sheet"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 72L
+					id: "27DB6217BB60575E"
+					item: "mekanism:sps_casing"
+					type: "item"
+				}
+				{
+					count: 123L
+					id: "1410E4435C087721"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:structural_glass"
+								}
+								{
+									Count: 1b
+									id: "mekanismgenerators:reactor_glass"
+								}
+							]
+						}
+					}
+					title: "Reactor or Structural Glass"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "13B3D73868A0FED7"
+					item: { Count: 3, id: "mekanism:sps_port" }
+					type: "item"
+				}
+				{
+					id: "137414FBB21B9DA3"
+					item: "mekanism:supercharged_coil"
+					type: "item"
+				}
+			]
+			title: "Expensive Shapeshifting"
 			x: -2.0d
 			y: -2.0d
 		}
 		{
-			dependencies: ["4360650F2979DA3E"]
-			id: "2216AA2620D7490E"
-			tasks: [{
-				id: "32A3FF1A0F91EA1E"
-				item: "mekanism:rotary_condensentrator"
+			dependencies: ["6C7AA34DE5186630"]
+			description: ["&dAntimatter&r can be used for quite a few things, but using it to &6spawn animals&r feels a bit... excessive? "]
+			hide_dependency_lines: true
+			icon: "botania:cocoon"
+			id: "3280AA361D85F36A"
+			optional: true
+			rewards: [{
+				id: "5BD1224A33094857"
+				item: "botania:cocoon"
 				type: "item"
 			}]
+			tasks: [
+				{
+					id: "7FB8FE25435C3BEE"
+					item: "mekanism:pellet_antimatter"
+					type: "item"
+				}
+				{
+					id: "2F30C1C276EF3AFC"
+					item: "botania:cocoon"
+					type: "item"
+				}
+			]
+			title: "A Step Too Far?"
+			x: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5F68529AB0469781"]
+			description: [
+				"&6Fission reactor&r heats water into &bsteam&r, which can be turned into power in an &6industrial turbine&r."
+				""
+				"&cReactors WILL explode&r if not provided with &cenough coolant&r or when there &cisn't enough space for steam&r."
+			]
+			icon: "mekanismgenerators:fission_reactor_casing"
+			id: "259749A489DA35FF"
+			rewards: [{
+				id: "1CC0140E34F8D89F"
+				item: "mekanism:reprocessed_fissile_fragment"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 24L
+					id: "559B7C3EAB37B903"
+					item: "mekanismgenerators:fission_reactor_casing"
+					type: "item"
+				}
+				{
+					id: "0224422927443035"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanismgenerators:reactor_glass"
+								}
+								{
+									Count: 1b
+									id: "mekanismgenerators:fission_reactor_casing"
+								}
+							]
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5E4C12BF4013E179"
+					item: { Count: 4, id: "mekanismgenerators:fission_reactor_port" }
+					type: "item"
+				}
+				{
+					id: "4E64485F8ACE90E4"
+					item: "mekanismgenerators:fission_fuel_assembly"
+					type: "item"
+				}
+				{
+					id: "4F2955B932509D46"
+					item: "mekanismgenerators:control_rod_assembly"
+					type: "item"
+				}
+			]
+			title: "Going Nuclear"
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2EB13C13E068F47C"]
+			description: ["The last part of fissile fuel creation is processing &auranium hexafluoride&r in a &6isotopic centrifuge&r."]
+			id: "5F68529AB0469781"
+			rewards: [{
+				id: "73ABF932FA12F73C"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			tasks: [{
+				id: "7D9A4D82690CE78F"
+				item: "mekanism:isotopic_centrifuge"
+				type: "item"
+			}]
+			title: "Fissile Fuel"
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["6C7AA34DE5186630"]
+			description: [
+				"After all this work, it may finally be possible to fully eliminate the effects of the disaster."
+				""
+				"Applying &6verdant essence&r will transform the nearby biomes into their &2verdant variants&r, which might cause the &aanimals&r that survived to eventually &amigrate&r."
+			]
+			id: "3E645D5F929A8EA1"
+			rewards: [{
+				count: 8
+				id: "53E3DB5DDF849D08"
+				item: {
+					Count: 1
+					id: "biomeblends:biome_blend"
+					tag: {
+						blend_type: "wasteland:verdant"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "125ABEB345751CAC"
+				item: {
+					Count: 1
+					id: "biomeblends:biome_blend"
+					tag: {
+						blend_type: "wasteland:verdant"
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Where It Ends..."
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3E645D5F929A8EA1"]
+			description: [
+				"So, this is it."
+				""
+				"Once, there was nothing. A vast, endless wasteland of dead trees and dust."
+				""
+				"You were left to die. But you didn't. You found the remnants of life, and you let them flourish."
+				""
+				"Life blossomed because you willed it, and you persisted because life blossomed."
+				""
+				"Now the world begins to come back to life, starting with your small oasis... and all of it began with your &overdant idea&r."
+			]
+			hide_until_deps_complete: true
+			icon: "botania:grass_seeds"
+			id: "6DBCA1BDAC6D1764"
+			rewards: [{
+				id: "4E5AFA14C87A727B"
+				item: "botania:grass_seeds"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				biome: "#wasteland:verdant_biomes"
+				icon: "minecraft:grass_block"
+				id: "28D234C1316107FD"
+				title: "Visit a Verdant Biome"
+				type: "biome"
+			}]
+			title: "Or Where It Starts?"
+			x: -0.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["259749A489DA35FF"]
+			description: [
+				"It's important to keep &6radioactive waste&r in a safe place, where it can slowly &ddecay&r."
+				""
+				"Luckily, &6radioactive waste barrels&r allow for just that and are insanely easy to make."
+			]
+			id: "291D1605EDD2B43B"
+			rewards: [{
+				count: 16
+				id: "295A285FE163F3C8"
+				item: "thermal:lead_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				id: "10AE1AC7C3CDA973"
+				item: "mekanism:radioactive_waste_barrel"
+				type: "item"
+			}]
+			title: "Waste Disposal"
 			x: -3.0d
-			y: -2.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["05B1D39E63429641"]
+			description: ["&6Canola press&r uses power to create &acanola oil&r from canola."]
+			id: "6F8D2F89331374EE"
+			rewards: [{
+				count: 8
+				id: "2C4314CD4B564352"
+				item: "actuallyadditions:canola"
+				type: "item"
+			}]
+			tasks: [{
+				id: "1F23F5993CDE2CFF"
+				item: "actuallyadditions:canola_press"
+				type: "item"
+			}]
+			title: "Canola Oil"
+			x: -4.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["6F8D2F89331374EE"]
+			description: ["&6Fermenting barrel&r can be used to slowly process canola oil into its &arefined variant&r."]
+			id: "5C4F20FC0114A214"
+			rewards: [{
+				count: 8
+				id: "328E9B57042317BD"
+				item: "actuallyadditions:canola"
+				type: "item"
+			}]
+			tasks: [{
+				id: "65F7D7D137114730"
+				item: "actuallyadditions:fermenting_barrel"
+				type: "item"
+			}]
+			title: "Fermented Canola"
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["5C4F20FC0114A214"]
+			description: [
+				"Throwing &6crystallized canola seeds&r into &3refined canola oil&r will transform it into &dcrystallized oil&r!"
+				""
+				"Similarly, throwing &6empowered canola seeds&r into &dcrystallized oil&r will create &aempowered oil&r."
+			]
+			icon: "actuallyadditions:empowered_canola_seed"
+			id: "11479EE774426F01"
+			rewards: [{
+				count: 16
+				id: "709F2A9BC80A064F"
+				item: "actuallyadditions:canola"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4DA939F74DA86998"
+					item: "actuallyadditions:crystallized_canola_seed"
+					type: "item"
+				}
+				{
+					id: "727EB26EBFEDC1B7"
+					item: "actuallyadditions:empowered_canola_seed"
+					type: "item"
+				}
+				{
+					id: "3022CA69101DCD32"
+					item: "actuallyadditions:empowered_oil_bucket"
+					type: "item"
+				}
+			]
+			title: "Empowered Oil"
+			x: -3.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["11479EE774426F01"]
+			description: [
+				"&6HDPE&r is a denser and more durable &6variant of plastic&r. Because of that, it requires more processing."
+				""
+				"Creating HDPE pellets requires &6substrate&r, which can be created from &abiomass&r, &3water&r and &bhydrogen&r."
+			]
+			icon: "mekanism:substrate"
+			id: "4455A05DAB21337B"
+			rewards: [{
+				count: 16
+				id: "63CDF59507B9E817"
+				item: "actuallyadditions:canola"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "3EC2A03EF7336E61"
+					item: "mekanism:bio_fuel"
+					type: "item"
+				}
+				{
+					id: "04F7D2CFBDE4325F"
+					item: "mekanism:substrate"
+					type: "item"
+				}
+			]
+			title: "HDPE Substrate"
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4785A9AFD84C5BE3"]
+			description: [
+				"&6Fissile Fuel&r requires surprisingly few items to make: it's just &3water&r, &6sulfur&r, &bfluorite&r and &auranium&r!"
+				""
+				"The difficult part is building the proper processing plant."
+			]
+			icon: "mekanism:reprocessed_fissile_fragment"
+			id: "2EB13C13E068F47C"
+			rewards: [{
+				count: 3
+				id: "6080CF19DC1D0686"
+				item: "mekanism:steel_casing"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "0062BC360B155FA3"
+					item: "immersiveengineering:ingot_uranium"
+					type: "item"
+				}
+				{
+					id: "468D325F55EBBB8A"
+					item: "mekanism:fluorite_gem"
+					type: "item"
+				}
+				{
+					id: "3477247665E6E1D2"
+					item: "thermal:sulfur_dust"
+					type: "item"
+				}
+			]
+			title: "Fissile Fuel Components"
+			x: -5.0d
+			y: 0.0d
 		}
 	]
 	title: "The Power of Mekanics"

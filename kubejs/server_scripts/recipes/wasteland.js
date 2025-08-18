@@ -6,20 +6,6 @@ ServerEvents.recipes(event => {
   // Add a recipe for rich soil so that organic compost doesn't slow down the gameplay
   event.shapeless('farmersdelight:rich_soil', ['minecraft:dirt', 'wasteland:compost'])
 
-  // Add a recipe for resonant rod
-  event.shaped(
-    'wasteland:resonant_rod',
-    [
-      " TP",
-      " TT",
-      "T  "
-    ],
-    {
-      P: 'botania:mana_powder',
-      T: 'botania:livingwood_twig'
-    }
-  )
-
   // Change the end portal recipe
   event.remove({id: 'endportalrecipe:craftable_end_portal'})
   event.shaped(
@@ -82,5 +68,66 @@ ServerEvents.recipes(event => {
         "item": "minecraft:sand"
       }
     ]
+  })
+  
+  event.shapeless('kubejs:sawdust_soup', ['minecraft:bowl', '#forge:sawdust', '#forge:sawdust'])
+
+  event.remove({id: 'biomeblends:biome_blend'})
+
+  event.shaped('4x minecraft:arrow', [
+    " F ",
+    " S ",
+    " P "
+  ], {
+    F: 'minecraft:flint',
+    P: '#botania:petals',
+    S: '#forge:rods/wooden'
+  })
+
+  event.shaped('kubejs:inconspicuous_visor', [
+    "A A",
+    "GGG",
+    "SPS"
+  ], {
+    A: '#forge:rods/aluminum',
+    G: 'botania:elf_glass_pane',
+    P: 'pneumaticcraft:printed_circuit_board',
+    S: 'enchanted:attuned_stone'
+  })
+
+  event.custom({
+    "type": "farmersdelight:cutting",
+    "ingredients": [
+      {
+        "item": "kubejs:fish_bones"
+      }
+    ],
+    "result": [
+      {
+        "item": "minecraft:bone_meal",
+        "count": 2
+      }
+    ],
+    "tool": {
+      "tag": "forge:tools/knives"
+    }
+  })
+
+  event.custom({
+    "type": "mekanism:nucleosynthesizing",
+    "duration": 2000,
+    "gasInput": {
+      "amount": 10,
+      "gas": "mekanism:antimatter"
+    },
+    "itemInput": {
+      "ingredient": {
+        "item": "ars_nouveau:manipulation_essence"
+      }
+    },
+    "output": {
+      "item": "biomeblends:biome_blend",
+      "nbt": {blend_type:"wasteland:verdant"}
+    }
   })
 })

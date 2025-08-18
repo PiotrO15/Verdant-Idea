@@ -62,7 +62,7 @@
 	#Range: 0.0 ~ 1.0
 	deadBeeConvertChance = 0.03
 	#Range: 0.0 ~ 1.0
-	sugarbagBeeChance = 0.02
+	sugarbagBeeChance = 0.0
 	#How many animals a CuBee can breed per pollination
 	#Range: > 0
 	cupidBeeAnimalsPerPollination = 5

@@ -1,0 +1,30 @@
+{
+    "items": [
+        {
+            "id": "minecraft:book",
+            "Count": 1
+        },
+        {
+            "id": "enchanted:odour_of_purity",
+            "Count": 1
+        },
+        {
+            "id": "botania:rune_mana",
+            "Count": 1
+        }
+    ],
+    "shapes": {
+        "enchanted:small_circle": "enchanted:ritual_chalk",
+        "enchanted:medium_circle": "enchanted:ritual_chalk"
+    },
+    "factory": {
+        "type": "enchanted:create_item",
+        "items": [
+            {
+                "id": "ars_nouveau:novice_spell_book",
+                "Count": 1
+            }
+        ]
+    },
+    "power": 3000
+}

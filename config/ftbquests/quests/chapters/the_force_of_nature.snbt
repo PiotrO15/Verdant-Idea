@@ -1,8 +1,9 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 250
 	default_quest_shape: ""
 	filename: "the_force_of_nature"
-	group: ""
+	group: "588E31E1F63967F1"
 	icon: {
 		Count: 1
 		id: "botania:lexicon"
@@ -457,7 +458,7 @@
 					type: "item"
 				}
 			]
-			title: "Connecting With Elves"
+			title: "Connecting with Elves"
 			x: 1.5d
 			y: -0.5d
 		}
@@ -516,7 +517,7 @@
 			y: -1.5d
 		}
 		{
-			dependencies: ["6A87706B9FF0A830"]
+			dependencies: ["75F50AEC3C84A5AC"]
 			description: ["Runic altar is useful, but it's not the only way to get new items using mana. alchemy catalyst can be crafted and placed directly under a mana pool, which will make it transform items into others of similar value."]
 			id: "1A1D658DD0100A99"
 			rewards: [{
@@ -531,8 +532,8 @@
 				type: "item"
 			}]
 			title: "Equivalent Exchange"
-			x: -1.5d
-			y: -0.5d
+			x: -2.0d
+			y: -1.5d
 		}
 		{
 			dependencies: ["637F2B86FAFF8458"]
@@ -760,6 +761,31 @@
 			]
 			title: "What a Star"
 			x: 4.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["6A87706B9FF0A830"]
+			description: [
+				"While blazes can be found in the Nether, finding a fortress may sometimes be hard. "
+				""
+				"The alternative way to create a blaze is by placing 2 iron bars with a fel pumpkin on top, just like you would make a snow golem."
+				""
+				"Fel blazes work just like the normal ones, except they only drop blaze powder, meaning obtaining blaze rods that way will require additional processing using a metal press."
+			]
+			id: "75F50AEC3C84A5AC"
+			rewards: [{
+				count: 6
+				id: "11ED606338EFE68B"
+				item: "minecraft:blaze_powder"
+				type: "item"
+			}]
+			tasks: [{
+				id: "541B5FC888C60ECE"
+				item: "minecraft:blaze_powder"
+				type: "item"
+			}]
+			title: "Blazing with Power"
+			x: -1.5d
 			y: -0.5d
 		}
 	]

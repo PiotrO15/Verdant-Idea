@@ -1,0 +1,6 @@
+{
+  "type": "emi:world_interaction",
+  "left": "fluid:actuallyadditions:crystallized_oil",
+  "right": "item:actuallyadditions:empowered_canola_seed",
+  "output": "fluid:actuallyadditions:empowered_oil"
+}

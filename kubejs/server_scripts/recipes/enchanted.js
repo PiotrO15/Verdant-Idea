@@ -56,4 +56,40 @@ ServerEvents.recipes(event => {
       "item": "minecraft:warped_nylium"
     }
   })
+
+  // Remove refined evil recipe that uses demon heart (unavailable item)
+  event.remove({id: 'enchanted:distilling/demon_heart_diamond_vapour'})
+
+  // Update recipes
+  event.replaceInput({id: 'enchanted:distillery'}, "enchanted:clay_jar", "enchanted:odour_of_purity")
+  event.replaceInput({id: 'enchanted:distillery'}, "minecraft:iron_ingot", "#forge:plates/steel")
+  event.replaceInput({id: 'enchanted:distillery'}, "enchanted:attuned_stone", "minecraft:campfire")
+  event.replaceInput({id: 'enchanted:distillery'}, "minecraft:gold_nugget", "enchanted:alder_log")
+
+  // Silver distilling recipe
+  event.custom({
+    "type": "enchanted:distilling",
+    "cookTime": 300,
+    "ingredients": [
+      {
+        "item": "enchanted:tear_of_the_goddess"
+      },
+      {
+        "count": 3,
+        "item": "minecraft:raw_copper"
+      }
+    ],
+    "results": [
+      {
+        "count": 3,
+        "item": "thermal:silver_nugget"
+      },
+      {
+        "count": 2,
+        "item": "thermal:copper_dust"
+      }
+    ]
+  })
+
+  event.replaceInput({id: 'enchanted:chalice'}, 'enchanted:attuned_stone', '#forge:ingots/silver')
 })

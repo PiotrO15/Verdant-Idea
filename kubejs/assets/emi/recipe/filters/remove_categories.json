@@ -17,6 +17,21 @@
     },
     {
       "category": "thermal:numismatic_fuel"
+    },
+    {
+      "category": "mysticalagriculture:soulium_spawner"
+    },
+    {
+      "category": "pneumaticcraft:refinery"
+    },
+    {
+      "category": "ftbquests:quest"
+    },
+    {
+      "category": "actuallyadditions:mining_lens"
+    },
+    {
+      "category": "actuallyadditions:crushing"
     }
   ]
 }

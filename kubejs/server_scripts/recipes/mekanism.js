@@ -48,7 +48,7 @@ ServerEvents.recipes(event => {
     ],
     {
       L: 'minecraft:lapis_lazuli',
-      T: '#forge:ingots/silver',
+      T: '#forge:ingots/signalum',
       S: 'minecraft:stick'
     }
   )
@@ -95,6 +95,145 @@ ServerEvents.recipes(event => {
     },
     "output": {
       "item": "mekanism:pellet_antimatter"
+    }
+  })
+
+  event.remove('mekanism:transmitter/universal_cable/basic')
+  event.shaped(
+    '8x mekanism:basic_universal_cable',
+    [
+      ' P ',
+      'RXR',
+      ' P '
+    ],
+    {
+      P: '#forge:plates/signalum',
+      R: '#forge:rods/aluminum',
+      X: 'minecraft:redstone'
+    }
+  )
+
+  event.remove('mekanism:transmitter/mechanical_pipe/basic')
+  event.shaped(
+    '8x mekanism:basic_mechanical_pipe',
+    [
+      ' P ',
+      'RXR',
+      ' P '
+    ],
+    {
+      P: '#forge:plates/signalum',
+      R: '#forge:rods/aluminum',
+      X: 'minecraft:bucket'
+    }
+  )
+
+  event.remove('mekanism:transmitter/pressurized_tube/basic')
+  event.shaped(
+    '8x mekanism:basic_pressurized_tube',
+    [
+      ' P ',
+      'RXR',
+      ' P '
+    ],
+    {
+      P: '#forge:plates/signalum',
+      R: '#forge:rods/aluminum',
+      X: '#forge:glass'
+    }
+  )
+
+  event.remove('mekanism:transmitter/logistical_transporter/basic')
+  event.shaped(
+    '8x mekanism:basic_logistical_transporter',
+    [
+      ' P ',
+      'RXR',
+      ' P '
+    ],
+    {
+      P: '#forge:plates/signalum',
+      R: '#forge:rods/aluminum',
+      X: 'minecraft:iron_ingot'
+    }
+  )
+
+  event.remove('mekanism:transmitter/thermodynamic_conductor/basic')
+  event.shaped(
+    '8x mekanism:basic_thermodynamic_conductor',
+    [
+      ' P ',
+      'RXR',
+      ' P '
+    ],
+    {
+      P: '#forge:plates/signalum',
+      R: '#forge:rods/aluminum',
+      X: 'minecraft:copper_ingot'
+    }
+  )
+
+  // HDPE Processing Chain
+  event.custom({
+    "type": "pneumaticcraft:fluid_mixer",
+    "fluid_output": {
+      "amount": 50,
+      "fluid": "kubejs:empowered_biodiesel"
+    },
+    "input1": {
+      "type": "pneumaticcraft:fluid",
+      "amount": 30,
+      "tag": "forge:biodiesel"
+    },
+    "input2": {
+      "type": "pneumaticcraft:fluid",
+      "amount": 20,
+      "fluid": "actuallyadditions:empowered_oil"
+    },
+    "pressure": 4.0,
+    "time": 600
+  })
+
+  event.custom({
+    "type": "pneumaticcraft:thermo_plant",
+    "exothermic": false,
+    "fluid_input": {
+      "type": "pneumaticcraft:fluid",
+      "amount": 200,
+      "fluid": "kubejs:empowered_biodiesel"
+    },
+    "fluid_output": {
+      "amount": 1000,
+      "fluid": "kubejs:molten_dense_plastic"
+    },
+    "item_input": {
+      "item": "mekanism:enriched_carbon"
+    },
+    "temperature": {
+      "min_temp": 373
+    }
+  })
+
+  event.remove({id: 'mekanism:reaction/substrate/ethene_oxygen'})
+  event.custom({
+    "type": "mekanism:reaction",
+    "duration": 60,
+    "energyRequired": 1000,
+    "fluidInput": {
+      "amount": 250,
+      "fluid": "kubejs:molten_dense_plastic"
+    },
+    "gasInput": {
+      "amount": 50,
+      "gas": "mekanism:ethene"
+    },
+    "itemInput": {
+      "ingredient": {
+        "item": "mekanism:substrate"
+      }
+    },
+    "itemOutput": {
+      "item": "mekanism:hdpe_pellet"
     }
   })
 })

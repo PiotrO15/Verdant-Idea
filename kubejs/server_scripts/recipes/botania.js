@@ -102,4 +102,89 @@ ServerEvents.recipes(event => {
     },
     "output": "botania:livingwood_log"
   })
+
+  // Remove recipe cycles that hurt progression
+  let cycles = [
+    [
+      'acacia_sapling',
+      'dark_oak_sapling',
+      'mangrove_propagule',
+      'cherry_sapling',
+      'oak_sapling',
+      'spruce_sapling',
+      'birch_sapling',
+      'jungle_sapling'
+    ],
+    [
+      'acacia_log',
+      'dark_oak_log',
+      'mangrove_log',
+      'cherry_log',
+      'oak_log',
+      'spruce_log',
+      'birch_log',
+      'jungle_log'
+    ],
+    [
+      'dandelion',
+      'poppy',
+      'blue_orchid',
+      'allium',
+      'azure_bluet',
+      'red_tulip',
+      'orange_tulip',
+      'white_tulip',
+      'pink_tulip',
+      'oxeye_daisy',
+      'cornflower',
+      'lily_of_the_valley',
+      'sunflower',
+      'lilac',
+      'rose_bush',
+      'peony'
+    ],
+    [
+      'wheat_seeds',
+      'potato',
+      'carrot',
+      'beetroot_seeds',
+      'melon_seeds',
+      'pumpkin_seeds',
+      'cocoa_beans'
+    ],
+    [
+      'sweet_berries',
+      'glow_berries',
+      'apple'
+    ],
+    [
+      'pearlescent_froglight',
+      'ochre_froglight',
+      'verdant_froglight'
+    ]
+  ]
+
+  cycles.forEach(cycle => {
+    for (let i = 0; i < cycle.length; i++) {
+      let item1 = cycle[i]
+      let item2 = cycle[(i + 1) % cycle.length]
+      event.remove({id: `botania:mana_infusion/${item1}_to_${item2}`})
+    }
+  })
+
+  // Reimplement useful parts of the removed cycles
+  event.recipes.botania.mana_infusion('minecraft:azure_bluet', 'minecraft:sunflower', 400, 'botania:alchemy_catalyst')
+  event.recipes.botania.mana_infusion('minecraft:sunflower', 'minecraft:lilac', 400, 'botania:alchemy_catalyst')
+  event.recipes.botania.mana_infusion('minecraft:lilac', 'minecraft:rose_bush', 400, 'botania:alchemy_catalyst')
+  event.recipes.botania.mana_infusion('minecraft:rose_bush', 'minecraft:peony', 400, 'botania:alchemy_catalyst')
+  event.recipes.botania.mana_infusion('minecraft:peony', 'minecraft:azure_bluet', 400, 'botania:alchemy_catalyst')
+
+  event.recipes.botania.mana_infusion('minecraft:jungle_sapling', 'minecraft:cocoa_beans', 6000, 'botania:alchemy_catalyst')
+  event.recipes.botania.mana_infusion('minecraft:cocoa_beans', 'minecraft:jungle_sapling', 6000, 'botania:alchemy_catalyst')
+
+  event.recipes.botania.mana_infusion('minecraft:glow_berries', 'minecraft:sweet_berries', 6000, 'botania:alchemy_catalyst')
+  event.recipes.botania.mana_infusion('minecraft:sweet_berries', 'minecraft:glow_berries', 6000, 'botania:alchemy_catalyst')
+
+  event.recipes.botania.mana_infusion('minecraft:oak_sapling', 'minecraft:apple', 6000, 'botania:alchemy_catalyst')
+  event.recipes.botania.mana_infusion('minecraft:apple', 'minecraft:oak_sapling', 6000, 'botania:alchemy_catalyst')
 })

@@ -257,4 +257,159 @@ ServerEvents.recipes(event => {
 
   // Fire essence to lava
   event.recipes.thermal.crucible(Fluid.of('minecraft:lava', 250), 'mysticalagriculture:fire_essence').energyMod(2.5)
+
+  function insolator(ingredient, result) {
+    event.custom({
+      "type": "thermal:insolator",
+      "ingredient": {
+        "item": ingredient
+      },
+      "result": result,
+      "energy_mod": 3,
+      "water_mod": 3
+    })
+  }
+
+  event.remove({id: 'thermal:compat/tconstruct/insolator_tconstruct_blood_slime_sapling'})
+  insolator('tconstruct:blood_slime_sapling', [
+    {
+      "item": "tconstruct:bloodshroom_log",
+      "chance": 6
+    },
+    {
+      "item": "tconstruct:blood_slime_sapling",
+      "chance": 1.1
+    },
+    {
+      "item": "tconstruct:ichor_slime_ball",
+      "chance": 1.1
+    }
+  ])
+
+  event.remove({id: 'thermal:compat/tconstruct/insolator_tconstruct_ender_slime_sapling'})
+  insolator('tconstruct:ender_slime_sapling', [
+    {
+      "item": "tconstruct:enderbark_log",
+      "chance": 6
+    },
+    {
+      "item": "tconstruct:ender_slime_sapling",
+      "chance": 1.1
+    },
+    {
+      "item": "tconstruct:ender_slime_ball",
+      "chance": 1.1
+    }
+  ])
+
+  insolator('enchanted:alder_sapling', [
+    {
+      "item": "enchanted:alder_log",
+      "chance": 6
+    },
+    {
+      "item": "enchanted:alder_sapling",
+      "chance": 1.1
+    }
+  ])
+
+  insolator('enchanted:hawthorn_sapling', [
+    {
+      "item": "enchanted:hawthorn_log",
+      "chance": 6
+    },
+    {
+      "item": "enchanted:hawthorn_sapling",
+      "chance": 1.1
+    }
+  ])
+
+  insolator('enchanted:rowan_sapling', [
+    {
+      "item": "enchanted:rowan_log",
+      "chance": 6
+    },
+    {
+      "item": "enchanted:rowan_sapling",
+      "chance": 1.1
+    },
+    {
+      "item": "enchanted:rowan_berries",
+      "chance": 1.1
+    }
+  ])
+
+  insolator('minecraft:crimson_fungus', [
+    {
+      "item": "minecraft:crimson_stem",
+      "chance": 6
+    },
+    {
+      "item": "minecraft:crimson_fungus",
+      "chance": 1.1
+    },
+    {
+      "item": "minecraft:shroomlight",
+      "chance": 1.1
+    }
+  ])
+
+  insolator('minecraft:warped_fungus', [
+    {
+      "item": "minecraft:warped_stem",
+      "chance": 6
+    },
+    {
+      "item": "minecraft:warped_fungus",
+      "chance": 1.1
+    },
+    {
+      "item": "minecraft:shroomlight",
+      "chance": 1.1
+    }
+  ])
+
+  insolator('ars_nouveau:blue_archwood_sapling', [
+    {
+      "item": "ars_nouveau:blue_archwood_log",
+      "chance": 6
+    },
+    {
+      "item": "ars_nouveau:blue_archwood_sapling",
+      "chance": 1.1
+    }
+  ])
+
+  insolator('ars_nouveau:green_archwood_sapling', [
+    {
+      "item": "ars_nouveau:green_archwood_log",
+      "chance": 6
+    },
+    {
+      "item": "ars_nouveau:green_archwood_sapling",
+      "chance": 1.1
+    }
+  ])
+
+  insolator('ars_nouveau:purple_archwood_sapling', [
+    {
+      "item": "ars_nouveau:purple_archwood_log",
+      "chance": 6
+    },
+    {
+      "item": "ars_nouveau:purple_archwood_sapling",
+      "chance": 1.1
+    }
+  ])
+
+  insolator('ars_nouveau:red_archwood_sapling', [
+    {
+      "item": "ars_nouveau:red_archwood_log",
+      "chance": 6
+    },
+    {
+      "item": "ars_nouveau:red_archwood_sapling",
+      "chance": 1.1
+    }
+  ])
 })

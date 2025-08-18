@@ -1,0 +1,8 @@
+{
+  "type": "productivebees:bee_conversion",
+  "source": "productivebees:mini",
+  "result": "productivebees:sussy",
+  "item": {
+    "item": "kubejs:inconspicuous_visor"
+  }
+}

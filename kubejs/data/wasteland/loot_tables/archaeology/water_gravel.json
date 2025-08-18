@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:archaeology",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:ink_sac"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "kubejs:fish_bones",
+          "weight": 2
+        },
+        {
+          "type": "minecraft:item",
+          "name": "tconstruct:copper_can"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:flint"
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:charcoal"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "wasteland:archaeology/water_gravel"
+}

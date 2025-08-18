@@ -1,0 +1,9 @@
+#When any blend is applied, the horizontal radius is multiplied by this number.
+#Range: 0.0 ~ 10.0
+horizontal_scale = 1.0
+#When any blend is applied, the vertical radius is multiplied by this number.
+#Range: 0.0 ~ 10.0
+vertical_scale = 1.0
+#Causes all blends to be applied from the bottom to the top of the world.
+ignore_vertical_radius = false
+

@@ -118,6 +118,89 @@ ServerEvents.recipes(event => {
   // High Power PCB
   pressure_chamber("pncepcb:high_power_empty_pcb", 3.5, ['3x mekanism:alloy_infused', '2x mekanism:basic_control_circuit', '#forge:plates/enderium', 'pncepcb:high_temp_unassembled_pcb'])
   assembly("pncepcb:high_power_unassembled_pcb", 'pncepcb:high_power_empty_pcb', 'laser')
+  event.remove({id: 'pncepcb:crafting_table/high_power_finished_pcb'})
+  event.custom(
+    {
+      "type": "actuallyadditions:empowering",
+      "base": {
+        "item": "pncepcb:high_power_unassembled_pcb"
+      },
+      "color": 0,
+      "energy": 40000,
+      "modifiers": [
+        {
+          "item": "pneumaticcraft:transistor"
+        },
+        {
+          "item": "pneumaticcraft:capacitor"
+        },
+        {
+          "item": "pneumaticcraft:transistor"
+        },
+        {
+          "item": "pneumaticcraft:capacitor"
+        }
+      ],
+      "result": {
+        "item": "pncepcb:high_power_finished_pcb"
+      },
+      "time": 30
+    }
+  )
+
+  // Crystal Clear PCB
+  assembly("pncepcb:crystal_clear_unassembled_pcb", 'pncepcb:crystal_clear_empty_pcb', 'laser')
+  event.remove({id: 'pncepcb:crafting_table/crystal_clear_finished_pcb'})
+  event.custom({
+    "type": "ae2:inscriber",
+    "ingredients": {
+      "bottom": {
+        "item": "ae2:formation_core"
+      },
+      "middle": {
+        "item": "pncepcb:crystal_clear_unassembled_pcb"
+      },
+      "top": {
+        "item": "ae2:annihilation_core"
+      }
+    },
+    "mode": "press",
+    "result": {
+      "item": "pncepcb:crystal_clear_finished_pcb"
+    }
+  })
+
+  // Radiation Hardened PCB
+  assembly("pncepcb:radiation_hardened_unassembled_pcb", 'pncepcb:radiation_hardened_empty_pcb', 'laser')
+  event.remove({id: 'pncepcb:crafting_table/radiation_hardened_finished_pcb'})
+  event.custom(
+    {
+      "type": "actuallyadditions:empowering",
+      "base": {
+        "item": "pncepcb:radiation_hardened_unassembled_pcb"
+      },
+      "color": 0,
+      "energy": 160000,
+      "modifiers": [
+        {
+          "item": "pneumaticcraft:transistor"
+        },
+        {
+          "item": "pneumaticcraft:capacitor"
+        },
+        {
+          "item": "pneumaticcraft:transistor"
+        },
+        {
+          "item": "pneumaticcraft:capacitor"
+        }
+      ],
+      "result": {
+        "item": "pncepcb:radiation_hardened_finished_pcb"
+      },
+      "time": 30
+    }
+  )
 
   // Hide diesel recipes
   event.remove({id: 'pneumaticcraft:thermo_plant/plastic_from_lpg'})

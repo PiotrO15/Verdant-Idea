@@ -17,6 +17,7 @@ ServerEvents.compostableRecipes(event => {
 })
 
 ServerEvents.recipes(event => {
+  // QOL recipes
   event.shaped('4x minecraft:chest', 
     [
     'LLL',
@@ -25,7 +26,7 @@ ServerEvents.recipes(event => {
     ], 
     {
       L: '#minecraft:logs'
-    })
+  })
     
   event.shaped('16x minecraft:stick', 
     [
@@ -34,7 +35,7 @@ ServerEvents.recipes(event => {
     ], 
     {
       L: '#minecraft:logs'
-    })
+  })
     
   event.shaped('minecraft:hopper', 
     [
@@ -45,5 +46,11 @@ ServerEvents.recipes(event => {
     {
       H: 'woodenhopper:wooden_hopper',
       I: 'minecraft:iron_ingot'
-    })
+  })
+
+  // Cauldron recipe change to gate Enchanted content
+  event.replaceInput({id: 'minecraft:cauldron'}, 'minecraft:iron_ingot', '#forge:plates/steel')
+
+  // Brush without feathers
+  event.replaceInput({id: 'minecraft:brush'}, 'minecraft:feather', 'enchanted:ember_moss')
 })

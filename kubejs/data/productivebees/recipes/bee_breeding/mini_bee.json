@@ -1,0 +1,8 @@
+{
+  "type": "productivebees:bee_breeding",
+  "parent1": "productivebees:coal",
+  "parent2": "productivebees:sugarbag",
+  "offspring": [
+    "productivebees:mini"
+  ]
+}

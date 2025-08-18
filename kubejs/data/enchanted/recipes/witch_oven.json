@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "f": {
+      "item": "minecraft:furnace"
+    },
+    "s": {
+      "tag": "forge:ingots/steel"
+    }
+  },
+  "pattern": [
+    " s ",
+    "sfs",
+    "sss"
+  ],
+  "result": {
+    "item": "enchanted:witch_oven"
+  },
+  "show_notification": true
+}

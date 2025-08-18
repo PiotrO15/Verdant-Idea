@@ -99,6 +99,9 @@
     "bee_attributes": true,
     "productive_bee": true
   },
+  "ars_nouveau": {
+    "mob_jar": true
+  },
   "mekanism": {
     "infuse_type": true,
     "gas": true,

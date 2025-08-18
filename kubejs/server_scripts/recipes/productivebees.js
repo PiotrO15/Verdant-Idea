@@ -37,6 +37,10 @@ let lumber_flowers = [
   'enchanted:hawthorn_log',
   'enchanted:rowan_log',
   'thermal:rubberwood_log',
+  'ars_nouveau:green_archwood_log',
+  'ars_nouveau:blue_archwood_log',
+  'ars_nouveau:purple_archwood_log',
+  'ars_nouveau:red_archwood_log',
   'minecraft:oak_leaves',
   'minecraft:spruce_leaves',
   'minecraft:birch_leaves',
@@ -51,7 +55,11 @@ let lumber_flowers = [
   'enchanted:alder_leaves',
   'enchanted:hawthorn_leaves',
   'enchanted:rowan_leaves',
-  'thermal:rubberwood_leaves'
+  'thermal:rubberwood_leaves',
+  'ars_nouveau:green_archwood_leaves',
+  'ars_nouveau:blue_archwood_leaves',
+  'ars_nouveau:purple_archwood_leaves',
+  'ars_nouveau:red_archwood_leaves'
 ]
 
 ServerEvents.tags('item', event => {
@@ -95,6 +103,12 @@ ServerEvents.recipes(event => {
       namespace: 'ae2',
       honeycombs: [
         'fluix'
+      ]
+    },
+    {
+      namespace: 'ars_nouveau',
+      honeycombs: [
+        'arcane'
       ]
     },
     {
@@ -260,9 +274,11 @@ ServerEvents.recipes(event => {
     static: true
   })
 
-  // Simplify the recipe for quartz nest
-  event.replaceInput({id: 'productivebees:nests/nether_quartz_nest_quartz_netherrack'}, 'minecraft:iron_sword', 'minecraft:stone_sword')
-  event.replaceInput({id: 'productivebees:nests/nether_quartz_nest'}, 'minecraft:iron_sword', 'minecraft:stone_sword')
+  // Sugarbag nest recipe
+  event.shapeless('productivebees:sugarbag_nest', ['minecraft:bee_nest', 'farmersdelight:hot_cocoa'])
+
+  // Simplify the recipe for nests
+  event.replaceInput({mod: 'productivebees'}, '#minecraft:swords', '#forge:shears')
 
   // Remove the need for eggs in inactive dragon egg recipe
   event.replaceInput({id: 'productivebees:inactive_dragon_egg'}, 'minecraft:egg', 'botania:dragonstone_block')
@@ -284,4 +300,7 @@ ServerEvents.recipes(event => {
       S: 'mekanism:superheating_element'
     }
   )
+
+  event.remove({id: 'productivebees:centrifuge_cauldron'})
+  event.replaceInput({id: 'productivebees:centrifuge'}, 'minecraft:iron_ingot', 'tconstruct:seared_brick')
 })

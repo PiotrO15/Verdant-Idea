@@ -1,0 +1,35 @@
+{
+  "type": "ars_nouveau:book_upgrade",
+  "ingredients": [
+    {
+      "item": "ars_nouveau:apprentice_spell_book"
+    },
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "item": "ars_nouveau:wilden_tribute"
+    },
+    {
+      "item": "enchanted:infused_poppet"
+    },
+    {
+      "item": "botania:life_essence"
+    },
+    {
+      "item": "botania:life_essence"
+    },
+    {
+      "item": "enchanted:attuned_stone_charged"
+    },
+    {
+      "item": "botania:terrasteel_ingot"
+    },
+    {
+      "item": "ars_nouveau:magebloom"
+    }
+  ],
+  "result": {
+    "item": "ars_nouveau:archmage_spell_book"
+  }
+}

@@ -28,4 +28,17 @@ ItemEvents.tooltip(event => {
             text.add(1, Text.red("This item breaks instantly! Only use as a crafting ingredient."))
         })
     })
+
+    event.add('kubejs:inconspicuous_visor', Text.gray('Not rated for water resistance.'))
+
+    event.addAdvanced(Item.of('biomeblends:biome_blend'), (item, advanced, text) => {
+        if (!item?.nbt?.blend_type) 
+            return
+
+        if (item.nbt.blend_type == "wasteland:verdant") {
+            text.add(1, [
+                Text.gray('Right-click on the ground to transform the nearby biomes.')
+            ])
+        }
+    })
 })

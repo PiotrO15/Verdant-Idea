@@ -1,0 +1,6 @@
+{
+  "chance": 0.5,
+  "child": "actuallyadditions:canola",
+  "parent1": "immersiveengineering:hemp",
+  "parent2": "farmersdelight:cabbage"
+}

@@ -1,8 +1,9 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 250
 	default_quest_shape: ""
 	filename: "how_engineering_works"
-	group: ""
+	group: "588E31E1F63967F1"
 	icon: {
 		Count: 1
 		id: "immersiveengineering:hammer"
@@ -11,7 +12,7 @@
 		}
 	}
 	id: "5ED58A8D34ABB233"
-	order_index: 5
+	order_index: 2
 	quest_links: [ ]
 	quests: [
 		{
@@ -658,7 +659,7 @@
 		}
 		{
 			dependencies: ["11971F809A2FCFDA"]
-			description: ["Sometimes the easiest way to keep your system from exploding is to craft a security update and place it in your machines. It will make them release overflow pressure, preventing an explosion."]
+			description: ["Sometimes the easiest way to keep your system from exploding is to craft a security upgrade and place it in your machines. It will make them release overflow pressure, preventing an explosion."]
 			id: "43619419A8A1F971"
 			rewards: [{
 				count: 16
@@ -739,9 +740,9 @@
 			icon: "prettypipes:pipe"
 			id: "1A32D3BCA4A6000C"
 			rewards: [{
-				count: 8
+				count: 16
 				id: "5597F8BE05CF34EE"
-				item: "minecraft:redstone"
+				item: "prettypipes:pipe"
 				type: "item"
 			}]
 			tasks: [
@@ -783,6 +784,7 @@
 		{
 			dependencies: ["1A32D3BCA4A6000C"]
 			description: ["To use pretty pipes to transport items from one inventory to another, add an extraction or retrieval module to a pipe."]
+			icon: "prettypipes:low_extraction_module"
 			id: "7DA224400E742DF8"
 			rewards: [{
 				count: 4
@@ -792,7 +794,23 @@
 			}]
 			tasks: [{
 				id: "0592364D86676AC0"
-				item: "prettypipes:low_extraction_module"
+				item: {
+					Count: 1
+					id: "itemfilters:or"
+					tag: {
+						items: [
+							{
+								Count: 1b
+								id: "prettypipes:low_retrieval_module"
+							}
+							{
+								Count: 1b
+								id: "prettypipes:low_extraction_module"
+							}
+						]
+					}
+				}
+				title: "Extraction or Retrieval Module"
 				type: "item"
 			}]
 			title: "Pretty Automation"
@@ -1345,6 +1363,50 @@
 			title: "Big Power"
 			x: 2.5d
 			y: -4.0d
+		}
+		{
+			dependencies: ["7DA224400E742DF8"]
+			description: ["Pretty pipe that can transfer &3fluids&r instead of items!"]
+			icon: "ppfluids:fluid_pipe"
+			id: "12260DCD33583493"
+			rewards: [{
+				count: 16
+				id: "0BD015CB0613AF63"
+				item: "ppfluids:fluid_pipe"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "44BBF3661F7C3921"
+					item: "ppfluids:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "0B502377D290444A"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ppfluids:low_fluid_retrieval_module"
+								}
+								{
+									Count: 1b
+									id: "ppfluids:low_fluid_extraction_module"
+								}
+							]
+						}
+					}
+					title: "Fluid Extraction or Retrieval Module"
+					type: "item"
+				}
+			]
+			title: "Pretty Fluid Pipe"
+			x: -1.0d
+			y: 3.0d
 		}
 	]
 	title: "How Engineering Works"

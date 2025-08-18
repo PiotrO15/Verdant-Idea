@@ -1,11 +1,7 @@
 {
   "replace": true,
   "values": [
-    "#wasteland:compost_growable",
     "minecraft:grass",
-    "minecraft:pink_petals",
-    "minecraft:brown_mushroom",
-    "minecraft:red_mushroom",
     "enchanted:ember_moss",
     "enchanted:glint_weed",
     "enchanted:spanish_moss",

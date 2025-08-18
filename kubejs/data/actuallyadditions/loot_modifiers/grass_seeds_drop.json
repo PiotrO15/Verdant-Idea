@@ -1,0 +1,13 @@
+{
+  "type": "actuallyadditions:grass_loot",
+  "conditions": [
+    {
+      "condition": "minecraft:random_chance",
+      "chance": 0.0
+    },
+    {
+      "condition": "block_state_property",
+      "block": "minecraft:grass"
+    }
+  ]
+}

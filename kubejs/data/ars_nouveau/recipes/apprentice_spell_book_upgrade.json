@@ -1,0 +1,41 @@
+{
+  "type": "ars_nouveau:book_upgrade",
+  "pattern":
+  [
+    "   ",
+    " y ",
+    "   "
+  ],
+  "key": {
+    "y": {
+      "item": "ars_nouveau:spell_book"
+    }
+  },
+  "ingredients": [
+    {
+      "item": "ars_nouveau:novice_spell_book"
+    },
+    {
+      "item": "ars_nouveau:source_gem"
+    },
+    {
+      "item": "ars_nouveau:source_gem"
+    },
+    {
+      "item": "botania:dragonstone"
+    },
+    {
+      "item": "botania:dragonstone"
+    },
+    {
+      "item": "enchanted:attuned_stone"
+    },
+    {
+      "item": "enchanted:attuned_stone"
+    }
+  ],
+  "result":
+  {
+    "item": "ars_nouveau:apprentice_spell_book"
+  }
+}

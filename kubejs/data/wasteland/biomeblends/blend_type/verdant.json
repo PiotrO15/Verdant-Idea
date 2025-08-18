@@ -1,0 +1,8 @@
+{
+  "action": {
+    "type": "biomeblends:set_namespace",
+    "target_namespace": "minecraft"
+  },
+  "vertical_radius": -1,
+  "horizontal_radius": 10
+}

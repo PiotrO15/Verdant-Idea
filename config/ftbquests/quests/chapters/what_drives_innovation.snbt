@@ -1,11 +1,12 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 250
 	default_quest_shape: ""
 	filename: "what_drives_innovation"
-	group: ""
+	group: "588E31E1F63967F1"
 	icon: "thermal:machine_frame"
 	id: "000AC5E12028C949"
-	order_index: 7
+	order_index: 4
 	quest_links: [ ]
 	quests: [
 		{
@@ -118,13 +119,14 @@
 				type: "item"
 			}]
 			title: "Compact Press"
-			x: 6.0d
-			y: 0.5d
+			x: 6.5d
+			y: -0.5d
 		}
 		{
 			dependencies: ["79F6A56E937E1C12"]
 			description: ["Redstone furnace can be used to smelt items using redstone flux."]
 			id: "4E98BA87B8EB00F3"
+			optional: true
 			rewards: [{
 				id: "12DEF6ADFF1DC9D9"
 				item: "thermal:machine_frame"
@@ -195,7 +197,7 @@
 				type: "item"
 			}]
 			title: "Enderium Power"
-			x: 5.0d
+			x: 6.0d
 			y: 0.5d
 		}
 		{
@@ -231,7 +233,7 @@
 				type: "item"
 			}]
 			title: "Compact Farming"
-			x: 4.5d
+			x: 6.5d
 			y: 1.5d
 		}
 		{
@@ -254,7 +256,7 @@
 			y: -0.5d
 		}
 		{
-			dependencies: ["45F4646844F3D492"]
+			dependencies: ["6EF1B0E7B25022DF"]
 			description: ["Magma crucible is a machine that can melt items into liquid form."]
 			id: "407B0481966BCA85"
 			rewards: [{
@@ -268,11 +270,11 @@
 				type: "item"
 			}]
 			title: "Melting Items"
-			x: 1.5d
+			x: 4.5d
 			y: -0.5d
 		}
 		{
-			dependencies: ["6EF1B0E7B25022DF"]
+			dependencies: ["407B0481966BCA85"]
 			description: ["Blast chiller can chill liquids into item form, but can also be a way to infuse alloys with liquids."]
 			id: "3A05B71DFEB3739A"
 			rewards: [{
@@ -286,8 +288,8 @@
 				type: "item"
 			}]
 			title: "Chilling Liquids"
-			x: 4.5d
-			y: -0.5d
+			x: 5.0d
+			y: 0.5d
 		}
 		{
 			dependencies: ["3D4FCBFE92ECE77B"]
@@ -322,6 +324,169 @@
 			}]
 			x: 0.0d
 			y: 0.5d
+		}
+		{
+			dependencies: ["3D4FCBFE92ECE77B"]
+			description: ["&6Atomic reconstructor&r uses power to &atransform various items&r, especially minerals."]
+			id: "05B1D39E63429641"
+			rewards: [{
+				count: 8
+				id: "1AC596837A6DD8BB"
+				item: "actuallyadditions:black_quartz"
+				type: "item"
+			}]
+			tasks: [{
+				id: "5A12E0BE86DE82B0"
+				item: "actuallyadditions:atomic_reconstructor"
+				type: "item"
+			}]
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["05B1D39E63429641"]
+			description: ["&6Crystals&r created using an atomic reconstructor can be empowered with an &6empowerer&r."]
+			icon: "actuallyadditions:empowerer"
+			id: "4B93AA37635DC904"
+			rewards: [{
+				count: 16
+				id: "61CCF18B7CDDB46F"
+				item: "actuallyadditions:black_quartz"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "4EC2FA10506AC95F"
+					item: "actuallyadditions:empowerer"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0419CAB71C51C6C7"
+					item: { Count: 4, id: "actuallyadditions:display_stand" }
+					type: "item"
+				}
+			]
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["05B1D39E63429641"]
+			description: [
+				"&6Lasers&r can be used for &6wireless transfer&r!"
+				""
+				"They need to be connected using a &alaser wrench&r."
+			]
+			hide_dependency_lines: true
+			icon: "actuallyadditions:laser_relay"
+			id: "6FEBB74CE63DD4DF"
+			optional: true
+			rewards: [{
+				count: 2
+				id: "4580D677774E4265"
+				item: "actuallyadditions:laser_relay"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 2L
+					id: "7CAE15CC8968975B"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "actuallyadditions:laser_relay"
+								}
+								{
+									Count: 1b
+									id: "actuallyadditions:laser_relay_fluids"
+								}
+								{
+									Count: 1b
+									id: "actuallyadditions:laser_relay_item"
+								}
+							]
+						}
+					}
+					title: "Any Laser Relay"
+					type: "item"
+				}
+				{
+					id: "255F0DE994FA0725"
+					item: {
+						Count: 1
+						id: "actuallyadditions:laser_wrench"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Lasers"
+			x: 2.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["45F4646844F3D492"]
+			description: [
+				"&6Signalum&r can be used to create &6better cables&r, capable of transferring even more. "
+				""
+				"These cables can be configurated with a &aconfigurator&r. "
+			]
+			icon: "mekanism:basic_universal_cable"
+			id: "348D4F9718838BE8"
+			rewards: [{
+				count: 16
+				id: "5BFEDEED8D4560E8"
+				item: "mekanism:basic_universal_cable"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "11F57E2CEC413615"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "mekanism:basic_universal_cable"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_mechanical_pipe"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_pressurized_tube"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_logistical_transporter"
+								}
+								{
+									Count: 1b
+									id: "mekanism:basic_thermodynamic_conductor"
+								}
+							]
+						}
+					}
+					title: "Any Basic Cable"
+					type: "item"
+				}
+				{
+					id: "75DACE7BADA667BD"
+					item: "mekanism:configurator"
+					type: "item"
+				}
+			]
+			title: "Better Cables"
+			x: 1.5d
+			y: -0.5d
 		}
 	]
 	title: "What Sparks Innovation"

@@ -1,11 +1,12 @@
 {
 	default_hide_dependency_lines: false
+	default_min_width: 250
 	default_quest_shape: ""
 	filename: "bounties_of_the_land"
-	group: ""
+	group: "252DCAF0906EAB55"
 	icon: "mysticalagriculture:diamond_essence"
 	id: "5B1FDCCB90244FA7"
-	order_index: 2
+	order_index: 0
 	quest_links: [ ]
 	quests: [
 		{
