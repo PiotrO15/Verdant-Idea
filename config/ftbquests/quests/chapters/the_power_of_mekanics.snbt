@@ -627,7 +627,7 @@
 			description: [
 				"&6Nuclear waste&r isn't as bad as it may sound. It can be processed into &bpolonium&r in a solar neutron activator and into &3plutionium&r using isotopic centrifuge."
 				""
-				"Both of these will be useful later on."
+				"Both of these can be used for various recipes."
 			]
 			id: "38CBB6ED575405C3"
 			rewards: [{
@@ -644,93 +644,6 @@
 			title: "Waste Management"
 			x: -3.0d
 			y: -2.0d
-		}
-		{
-			dependencies: [
-				"38CBB6ED575405C3"
-				"308E96815535A016"
-			]
-			description: ["&6Supercritical Phase Shifter&r is suprisingly similar to a simple pressure chamber. It uses a &cLOT&r of power to transform &bpolonium&r into &dantimatter&r. "]
-			icon: "mekanism:sps_casing"
-			id: "6C7AA34DE5186630"
-			rewards: [{
-				count: 16
-				id: "664419EE79B61696"
-				item: "mekanism:hdpe_sheet"
-				type: "item"
-			}]
-			tasks: [
-				{
-					count: 72L
-					id: "27DB6217BB60575E"
-					item: "mekanism:sps_casing"
-					type: "item"
-				}
-				{
-					count: 123L
-					id: "1410E4435C087721"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "mekanism:structural_glass"
-								}
-								{
-									Count: 1b
-									id: "mekanismgenerators:reactor_glass"
-								}
-							]
-						}
-					}
-					title: "Reactor or Structural Glass"
-					type: "item"
-				}
-				{
-					count: 3L
-					id: "13B3D73868A0FED7"
-					item: { Count: 3, id: "mekanism:sps_port" }
-					type: "item"
-				}
-				{
-					id: "137414FBB21B9DA3"
-					item: "mekanism:supercharged_coil"
-					type: "item"
-				}
-			]
-			title: "Expensive Shapeshifting"
-			x: -2.0d
-			y: -2.0d
-		}
-		{
-			dependencies: ["6C7AA34DE5186630"]
-			description: ["&dAntimatter&r can be used for quite a few things, but using it to &6spawn animals&r feels a bit... excessive? "]
-			hide_dependency_lines: true
-			icon: "botania:cocoon"
-			id: "3280AA361D85F36A"
-			optional: true
-			rewards: [{
-				id: "5BD1224A33094857"
-				item: "botania:cocoon"
-				type: "item"
-			}]
-			tasks: [
-				{
-					id: "7FB8FE25435C3BEE"
-					item: "mekanism:pellet_antimatter"
-					type: "item"
-				}
-				{
-					id: "2F30C1C276EF3AFC"
-					item: "botania:cocoon"
-					type: "item"
-				}
-			]
-			title: "A Step Too Far?"
-			x: -2.0d
-			y: 0.0d
 		}
 		{
 			dependencies: ["5F68529AB0469781"]
@@ -810,76 +723,6 @@
 			}]
 			title: "Fissile Fuel"
 			x: -4.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["6C7AA34DE5186630"]
-			description: [
-				"After all this work, it may finally be possible to fully eliminate the effects of the disaster."
-				""
-				"Applying &6verdant essence&r will transform the nearby biomes into their &2verdant variants&r, which might cause the &aanimals&r that survived to eventually &amigrate&r."
-			]
-			id: "3E645D5F929A8EA1"
-			rewards: [{
-				count: 8
-				id: "53E3DB5DDF849D08"
-				item: {
-					Count: 1
-					id: "biomeblends:biome_blend"
-					tag: {
-						blend_type: "wasteland:verdant"
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "125ABEB345751CAC"
-				item: {
-					Count: 1
-					id: "biomeblends:biome_blend"
-					tag: {
-						blend_type: "wasteland:verdant"
-					}
-				}
-				match_nbt: true
-				type: "item"
-				weak_nbt_match: true
-			}]
-			title: "Where It Ends..."
-			x: -1.5d
-			y: -1.0d
-		}
-		{
-			dependencies: ["3E645D5F929A8EA1"]
-			description: [
-				"So, this is it."
-				""
-				"Once, there was nothing. A vast, endless wasteland of dead trees and dust."
-				""
-				"You were left to die. But you didn't. You found the remnants of life, and you let them flourish."
-				""
-				"Life blossomed because you willed it, and you persisted because life blossomed."
-				""
-				"Now the world begins to come back to life, starting with your small oasis... and all of it began with your &overdant idea&r."
-			]
-			hide_until_deps_complete: true
-			icon: "botania:grass_seeds"
-			id: "6DBCA1BDAC6D1764"
-			rewards: [{
-				id: "4E5AFA14C87A727B"
-				item: "botania:grass_seeds"
-				type: "item"
-			}]
-			size: 1.25d
-			tasks: [{
-				biome: "#wasteland:verdant_biomes"
-				icon: "minecraft:grass_block"
-				id: "28D234C1316107FD"
-				title: "Visit a Verdant Biome"
-				type: "biome"
-			}]
-			title: "Or Where It Starts?"
-			x: -0.5d
 			y: -1.0d
 		}
 		{

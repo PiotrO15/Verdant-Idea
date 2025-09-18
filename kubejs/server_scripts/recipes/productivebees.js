@@ -217,6 +217,7 @@ ServerEvents.recipes(event => {
   })
 
   event.remove({ id: 'productivebees:centrifuge/honeycomb_frosty' })
+  event.remove({ id: 'productivebees:centrifuge/honeycomb_silky' })
 
   event.remove({id: 'productivebees:upgrades/base'})
   event.shaped(
@@ -273,9 +274,6 @@ ServerEvents.recipes(event => {
     },
     static: true
   })
-
-  // Sugarbag nest recipe
-  event.shapeless('productivebees:sugarbag_nest', ['minecraft:bee_nest', 'farmersdelight:hot_cocoa'])
 
   // Simplify the recipe for nests
   event.replaceInput({mod: 'productivebees'}, '#minecraft:swords', '#forge:shears')

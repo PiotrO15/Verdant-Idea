@@ -12,4 +12,21 @@ StartupEvents.registry('item', event => {
   event.create('fish_bones')
 
   event.create('sky_steel')
+
+  event.create('stale_cod').food(food => food.hunger(2).saturation(0.25).effect('hunger', 200, 0, 1))
+  event.create('stale_salmon').food(food => food.hunger(2).saturation(0.25).effect('hunger', 200, 0, 1))
+
+  event.create('ochre_shard')
+  event.create('ochre_prism')
+  event.create('ochre_nucleus')
+  
+  event.create('pearlescent_shard')
+  event.create('pearlescent_prism')
+  event.create('pearlescent_nucleus')
+  
+  event.create('verdant_shard')
+  event.create('verdant_prism')
+  event.create('verdant_nucleus')
+
+  event.create('amethyst_fertilizer')
 })

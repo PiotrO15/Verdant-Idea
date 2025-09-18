@@ -1,0 +1,17 @@
+{
+  "action": {
+    "type": "biomeblends:set_namespace",
+    "target_namespace": "recovering"
+  },
+  "vertical_radius": -1,
+  "horizontal_radius": 10,
+  "namespace_blacklist": {
+    "values": [
+      "wasteland"
+    ],
+    "negate": true
+  },
+  "particle_type": {
+    "type": "minecraft:scrape"
+  }
+}

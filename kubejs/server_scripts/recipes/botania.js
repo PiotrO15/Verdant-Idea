@@ -35,60 +35,6 @@ ServerEvents.recipes(event => {
 
   event.recipes.botania.orechid("ae2:sky_stone_block", "minecraft:deepslate", 64)
 
-  // Move Cocoon recipe to endgame
-  event.remove({id: 'botania:cocoon'})
-  event.shaped(
-    'botania:cocoon',
-    [
-      "SSS",
-      "MFM",
-      "SAS"
-    ],
-    {
-      A: 'mekanism:pellet_antimatter',
-      F: 'botania:fel_pumpkin',
-      M: 'botania:manaweave_cloth',
-      S: 'minecraft:string'
-    }
-  )
-
-  // Make fel pumpkin obtained through witch's cauldron
-  event.remove({id: 'botania:fel_pumpkin'})
-  event.custom({
-    "type": "enchanted:witch_cauldron",
-    "cookingColor": [
-      26,
-      71,
-      35
-    ],
-    "finalColor": [
-      62,
-      128,
-      78
-    ],
-    "ingredients": [
-      {
-        "item": "minecraft:pumpkin"
-      },
-      {
-        "item": "minecraft:string"
-      },
-      {
-        "item": "minecraft:rotten_flesh"
-      },
-      {
-        "item": "minecraft:gunpowder"
-      },
-      {
-        "item": "minecraft:bone"
-      }
-    ],
-    "power": 0,
-    "result": {
-      "item": "botania:fel_pumpkin"
-    }
-  })
-
   // Replace feathers with manaweave cloth in flugel tiara recipe
   event.replaceInput({id: 'botania:flighttiara_0'}, 'minecraft:feather', 'botania:manaweave_cloth')
 

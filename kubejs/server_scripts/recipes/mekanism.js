@@ -70,33 +70,59 @@ ServerEvents.recipes(event => {
     }
   )
 
-  // Update Antimatter pellet cost
-  event.remove({id: 'mekanism:processing/lategame/antimatter/from_pellet'})
+  // Remove Antimatter and replace antimatter inputs
+  event.remove({'id': 'mekanism:qio_drive_supermassive'})
   event.custom({
-    "type": "mekanism:oxidizing",
-    "input": {
-      "ingredient": {
-        "tag": "forge:pellets/antimatter"
+    "type": "mekanism:mek_data",
+    "key": {
+      "#": {
+        "item": "mekanism:pellet_plutonium"
+      },
+      "I": {
+        "tag": "forge:ingots/lead"
+      },
+      "P": {
+        "item": "mekanism:qio_drive_time_dilating"
       }
     },
-    "output": {
-      "amount": 100,
-      "gas": "mekanism:antimatter"
+    "pattern": [
+      "IPI",
+      "P#P",
+      "IPI"
+    ],
+    "result": {
+      "item": "mekanism:qio_drive_supermassive"
+    }
+  })
+  event.remove({'id': 'mekanism:module_teleportation_unit'})
+    event.custom({
+    "type": "minecraft:crafting_shaped",
+    "key": {
+      "#": {
+        "item": "mekanism:teleportation_core"
+      },
+      "A": {
+        "tag": "forge:alloys/ultimate"
+      },
+      "H": {
+        "item": "mekanism:pellet_plutonium"
+      },
+      "P": {
+        "item": "mekanism:module_base"
+      }
+    },
+    "pattern": [
+      "A#A",
+      "APA",
+      "HHH"
+    ],
+    "result": {
+      "item": "mekanism:module_teleportation_unit"
     }
   })
 
-  event.remove({id: 'mekanism:processing/lategame/antimatter_pellet/from_gas'})
-  event.custom({
-    "type": "mekanism:crystallizing",
-    "chemicalType": "gas",
-    "input": {
-      "amount": 100,
-      "gas": "mekanism:antimatter"
-    },
-    "output": {
-      "item": "mekanism:pellet_antimatter"
-    }
-  })
+  event.replaceInput({'mod': 'mekanism'}, '#forge:pellets/antimatter', 'mekanism:pellet_plutonium')
+  event.replaceInput({'mod': 'mekanism'}, 'mekanism:pellet_antimatter', 'mekanism:pellet_plutonium')
 
   event.remove('mekanism:transmitter/universal_cable/basic')
   event.shaped(

@@ -240,4 +240,6 @@ ServerEvents.recipes(event => {
     ],
     "source": 2000
   })
+
+  event.shapeless('ars_nouveau:ritual_animal_summon', ['ars_nouveau:purple_archwood_log', 'minecraft:nether_star', 'botania:life_essence', 'enchanted:hint_of_rebirth', 'actuallyadditions:empowered_palis_crystal_block'])
 })

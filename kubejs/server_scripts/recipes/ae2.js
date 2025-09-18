@@ -45,5 +45,4 @@ ServerEvents.recipes(event => {
       S: 'minecraft:nether_star'
     }
   )
-
 })

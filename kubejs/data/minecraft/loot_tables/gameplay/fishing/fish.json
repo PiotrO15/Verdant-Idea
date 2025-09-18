@@ -6,23 +6,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:cod",
-          "weight": 60
+          "name": "kubejs:stale_cod",
+          "weight": 70
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:salmon",
-          "weight": 25
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:tropical_fish",
-          "weight": 2
-        },
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:pufferfish",
-          "weight": 13
+          "name": "kubejs:stale_salmon",
+          "weight": 30
         }
       ],
       "rolls": 1.0

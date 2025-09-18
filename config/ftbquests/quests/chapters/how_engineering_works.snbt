@@ -1029,6 +1029,96 @@
 			y: 1.0d
 		}
 		{
+			dependencies: ["7DA224400E742DF8"]
+			description: ["Pipes are kinda &eslow&r, but that doesn't need to be the case! &ePipe pressurizer&r will &adrastically speed up&r the travel time inside &econnected pipes&r for the small cost of &epower&r!"]
+			id: "6B9C39EEBAD662B6"
+			rewards: [{
+				count: 8
+				id: "7B8E0088AADBF412"
+				item: "pneumaticcraft:plastic"
+				type: "item"
+			}]
+			tasks: [{
+				id: "41A6FD93639077AC"
+				item: "prettypipes:pressurizer"
+				type: "item"
+			}]
+			title: "Pretty Quick Pipes"
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["64269BEAA28956F7"]
+			description: [
+				"The infrastructure needed to bring life back requires &ea lot of power&r."
+				""
+				"Simple water wheels won't be enough, but a &ediesel generator&r can be a &agood start&r."
+			]
+			hide_dependency_lines: true
+			id: "14B37ACCA9937F2B"
+			optional: true
+			rewards: [{
+				count: 16
+				id: "3C68501DE68F5FFA"
+				item: "thermal:steel_ingot"
+				type: "item"
+			}]
+			tasks: [{
+				advancement: "immersiveengineering:multiblocks/mb_dieselgen"
+				criterion: ""
+				id: "5327AE2C63E9A174"
+				title: "Build a Diesel Generator"
+				type: "advancement"
+			}]
+			title: "Big Power"
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["7DA224400E742DF8"]
+			description: ["Pretty pipe that can transfer &3fluids&r instead of items!"]
+			icon: "ppfluids:fluid_pipe"
+			id: "12260DCD33583493"
+			rewards: [{
+				count: 16
+				id: "0BD015CB0613AF63"
+				item: "ppfluids:fluid_pipe"
+				type: "item"
+			}]
+			tasks: [
+				{
+					count: 16L
+					id: "44BBF3661F7C3921"
+					item: "ppfluids:fluid_pipe"
+					type: "item"
+				}
+				{
+					id: "0B502377D290444A"
+					item: {
+						Count: 1
+						id: "itemfilters:or"
+						tag: {
+							items: [
+								{
+									Count: 1b
+									id: "ppfluids:low_fluid_retrieval_module"
+								}
+								{
+									Count: 1b
+									id: "ppfluids:low_fluid_extraction_module"
+								}
+							]
+						}
+					}
+					title: "Fluid Extraction or Retrieval Module"
+					type: "item"
+				}
+			]
+			title: "Pretty Fluid Pipe"
+			x: -1.0d
+			y: 3.0d
+		}
+		{
 			dependencies: ["4CDBF245C03D44B6"]
 			description: ["&eRaw metals&r can be smelted into &eingots&r, but there are many more uses for them. Placing a &eseared melter&r on a &eseared heater&r or a &efuel tank&r lets you melt them for &aadditional 3 nuggets&r per raw metal."]
 			icon: "tconstruct:seared_melter"
@@ -1252,31 +1342,6 @@
 			y: -3.0d
 		}
 		{
-			dependencies: ["1692E52F82EDDF27"]
-			description: [
-				"There are &cno bee nests&r in sight. It might be worth creating a few, perhaps &ebees still live&r in &ethe nether&r?"
-				""
-				"Making a &equartz nest&r doesn't actually require silk touch, as &aquartz in netherrack&r can be used &einstead of nether quartz ore&r."
-			]
-			id: "4E64B2FC0904D639"
-			rewards: [{
-				count: 4
-				id: "74ED384A28FCA085"
-				item: "productivebees:bee_cage"
-				type: "item"
-			}]
-			size: 1.25d
-			subtitle: "Unlocks new quests in Bounties of the Land"
-			tasks: [{
-				id: "10777DF8D98CEA6B"
-				item: "productivebees:nether_quartz_nest"
-				type: "item"
-			}]
-			title: "Looking for Bees"
-			x: -5.5d
-			y: -2.0d
-		}
-		{
 			dependencies: ["7D016ED5CD6DD2FF"]
 			description: [
 				"Now that the metals are molten, it's time to think about &esolidifying&r them. First, place a &eseared faucet&r on the wall of the melter. Then, place a &ecasting table&r or a &ecasting basin&r under it."
@@ -1319,94 +1384,29 @@
 			y: -1.0d
 		}
 		{
-			dependencies: ["7DA224400E742DF8"]
-			description: ["Pipes are kinda &eslow&r, but that doesn't need to be the case! &ePipe pressurizer&r will &adrastically speed up&r the travel time inside &econnected pipes&r for the small cost of &epower&r!"]
-			id: "6B9C39EEBAD662B6"
-			rewards: [{
-				count: 8
-				id: "7B8E0088AADBF412"
-				item: "pneumaticcraft:plastic"
-				type: "item"
-			}]
-			tasks: [{
-				id: "41A6FD93639077AC"
-				item: "prettypipes:pressurizer"
-				type: "item"
-			}]
-			title: "Pretty Quick Pipes"
-			x: 0.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["64269BEAA28956F7"]
+			dependencies: ["1692E52F82EDDF27"]
 			description: [
-				"The infrastructure needed to bring life back requires &ea lot of power&r."
+				"There are &cno bee nests&r in sight. It might be worth creating a few, perhaps &ebees still live&r in &ethe nether&r?"
 				""
-				"Simple water wheels won't be enough, but a &ediesel generator&r can be a &agood start&r."
+				"Making a &equartz nest&r doesn't actually require silk touch, as &aquartz in netherrack&r can be used &einstead of nether quartz ore&r."
 			]
-			hide_dependency_lines: true
-			id: "14B37ACCA9937F2B"
-			optional: true
+			id: "4E64B2FC0904D639"
 			rewards: [{
-				count: 16
-				id: "3C68501DE68F5FFA"
-				item: "thermal:steel_ingot"
+				count: 4
+				id: "74ED384A28FCA085"
+				item: "productivebees:bee_cage"
 				type: "item"
 			}]
+			size: 1.25d
+			subtitle: "Unlocks new quests in Bounties of the Land"
 			tasks: [{
-				advancement: "immersiveengineering:multiblocks/mb_dieselgen"
-				criterion: ""
-				id: "5327AE2C63E9A174"
-				title: "Build a Diesel Generator"
-				type: "advancement"
-			}]
-			title: "Big Power"
-			x: 2.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["7DA224400E742DF8"]
-			description: ["Pretty pipe that can transfer &3fluids&r instead of items!"]
-			icon: "ppfluids:fluid_pipe"
-			id: "12260DCD33583493"
-			rewards: [{
-				count: 16
-				id: "0BD015CB0613AF63"
-				item: "ppfluids:fluid_pipe"
+				id: "10777DF8D98CEA6B"
+				item: "productivebees:nether_quartz_nest"
 				type: "item"
 			}]
-			tasks: [
-				{
-					count: 16L
-					id: "44BBF3661F7C3921"
-					item: "ppfluids:fluid_pipe"
-					type: "item"
-				}
-				{
-					id: "0B502377D290444A"
-					item: {
-						Count: 1
-						id: "itemfilters:or"
-						tag: {
-							items: [
-								{
-									Count: 1b
-									id: "ppfluids:low_fluid_retrieval_module"
-								}
-								{
-									Count: 1b
-									id: "ppfluids:low_fluid_extraction_module"
-								}
-							]
-						}
-					}
-					title: "Fluid Extraction or Retrieval Module"
-					type: "item"
-				}
-			]
-			title: "Pretty Fluid Pipe"
-			x: -1.0d
-			y: 3.0d
+			title: "Looking for Bees"
+			x: -5.5d
+			y: -2.0d
 		}
 	]
 	title: "How Engineering Works"

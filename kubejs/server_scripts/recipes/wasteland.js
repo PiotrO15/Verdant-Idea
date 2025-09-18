@@ -2,6 +2,13 @@ ServerEvents.tags('item', event => {
   event.add('minecraft:logs', ['wasteland:dead_log'])
 })
 
+ServerEvents.tags('block', event => {
+  event.add('wasteland:depleted_soil_catalyst', ['minecraft:pink_petals', 'minecraft:dandelion', 'minecraft:poppy', 'minecraft:grass', 'minecraft:tall_grass', 'minecraft:fern', 'minecraft:large_fern', 'wasteland:clover'])
+  event.add('wasteland:poor_soil_catalyst', ['minecraft:brown_mushroom', 'minecraft:red_mushroom', '#botania:shimmering_mushrooms', 'minecraft:moss_block', 'minecraft:moss_carpet'])
+  event.add('wasteland:restoring_soil_catalyst', ['#wasteland:alive_logs'])
+  event.add('wasteland:depleted_soil', ['wasteland:depleted_soil', 'wasteland:poor_soil', 'wasteland:restoring_soil'])
+})
+
 ServerEvents.recipes(event => {
   // Add a recipe for rich soil so that organic compost doesn't slow down the gameplay
   event.shapeless('farmersdelight:rich_soil', ['minecraft:dirt', 'wasteland:compost'])
@@ -114,20 +121,55 @@ ServerEvents.recipes(event => {
   })
 
   event.custom({
-    "type": "mekanism:nucleosynthesizing",
-    "duration": 2000,
-    "gasInput": {
-      "amount": 10,
-      "gas": "mekanism:antimatter"
-    },
-    "itemInput": {
-      "ingredient": {
-        "item": "ars_nouveau:manipulation_essence"
+    "type": "farmersdelight:cutting",
+    "ingredients": [
+      {
+        "item": "kubejs:stale_cod"
       }
-    },
-    "output": {
-      "item": "biomeblends:biome_blend",
-      "nbt": {blend_type:"wasteland:verdant"}
+    ],
+    "result": [
+      {
+        "item": "farmersdelight:cod_slice"
+      },
+      {
+        "item": "minecraft:bone_meal"
+      }
+    ],
+    "tool": {
+      "tag": "forge:tools/knives"
     }
   })
+
+  event.custom({
+    "type": "farmersdelight:cutting",
+    "ingredients": [
+      {
+        "item": "kubejs:stale_salmon"
+      }
+    ],
+    "result": [
+      {
+        "item": "farmersdelight:salmon_slice"
+      },
+      {
+        "item": "minecraft:bone_meal"
+      }
+    ],
+    "tool": {
+      "tag": "forge:tools/knives"
+    }
+  })
+
+  event.shapeless('3x kubejs:amethyst_fertilizer', ['minecraft:amethyst_shard', 'wasteland:compost', '#botania:petals'])
+})
+
+BlockEvents.rightClicked(event =>{
+    if (event.hand != "MAIN_HAND") return;
+    if (event.player.mainHandItem.id != "kubejs:amethyst_fertilizer") return;
+
+    if (event.block.id != "wasteland:cracked_sand") return;
+
+    event.block.set("wasteland:depleted_soil")
+
+    if (!event.player.isCreative()) event.player.mainHandItem.count--
 })

@@ -49,9 +49,13 @@ global.removed_items = {
     'ritual_conjure_island_desert',
     'ritual_conjure_island_plains'
   ],
+  biomeblends: [
+    'bland_blend'
+  ],
   botania: [
     'living_root',
-    'pebble'
+    'pebble',
+    'cocoon'
   ],
   enchanted: [
     'water_artichoke_seeds',
@@ -62,6 +66,13 @@ global.removed_items = {
   ],
   farmersdelight: [
     'organic_compost'
+  ],
+  mekanism: [
+    'pellet_antimatter',
+    'sps_port',
+    'sps_casing',
+    'supercharged_coil',
+    'antiprotonic_nucleosynthesizer'
   ],
   mekanismgenerators: [
     'wind_generator'
@@ -199,6 +210,7 @@ global.removed_items = {
     'dragon_egg_hive',
     'warped_bee_nest',
     'crimson_bee_nest',
+    'sugarbag_nest',
     'nest_locator',
     'honey_generator'
   ],

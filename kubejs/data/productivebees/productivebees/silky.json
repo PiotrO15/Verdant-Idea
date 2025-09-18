@@ -1,0 +1,15 @@
+{
+    "primaryColor": "#ff00ff",
+    "secondaryColor": "#d0581f",
+    "flowerTag": "minecraft:flowers",
+    "name": "Baconator",
+    "conditions": [
+        {
+            "type": "forge:not",
+            "value": {
+                "type": "forge:mod_loaded",
+                "modid": "productivebees"
+            }
+        }
+    ]
+}

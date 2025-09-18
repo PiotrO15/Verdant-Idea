@@ -8,8 +8,8 @@
   },
   "downfall": 0.9,
   "effects": {
-    "fog_color": 12638463,
-    "foliage_color": 9285927,
+    "fog_color": 13359325,
+    "foliage_color": 11317366,
     "grass_color_modifier": "swamp",
     "mood_sound": {
       "block_search_extent": 8,
@@ -23,9 +23,16 @@
       "replace_current_music": false,
       "sound": "minecraft:music.overworld.swamp"
     },
-    "sky_color": 7907327,
-    "water_color": 3832426,
-    "water_fog_color": 5077600
+    "sky_color": 9937841,
+    "water_color": 4342839,
+    "water_fog_color": 3618599,
+    "grass_color": 10525308,
+    "particle": {
+      "probability": 0.0035,
+      "options": {
+        "type": "minecraft:white_ash"
+      }
+    }
   },
   "features": [
     [],

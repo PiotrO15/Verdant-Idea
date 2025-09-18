@@ -1,3 +1,43 @@
+// priority: 10
+
+function pressure_chamber(event, output, pressure, input) {
+  const processedInput = input.map(pneumaticcraft_format)
+
+  event.custom({
+    type: "pneumaticcraft:pressure_chamber",
+    inputs: processedInput,
+    pressure: pressure,
+    results: [{ item: output }]
+  })
+}
+
+function pneumaticcraft_format(item) {
+  let count = {}
+    if (item.match(/^(\d+)x /)) {
+      count = {
+        count: parseInt(item.match(/^(\d+)x /)[1]),
+        type: "pneumaticcraft:stacked_item"
+      }
+      item = item.replace(/^(\d+)x /, "")
+    }
+
+    if (item.startsWith('#')) {
+      item = { 
+        tag: item.substring(1)
+      }
+    } else {
+      item = { 
+        item: item
+      }
+    }
+
+    for (var key in count) {
+      item[key] = count[key]
+    }
+
+    return item
+}
+
 ServerEvents.recipes(event => {
   function explosion_crafting(input, loss_rate, output) {
     event.custom({
@@ -12,51 +52,13 @@ ServerEvents.recipes(event => {
     })
   }
 
-  function format(item) {
-    let count = {}
-      if (item.match(/^(\d+)x /)) {
-        count = {
-          count: parseInt(item.match(/^(\d+)x /)[1]),
-          type: "pneumaticcraft:stacked_item"
-        }
-        item = item.replace(/^(\d+)x /, "")
-      }
-  
-      if (item.startsWith('#')) {
-        item = { 
-          tag: item.substring(1)
-        }
-      } else {
-        item = { 
-          item: item
-        }
-      }
-  
-      for (var key in count) {
-        item[key] = count[key]
-      }
-  
-      return item
-  }
-
-  function pressure_chamber(output, pressure, input) {
-    const processedInput = input.map(format)
-  
-    event.custom({
-      type: "pneumaticcraft:pressure_chamber",
-      inputs: processedInput,
-      pressure: pressure,
-      results: [{ item: output }]
-    })
-  }
-
   function assembly(output, input, program) {
     event.custom(
       {
         type: "pneumaticcraft:assembly_laser",
-        input: format(input),
+        input: pneumaticcraft_format(input),
         program: program,
-        result: format(output)
+        result: pneumaticcraft_format(output)
       }
     )
   }
@@ -71,8 +73,8 @@ ServerEvents.recipes(event => {
 
   explosion_crafting("forge:ingots/steel", 20, "pneumaticcraft:ingot_iron_compressed")
   explosion_crafting("forge:storage_blocks/steel", 20, "pneumaticcraft:compressed_iron_block")
-  pressure_chamber("pneumaticcraft:ingot_iron_compressed", 2.0, ["#forge:ingots/steel"])
-  pressure_chamber("pneumaticcraft:compressed_iron_block", 2.0, ["#forge:storage_blocks/steel"])
+  pressure_chamber(event, "pneumaticcraft:ingot_iron_compressed", 2.0, ["#forge:ingots/steel"])
+  pressure_chamber(event, "pneumaticcraft:compressed_iron_block", 2.0, ["#forge:storage_blocks/steel"])
 
   // Remove duplicate fluids
   event.remove({id: 'pneumaticcraft:fluid_mixer/biodiesel'})
@@ -112,11 +114,11 @@ ServerEvents.recipes(event => {
   event.remove({id: 'pncepcb:pressure_chamber/crystal_clear_empty_pcb'})
 
   // High Temperature PCB
-  pressure_chamber("pncepcb:high_temp_empty_pcb", 2.5, ['2x thermal:cured_rubber', '3x immersiveengineering:ingot_hop_graphite', '#forge:plates/copper', 'pneumaticcraft:unassembled_pcb'])
+  pressure_chamber(event, "pncepcb:high_temp_empty_pcb", 2.5, ['2x thermal:cured_rubber', '3x immersiveengineering:ingot_hop_graphite', '#forge:plates/copper', 'pneumaticcraft:unassembled_pcb'])
   assembly("pncepcb:high_temp_unassembled_pcb", 'pncepcb:high_temp_empty_pcb', 'laser')
 
   // High Power PCB
-  pressure_chamber("pncepcb:high_power_empty_pcb", 3.5, ['3x mekanism:alloy_infused', '2x mekanism:basic_control_circuit', '#forge:plates/enderium', 'pncepcb:high_temp_unassembled_pcb'])
+  pressure_chamber(event, "pncepcb:high_power_empty_pcb", 3.5, ['3x mekanism:alloy_infused', '2x mekanism:basic_control_circuit', '#forge:plates/enderium', 'pncepcb:high_temp_unassembled_pcb'])
   assembly("pncepcb:high_power_unassembled_pcb", 'pncepcb:high_power_empty_pcb', 'laser')
   event.remove({id: 'pncepcb:crafting_table/high_power_finished_pcb'})
   event.custom(

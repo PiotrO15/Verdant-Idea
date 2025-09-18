@@ -1392,40 +1392,6 @@
 			y: -6.0d
 		}
 		{
-			dependencies: ["5F740F8A702AEFAD"]
-			hide_dependent_lines: true
-			id: "543B8D9F5CF87DB2"
-			rewards: [{
-				count: 3
-				id: "5D2DEEDBE903F5BD"
-				item: {
-					Count: 1
-					id: "productivebees:configurable_honeycomb"
-					tag: {
-						EntityTag: {
-							type: "productivebees:silky"
-						}
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "62BA7C26DAEC0165"
-				item: {
-					Count: 1
-					id: "productivebees:configurable_honeycomb"
-					tag: {
-						EntityTag: {
-							type: "productivebees:silky"
-						}
-					}
-				}
-				type: "item"
-			}]
-			x: 6.0d
-			y: -7.0d
-		}
-		{
 			dependencies: ["4720320FB591BC73"]
 			hide_dependent_lines: true
 			id: "4E42C5B45CDD3840"

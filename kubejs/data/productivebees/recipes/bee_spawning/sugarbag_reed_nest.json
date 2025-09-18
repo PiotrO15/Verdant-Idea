@@ -1,11 +1,14 @@
 {
   "type": "productivebees:bee_spawning",
   "ingredient": {
-    "item": "productivebees:sugarbag_nest"
+    "item": "productivebees:sugar_cane_nest"
   },
   "results": [
     {
       "bee": "productivebees:sugarbag"
     }
-  ]
+  ],
+  "spawn_item": {
+    "item": "farmersdelight:hot_cocoa"
+  }
 }

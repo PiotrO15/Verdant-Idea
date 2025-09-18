@@ -32,6 +32,12 @@
     },
     {
       "category": "actuallyadditions:crushing"
+    },
+    {
+      "category": "mekanism:antiprotonic_nucleosynthesizer"
+    },
+    {
+      "category": "mekanism:sps_casing"
     }
   ]
 }

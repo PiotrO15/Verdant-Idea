@@ -35,7 +35,7 @@ ItemEvents.tooltip(event => {
         if (!item?.nbt?.blend_type) 
             return
 
-        if (item.nbt.blend_type == "wasteland:verdant") {
+        if (item.nbt.blend_type == "wasteland:verdant" || item.nbt.blend_type == 'wasteland:weak') {
             text.add(1, [
                 Text.gray('Right-click on the ground to transform the nearby biomes.')
             ])

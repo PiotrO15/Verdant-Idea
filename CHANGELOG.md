@@ -1,3 +1,22 @@
+0.8 changes:
+- updated Wasteland Things and Biome Blends
+- added depleted, poor and restoring soils, which are a new variant of dirt
+- reworked fishing loot tables
+- added an alternative recipe for tablet of summon animals
+- added amethyst fertilizer, a new item capable of transforming cracked sand into depleted soil
+- added cloverleaf, which can be spawned by using compost on depleted soil; it works similar to pink petals, but spreads naturally on depleted soil variants
+- added recovering biomes, a new stage between ruined and verdant biomes
+- changed the grass, foliage, water and sky colors of ruined and recovering biomes
+- fixed 0.7 seed quests not matching NBT properly
+- removed the duplicate rubberwood sapling recipe
+- changed the method to get sugarbag bees (fixes nest spawning not working)
+- changed fel pumpkin recipe to make it viable pre-steel
+- fixed an issue with cracked sand water bottle interaction and shields
+- removed antimatter and replaced its uses with plutonium pellets
+- removed silky bee, reed bee is no longer obtainable
+- skybee no longer produces ice
+- removed resonant rod (the old one from before 0.7)
+
 0.7 changes:
 - added Applied Mekanistics (AE2 support for Mekanism)
 - added Ars Nouveau

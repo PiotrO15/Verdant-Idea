@@ -104,7 +104,7 @@ ServerEvents.recipes(event => {
   event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:nether_quartz'), ['mysticalagriculture:prosperity_seed_base', 'botania:mana_quartz', 'botania:light_blue_petal_block', combBlock('crystalline')].concat('botania:rune_air').concat('botania:rune_fire').concat(multi(essence, 4)), manaCost)
   event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:redstone'), ['mysticalagriculture:prosperity_seed_base', 'minecraft:nether_wart_block', 'botania:red_petal_block', 'mysticalagriculture:fire_essence'].concat('botania:rune_earth').concat('botania:rune_fire').concat(multi(essence, 4)), manaCost)
   event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:silver'), ['mysticalagriculture:prosperity_seed_base', 'botania:light_gray_petal_block', 'botania:light_blue_petal_block', '#forge:ingots/silver', '#forge:ingots/silver'].concat('botania:rune_earth').concat('botania:rune_water').concat(multi(essence, 4)), manaCost)
-  event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:spider'), ['mysticalagriculture:soulium_seed_base'].concat(multi(comb('silky'), 3)).concat('botania:rune_air').concat('botania:rune_earth').concat(multi(essence, 4)), manaCost)
+  event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:spider'), ['mysticalagriculture:soulium_seed_base'].concat(multi('minecraft:spider_eye', 3)).concat('botania:rune_air').concat('botania:rune_earth').concat(multi(essence, 4)), manaCost)
 
   //
   // Elemental

@@ -8,9 +8,9 @@
   },
   "downfall": 0.8,
   "effects": {
-    "fog_color": 12638463,
-    "foliage_color": 11983713,
-    "grass_color": 11983713,
+    "fog_color": 13359325,
+    "foliage_color": 12238474,
+    "grass_color": 12238473,
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,
@@ -23,9 +23,15 @@
       "replace_current_music": false,
       "sound": "minecraft:music.overworld.cherry_grove"
     },
-    "sky_color": 8103167,
-    "water_color": 6141935,
-    "water_fog_color": 6141935
+    "sky_color": 9937841,
+    "water_color": 4672842,
+    "water_fog_color": 3817533,
+    "particle": {
+      "probability": 0.0035,
+      "options": {
+        "type": "minecraft:white_ash"
+      }
+    }
   },
   "features": [
     [],

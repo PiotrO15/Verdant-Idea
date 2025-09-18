@@ -1089,6 +1089,172 @@
 			x: 7.5d
 			y: 3.0d
 		}
+		{
+			dependencies: ["76E6ADB613585553"]
+			description: [
+				"It's no surprise all the plants look lifeless with all the &cdust and pollution&r, but what if these changes could be reversed, even if only partially?"
+				""
+				"&aWeak essence&r can be applied by right-clicking the ground to transform the nearby biomes from their ruined state into their &3recovering variants&r."
+				""
+				"&3Recovering biomes&r are slightly more &2verdant&r, allowing for &6more plants&r to grow and &6additional animal activity&r."
+			]
+			hide_dependency_lines: true
+			id: "67DAC5B9A54DF15A"
+			rewards: [{
+				count: 8
+				id: "338E4ACD6C2982ED"
+				item: {
+					Count: 1
+					id: "biomeblends:biome_blend"
+					tag: {
+						blend_type: "wasteland:weak"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "227ABD164E5A4A8A"
+				item: {
+					Count: 1
+					id: "biomeblends:biome_blend"
+					tag: {
+						blend_type: "wasteland:weak"
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Air Purifier...?"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["3E645D5F929A8EA1"]
+			description: [
+				"So, this is it."
+				""
+				"Once, there was nothing. A vast, endless wasteland of dead trees and dust."
+				""
+				"You were left to die. But you didn't. You found the remnants of life, and you let them flourish."
+				""
+				"Life blossomed because you willed it, and you persisted because life blossomed."
+				""
+				"Now the world begins to come back to life, starting with your small oasis... and all of it began with your &overdant idea&r."
+			]
+			hide_until_deps_complete: true
+			icon: "botania:grass_seeds"
+			id: "6DBCA1BDAC6D1764"
+			rewards: [{
+				id: "4E5AFA14C87A727B"
+				item: "botania:grass_seeds"
+				type: "item"
+			}]
+			size: 1.25d
+			tasks: [{
+				biome: "#wasteland:verdant_biomes"
+				icon: "minecraft:grass_block"
+				id: "28D234C1316107FD"
+				title: "Visit a Verdant Biome"
+				type: "biome"
+			}]
+			title: "Or Where It Starts?"
+			x: 9.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["5C8D1593612C3D1A"]
+			description: [
+				"After all this work, it may finally be possible to fully eliminate the effects of the disaster."
+				""
+				"Applying &6verdant essence&r will transform the nearby biomes into their &2verdant variants&r, which might cause the &aanimals&r that survived to eventually &amigrate&r."
+			]
+			id: "3E645D5F929A8EA1"
+			rewards: [{
+				count: 8
+				id: "53E3DB5DDF849D08"
+				item: {
+					Count: 1
+					id: "biomeblends:biome_blend"
+					tag: {
+						blend_type: "wasteland:verdant"
+					}
+				}
+				type: "item"
+			}]
+			tasks: [{
+				id: "125ABEB345751CAC"
+				item: {
+					Count: 1
+					id: "biomeblends:biome_blend"
+					tag: {
+						blend_type: "wasteland:verdant"
+					}
+				}
+				match_nbt: true
+				type: "item"
+				weak_nbt_match: true
+			}]
+			title: "Where It Ends..."
+			x: 8.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["7263B138D91DE8F4"]
+			description: [
+				"&aFrogs&r are capable of eating &6small magma cubes&r. Interestingly, this allows them to produce &6froglights&r."
+				""
+				"The type of froglight that gets created is determined by the biome the frog grows from a tadpole."
+				""
+				"While froglights can produce light, they can have &2much greater value&r."
+			]
+			icon: "minecraft:verdant_froglight"
+			id: "5C8D1593612C3D1A"
+			rewards: [{
+				id: "6642DBC4DF6DB6EF"
+				item: "minecraft:tadpole_bucket"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "75F260CCC7573E29"
+					item: "minecraft:ochre_froglight"
+					type: "item"
+				}
+				{
+					id: "643371687D6734D7"
+					item: "minecraft:pearlescent_froglight"
+					type: "item"
+				}
+				{
+					id: "17C464102D8E51A3"
+					item: "minecraft:verdant_froglight"
+					type: "item"
+				}
+			]
+			title: "It's... Verdant!"
+			x: 9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["29BFB12064D30BD9"]
+			description: ["Throwing a &3skyslime ball&r into the brazier before the ritual of summon animals might interest some amphibians that are still alive."]
+			id: "7263B138D91DE8F4"
+			rewards: [{
+				count: 8
+				id: "6EF8061BFA4B0656"
+				item: "minecraft:slime_ball"
+				type: "item"
+			}]
+			tasks: [{
+				id: "0684CB774B3919E3"
+				item: "minecraft:tadpole_bucket"
+				type: "item"
+			}]
+			title: "Frogspawn"
+			x: 8.5d
+			y: 3.0d
+		}
 	]
 	title: "The Energy of Flora"
 }
