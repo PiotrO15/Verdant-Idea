@@ -42,6 +42,18 @@ let blends = [
 ]
 
 ServerEvents.recipes(event => {
+  function catalyst(ingredient, primary_mod, secondary_mod, energy_mod, min_chance, use_chance) {
+    return {
+      "type": "thermal:insolator_catalyst",
+      "ingredient": ingredient,
+      "primary_mod": primary_mod,
+      "secondary_mod": secondary_mod,
+      "energy_mod": energy_mod,
+      "min_chance": min_chance,
+      "use_chance": use_chance
+    }
+  }
+
   // Remove recipes that use fire charges
   event.remove({mod: 'thermal', type: 'minecraft:crafting_shaped', input: 'minecraft:fire_charge'})
   event.remove({mod: 'thermal', type: 'minecraft:crafting_shapeless', input: 'minecraft:fire_charge'})
@@ -412,4 +424,9 @@ ServerEvents.recipes(event => {
       "chance": 1.1
     }
   ])
+
+  event.remove({type: 'thermal:insolator_catalyst'})
+  event.custom(catalyst({item: 'kubejs:amethyst_fertilizer'}, 1.3, 1.3, 0.8, 0.5, 1.0))
+  event.custom(catalyst({item: 'kubejs:industrial_fertilizer'}, 1.6, 1.6, 0.7, 0.5, 1.0))
+  event.custom(catalyst({item: 'kubejs:organic_fertilizer'}, 2.5, 2.5, 0.5, 0.5, 1.0))
 })

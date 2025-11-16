@@ -13,7 +13,7 @@
       "fallback": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "minecraft:dirt"
+          "Name": "wasteland:depleted_soil"
         }
       },
       "rules": []
@@ -22,7 +22,7 @@
       "type": "minecraft:matching_blocks",
       "blocks": [
         "wasteland:cracked_sand",
-        "minecraft:dirt"
+        "wasteland:depleted_soil"
       ]
     }
   }

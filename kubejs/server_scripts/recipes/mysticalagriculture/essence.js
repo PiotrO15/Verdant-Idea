@@ -72,7 +72,6 @@ ServerEvents.recipes(event => {
   // Add uses for elemental essences
   checked_2x2('mysticalagriculture:air_essence', 'mysticalagriculture:fire_essence', '12x minecraft:sand')
   checked_2x2('mysticalagriculture:earth_essence', 'mysticalagriculture:fire_essence', '16x minecraft:cobblestone')
-  checked_2x2('mysticalagriculture:earth_essence', 'mysticalagriculture:air_essence', '16x minecraft:dirt')
   checked_2x2('mysticalagriculture:earth_essence', 'mysticalagriculture:water_essence', '8x minecraft:clay_ball')
 
   // Add missing ore recipes and change ingots to raw resources
@@ -117,14 +116,8 @@ ServerEvents.recipes(event => {
   event.remove({ id: "mysticalagriculture:essence/minecraft/rotten_flesh"})
   row("mysticalagriculture:zombie_essence", "12x minecraft:rotten_flesh")
 
-  event.remove({ id: "mysticalagriculture:essence/minecraft/slime_ball"})
-  row("mysticalagriculture:slime_essence", "8x minecraft:slime_ball")
-
   event.remove({ id: "mysticalagriculture:essence/minecraft/gunpowder"})
   row("mysticalagriculture:creeper_essence", "6x minecraft:gunpowder")
-
-  event.remove({ id: "mysticalagriculture:essence/minecraft/string"})
-  row("mysticalagriculture:spider_essence", "8x minecraft:string")
 
   event.remove({ id: "mysticalagriculture:essence/appliedenergetics2/certus_quartz_dust"})
   row("mysticalagriculture:certus_quartz_essence", "3x ae2:certus_quartz_dust")
@@ -173,71 +166,5 @@ ServerEvents.recipes(event => {
     "mysticalagriculture:nether_essence",
     "mysticalagriculture:netherite_essence",
     "minecraft:music_disc_pigstep"
-  )
-
-  // Fix dye essence recipes
-  event.remove({ id: "mysticalagriculture:essence/minecraft/white_dye"})
-  event.shaped(
-    '6x minecraft:white_dye', 
-    [
-      " E ", 
-      "E  ", 
-      "  E"
-    ], 
-    {
-      E: 'mysticalagriculture:dye_essence',
-    }
-  )
-
-  event.remove({ id: "mysticalagriculture:essence/minecraft/orange_dye"})
-  event.shaped(
-    '6x minecraft:orange_dye', 
-    [
-      "E  ", 
-      "  E", 
-      " E "
-    ], 
-    {
-      E: 'mysticalagriculture:dye_essence',
-    }
-  )
-  
-  event.remove({ id: "mysticalagriculture:essence/minecraft/green_dye"})
-  event.shaped(
-    '6x minecraft:green_dye', 
-    [
-      "  E", 
-      "E  ", 
-      "E  "
-    ], 
-    {
-      E: 'mysticalagriculture:dye_essence',
-    }
-  )
-  
-  event.remove({ id: "mysticalagriculture:essence/minecraft/cyan_dye"})
-  event.shaped(
-    '6x minecraft:cyan_dye', 
-    [
-      "E  ", 
-      "E  ", 
-      "  E"
-    ], 
-    {
-      E: 'mysticalagriculture:dye_essence',
-    }
-  )
-  
-  event.remove({ id: "mysticalagriculture:essence/minecraft/light_blue_dye"})
-  event.shaped(
-    '6x minecraft:light_blue_dye', 
-    [
-      "  E", 
-      "   ", 
-      "EE "
-    ], 
-    {
-      E: 'mysticalagriculture:dye_essence',
-    }
   )
 })

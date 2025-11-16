@@ -1,0 +1,14 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 754121568,
+    "separation": 10,
+    "spacing": 25
+  },
+  "structures": [
+    {
+      "structure": "wasteland:space_debris",
+      "weight": 1
+    }
+  ]
+}

@@ -16,7 +16,6 @@ ServerEvents.recipes(event => {
   event.replaceInput({id: 'botania:runic_altar/air'}, 'minecraft:feather', 'minecraft:glass_bottle')
   event.replaceInput({id: 'botania:runic_altar/winter'}, 'minecraft:cake', '#wasteland:cakes')
 
-  event.replaceInput({id: 'botania:lexicon'}, 'minecraft:book', 'minecraft:paper')
   event.replaceInput({id: 'botania:lexicon'}, '#minecraft:saplings', '#botania:mystical_flowers')
 
   event.remove({id: 'botania:mana_spreader'})

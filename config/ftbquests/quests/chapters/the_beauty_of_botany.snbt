@@ -2061,8 +2061,6 @@
 				item: "immersiveengineering:hemp_fiber"
 				type: "item"
 			}]
-			size: 1.25d
-			subtitle: "Unlocks new quests in How Engineering Works"
 			tasks: [{
 				icon: {
 					Count: 1

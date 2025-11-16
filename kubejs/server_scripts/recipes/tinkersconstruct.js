@@ -12,6 +12,9 @@ ServerEvents.recipes(event => {
   event.remove({id: 'tconstruct:smeltery/entity_melting/skeletons'})
   event.remove({id: 'tconstruct:smeltery/entity_melting/heads/skeleton'})
 
+  // Remove pewter (why is this even in the game)
+  event.remove({id: 'tconstruct:smeltery/alloys/molten_pewter'})
+
   // Lava melting
   event.custom({
     "type": "tconstruct:melting",

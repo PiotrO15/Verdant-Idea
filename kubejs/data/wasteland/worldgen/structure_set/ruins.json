@@ -1,0 +1,18 @@
+{
+  "placement": {
+    "type": "minecraft:random_spread",
+    "salt": 67992157,
+    "separation": 3,
+    "spacing": 12
+  },
+  "structures": [
+    {
+      "structure": "wasteland:ruins",
+      "weight": 1
+    },
+    {
+      "structure": "wasteland:house",
+      "weight": 1
+    }
+  ]
+}

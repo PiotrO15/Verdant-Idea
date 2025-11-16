@@ -30,19 +30,19 @@
       "winter"
     ],
     "soil_acidity": {
-      "type": "equal",
+      "type": "equal_or_higher",
       "tolerance_factor": 0.2,
       "value": "neutral"
     },
     "soil_humidity": {
-      "type": "equal",
+      "type": "equal_or_lower",
       "tolerance_factor": 0.15,
-      "value": "damp"
+      "value": "wet"
     },
     "soil_nutrients": {
-      "type": "equal_or_lower",
-      "tolerance_factor": 0.2,
-      "value": "medium"
+      "type": "equal",
+      "tolerance_factor": 0.1,
+      "value": "low"
     }
   },
   "seeds": [

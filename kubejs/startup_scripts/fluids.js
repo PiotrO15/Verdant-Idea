@@ -8,4 +8,14 @@ StartupEvents.registry('fluid', event => {
     .thickTexture(0x777777)
     .bucketColor(0x777777)
     .displayName('Molten Dense Plastic')
+  
+  event.create('industrial_fertilizer_solution')
+    .thinTexture(0xaa9c8d)
+    .bucketColor(0xaa9c8d)
+    .displayName('Industrial Fertilizer Solution')
+
+  event.create('organic_fertilizer_solution')
+    .thinTexture(0x228267)
+    .bucketColor(0x228267)
+    .displayName('Organic Fertilizer Solution')
 })

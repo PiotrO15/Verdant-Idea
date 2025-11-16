@@ -198,4 +198,22 @@ ServerEvents.recipes(event => {
       "nbt": {blend_type:"wasteland:verdant"}
     }
   })
+
+  // Update Rod of the Lands recipe
+  event.remove({id: 'botania:dirt_rod'})
+  event.shaped(
+    'botania:dirt_rod',
+    [
+      " OD",
+      " RV",
+      "P  "
+    ],
+    {
+      D: 'minecraft:dirt',
+      O: 'kubejs:ochre_nucleus',
+      V: 'kubejs:verdant_nucleus',
+      R: 'botania:livingwood_twig',
+      P: 'kubejs:pearlescent_nucleus'
+    }
+  )
 })

@@ -394,8 +394,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 1.5d
-			y: 0.0d
+			x: 2.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["51D11A68071D136A"]
@@ -1354,60 +1354,8 @@
 				item: "productivebees:honeycomb_milky"
 				type: "item"
 			}]
-			x: 4.5d
-			y: -4.0d
-		}
-		{
-			dependencies: ["1A1D658DD0100A99"]
-			hide_dependent_lines: true
-			id: "30F9794702BBF241"
-			rewards: [{
-				count: 3
-				id: "66F27C0AAB83DB56"
-				item: {
-					Count: 1
-					id: "productivebees:configurable_honeycomb"
-					tag: {
-						EntityTag: {
-							type: "productivebees:slimy"
-						}
-					}
-				}
-				type: "item"
-			}]
-			tasks: [{
-				id: "038B7944F1C9CCDB"
-				item: {
-					Count: 1
-					id: "productivebees:configurable_honeycomb"
-					tag: {
-						EntityTag: {
-							type: "productivebees:slimy"
-						}
-					}
-				}
-				type: "item"
-			}]
 			x: 11.5d
 			y: -6.0d
-		}
-		{
-			dependencies: ["4720320FB591BC73"]
-			hide_dependent_lines: true
-			id: "4E42C5B45CDD3840"
-			rewards: [{
-				count: 3
-				id: "73576F570EBB26AE"
-				item: "productivebees:honeycomb_ghostly"
-				type: "item"
-			}]
-			tasks: [{
-				id: "21B9E0D62AF0DEE9"
-				item: "productivebees:honeycomb_ghostly"
-				type: "item"
-			}]
-			x: 10.0d
-			y: -3.0d
 		}
 		{
 			dependencies: [
@@ -1448,10 +1396,7 @@
 			y: -7.0d
 		}
 		{
-			dependencies: [
-				"355D2000A9ECFDD0"
-				"30F9794702BBF241"
-			]
+			dependencies: ["355D2000A9ECFDD0"]
 			description: ["The first few emeralds can be &etraded&r on &eamadron&r, created with an &eorechid&r or &dfound in an end city&r."]
 			hide_dependent_lines: true
 			id: "415BBAE21AB85F8A"
@@ -1817,44 +1762,6 @@
 			y: 2.0d
 		}
 		{
-			dependencies: ["51D11A68071D136A"]
-			id: "71F3B8506E6A77ED"
-			rewards: [
-				{
-					count: 2
-					id: "0E8543BB2901AC03"
-					item: "mysticalagriculture:prudentium_essence"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "2F28E44C2EB5B19D"
-					item: "mysticalagriculture:dye_essence"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "6BB6AE05B063D9BE"
-				item: {
-					Count: 1
-					id: "agricraft:seed"
-					tag: {
-						genes: {
-							species: {
-								dom: "mysticalagriculture:dye"
-								rec: "mysticalagriculture:dye"
-							}
-						}
-					}
-				}
-				match_nbt: true
-				type: "item"
-				weak_nbt_match: true
-			}]
-			x: 2.0d
-			y: -1.0d
-		}
-		{
 			dependencies: ["60AB48169195063E"]
 			id: "09605661C5F0DAE5"
 			rewards: [
@@ -2008,83 +1915,6 @@
 		}
 		{
 			dependencies: ["6C563A93CC19034C"]
-			id: "6E3FDD0A5CDB13D8"
-			rewards: [
-				{
-					count: 2
-					id: "1BC5348043520209"
-					item: "mysticalagriculture:supremium_essence"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "6AC84DF18C6A19DA"
-					item: "mysticalagriculture:slime_essence"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "7E05121DCE7CC424"
-				item: {
-					Count: 1
-					id: "agricraft:seed"
-					tag: {
-						genes: {
-							species: {
-								dom: "mysticalagriculture:slime"
-								rec: "mysticalagriculture:slime"
-							}
-						}
-					}
-				}
-				match_nbt: true
-				type: "item"
-				weak_nbt_match: true
-			}]
-			x: 17.5d
-			y: 2.0d
-		}
-		{
-			dependencies: ["60AB48169195063E"]
-			hide_dependent_lines: true
-			id: "535B5EE4FBF36635"
-			rewards: [
-				{
-					count: 2
-					id: "621212EBEC5BF820"
-					item: "mysticalagriculture:tertium_essence"
-					type: "item"
-				}
-				{
-					count: 4
-					id: "25ACB77D2AE16719"
-					item: "mysticalagriculture:spider_essence"
-					type: "item"
-				}
-			]
-			tasks: [{
-				id: "14B143BFB3A4DA84"
-				item: {
-					Count: 1
-					id: "agricraft:seed"
-					tag: {
-						genes: {
-							species: {
-								dom: "mysticalagriculture:spider"
-								rec: "mysticalagriculture:spider"
-							}
-						}
-					}
-				}
-				match_nbt: true
-				type: "item"
-				weak_nbt_match: true
-			}]
-			x: 7.0d
-			y: 1.0d
-		}
-		{
-			dependencies: ["6C563A93CC19034C"]
 			hide_dependent_lines: true
 			id: "4720320FB591BC73"
 			rewards: [
@@ -2119,8 +1949,8 @@
 				type: "item"
 				weak_nbt_match: true
 			}]
-			x: 15.5d
-			y: 0.0d
+			x: 17.5d
+			y: 2.0d
 		}
 		{
 			dependencies: ["1261E6D048DE0810"]
@@ -2221,8 +2051,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.0d
-			y: -5.0d
+			x: 10.0d
+			y: -3.0d
 		}
 		{
 			dependencies: ["1261E6D048DE0810"]
@@ -2531,8 +2361,8 @@
 				}
 				type: "item"
 			}]
-			x: 4.5d
-			y: -6.0d
+			x: 6.0d
+			y: -7.0d
 		}
 		{
 			dependencies: ["7BFE66A24E3A3E1C"]

@@ -1,0 +1,31 @@
+{
+  "type": "emi:world_interaction",
+  "left": "item:wasteland:depleted_soil",
+  "right": "#item:minecraft:hoes",
+  "output": [
+    "item:wasteland:depleted_soil_farmland",
+    {
+      "type": "item",
+      "id": "agricraft:seed",
+      "nbt": "{genes:{fertility:{dom:1,rec:1},gain:{dom:1,rec:1},growth:{dom:1,rec:1},mutativity:{dom:1,rec:1},resistance:{dom:10,rec:10},species:{dom:\"minecraft:beetroot\",rec:\"minecraft:beetroot\"},strength:{dom:1,rec:1}}}",
+      "chance": 0.1
+    },
+    {
+      "type": "item",
+      "id": "agricraft:seed",
+      "nbt": "{genes:{fertility:{dom:1,rec:1},gain:{dom:1,rec:1},growth:{dom:1,rec:1},mutativity:{dom:1,rec:1},resistance:{dom:10,rec:10},species:{dom:\"minecraft:potato\",rec:\"minecraft:potato\"},strength:{dom:1,rec:1}}}",
+      "chance": 0.1
+    },
+    {
+      "type": "item",
+      "id": "agricraft:seed",
+      "nbt": "{genes:{fertility:{dom:1,rec:1},gain:{dom:1,rec:1},growth:{dom:1,rec:1},mutativity:{dom:1,rec:1},resistance:{dom:10,rec:10},species:{dom:\"minecraft:wheat\",rec:\"minecraft:wheat\"},strength:{dom:1,rec:1}}}",
+      "chance": 0.1
+    },
+    {
+      "type": "item",
+      "id": "minecraft:flint",
+      "chance": 0.1
+    }
+  ]
+}

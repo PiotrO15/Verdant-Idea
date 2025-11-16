@@ -81,9 +81,8 @@ ServerEvents.recipes(event => {
   manaCost = 6250
 
   event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:coal'), ['mysticalagriculture:prosperity_seed_base', '#forge:storage_blocks/charcoal', 'botania:black_petal_block', 'botania:gray_petal_block'].concat(multi(essence, 4)), manaCost)
-  event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:copper'), ['mysticalagriculture:prosperity_seed_base', 'minecraft:terracotta', 'minecraft:sand', 'botania:orange_petal_block'].concat(multi(essence, 4)), manaCost)
-  event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:dye'), ['mysticalagriculture:prosperity_seed_base'].concat(multi('mysticalagriculture:dye_agglomeratio', 3)).concat(multi(essence, 4)), manaCost)
-  event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:iron'), ['mysticalagriculture:prosperity_seed_base', 'minecraft:gravel', 'botania:light_gray_petal_block', 'mysticalagriculture:copper_essence'].concat(multi(essence, 4)), manaCost)
+  event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:copper'), ['mysticalagriculture:prosperity_seed_base', 'botania:orange_petal_block', 'minecraft:terracotta', 'minecraft:copper_ingot'].concat(multi(essence, 4)), manaCost)
+  event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:iron'), ['mysticalagriculture:prosperity_seed_base', 'botania:light_gray_petal_block', 'minecraft:iron_ingot', 'minecraft:iron_ingot'].concat(multi(essence, 4)), manaCost)
   
   event.remove({id: 'mysticalagriculture:nether_agglomeratio'})
   event.shapeless('mysticalagriculture:nether_agglomeratio', [{"type": "bucketlib:fluid", "fluid": "minecraft:lava"}, 'minecraft:basalt', 'minecraft:blackstone', 'minecraft:magma_block'])
@@ -99,12 +98,11 @@ ServerEvents.recipes(event => {
   essence = 'mysticalagriculture:tertium_essence'
   manaCost = 12500
   
-  event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:experience'), ['mysticalagriculture:prosperity_seed_base', 'mysticalagriculture:skeleton_essence', 'mysticalagriculture:zombie_essence', 'mysticalagriculture:spider_essence'].concat(multi('botania:rune_mana', 2)).concat(multi(essence, 4)), manaCost)
+  event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:experience'), ['mysticalagriculture:prosperity_seed_base', 'mysticalagriculture:skeleton_essence', 'mysticalagriculture:zombie_essence'].concat(multi('botania:rune_mana', 2)).concat(multi(essence, 4)), manaCost)
   event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:lapis_lazuli'), ['mysticalagriculture:prosperity_seed_base', 'botania:blue_petal_block', 'minecraft:warped_wart_block', 'botania:cyan_petal_block'].concat('botania:rune_air').concat('botania:rune_water').concat(multi(essence, 4)), manaCost)
   event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:nether_quartz'), ['mysticalagriculture:prosperity_seed_base', 'botania:mana_quartz', 'botania:light_blue_petal_block', combBlock('crystalline')].concat('botania:rune_air').concat('botania:rune_fire').concat(multi(essence, 4)), manaCost)
   event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:redstone'), ['mysticalagriculture:prosperity_seed_base', 'minecraft:nether_wart_block', 'botania:red_petal_block', 'mysticalagriculture:fire_essence'].concat('botania:rune_earth').concat('botania:rune_fire').concat(multi(essence, 4)), manaCost)
   event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:silver'), ['mysticalagriculture:prosperity_seed_base', 'botania:light_gray_petal_block', 'botania:light_blue_petal_block', '#forge:ingots/silver', '#forge:ingots/silver'].concat('botania:rune_earth').concat('botania:rune_water').concat(multi(essence, 4)), manaCost)
-  event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:spider'), ['mysticalagriculture:soulium_seed_base'].concat(multi('minecraft:spider_eye', 3)).concat('botania:rune_air').concat('botania:rune_earth').concat(multi(essence, 4)), manaCost)
 
   //
   // Elemental
@@ -132,7 +130,7 @@ ServerEvents.recipes(event => {
   essence = 'mysticalagriculture:imperium_essence'
   manaCost = 25000
 
-  event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:aluminum'), ['mysticalagriculture:prosperity_seed_base', 'minecraft:iron_block', 'botania:white_petal_block', 'mysticalagriculture:dye_essence', 'mysticalagriculture:dye_essence'].concat('botania:rune_air').concat('botania:rune_winter').concat(multi(essence, 4)), manaCost)
+  event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:aluminum'), ['mysticalagriculture:prosperity_seed_base', 'minecraft:iron_block', 'botania:white_petal_block', 'mysticalagriculture:air_essence', 'mysticalagriculture:air_essence'].concat('botania:rune_air').concat('botania:rune_winter').concat(multi(essence, 4)), manaCost)
   event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:diamond'), ['mysticalagriculture:prosperity_seed_base', '#forge:storage_blocks/tin', 'botania:light_blue_petal_block', 'minecraft:diamond', 'minecraft:diamond'].concat('botania:rune_water').concat('botania:rune_summer').concat(multi(essence, 4)), manaCost)
   event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:emerald'), ['mysticalagriculture:prosperity_seed_base', 'minecraft:emerald_block', 'minecraft:emerald_block', 'botania:lime_petal_block', 'botania:green_petal_block'].concat('botania:rune_earth').concat('botania:rune_autumn').concat(multi(essence, 4)), manaCost)
   event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:end'), ['mysticalagriculture:prosperity_seed_base', 'botania:yellow_petal_block', 'minecraft:end_stone', 'minecraft:chorus_flower', 'mysticalagriculture:enderman_essence'].concat('botania:rune_earth').concat('botania:rune_winter').concat(multi(essence, 4)), manaCost)
@@ -157,6 +155,5 @@ ServerEvents.recipes(event => {
   event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:osmium'), ['mysticalagriculture:prosperity_seed_base', 'botania:light_gray_petal_block', 'botania:light_blue_petal_block', '#forge:storage_blocks/nickel', 'minecraft:copper_block'].concat('botania:rune_winter').concat('botania:rune_greed').concat('botania:rune_lust').concat(multi(essence, 4)), manaCost)
 
   event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:ghast'), ['mysticalagriculture:soulium_seed_base', 'botania:light_gray_petal_block', 'botania:white_petal_block', 'minecraft:ghast_tear', 'minecraft:ghast_tear'].concat('botania:rune_winter').concat('botania:rune_envy').concat('botania:rune_wrath').concat(multi(essence, 4)), manaCost)
-  event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:slime'), ['mysticalagriculture:soulium_seed_base', combBlock('slimy'), 'botania:lime_petal_block', 'minecraft:slime_block', 'minecraft:slime_block'].concat('botania:rune_summer').concat('botania:rune_gluttony').concat('botania:rune_sloth').concat(multi(essence, 4)), manaCost)
   event.recipes.botania.runic_altar(agri_seed('mysticalagriculture:wither_skeleton'), ['mysticalagriculture:soulium_seed_base', 'mysticalagriculture:skeleton_essence', 'minecraft:wither_rose', 'productivebees:wither_skull_chip', 'productivebees:wither_skull_chip'].concat('botania:rune_spring').concat('botania:rune_pride').concat('botania:rune_wrath').concat(multi('mysticalagriculture:supremium_essence', 4)), 25000)
 })

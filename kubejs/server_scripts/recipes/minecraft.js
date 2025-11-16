@@ -14,6 +14,8 @@ ServerEvents.compostableRecipes(event => {
   event.add('minecraft:poisonous_potato', 0.3)
   event.add('thermal:sawdust', 0.3)
   event.add('chipped:muddy_mangrove_roots', 0.3)
+  event.add('wasteland:clover', 0.3)
+  event.add('wasteland:wildflowers', 0.3)
 })
 
 ServerEvents.recipes(event => {

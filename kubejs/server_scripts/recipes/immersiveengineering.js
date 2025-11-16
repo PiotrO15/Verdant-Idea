@@ -49,6 +49,14 @@ ServerEvents.recipes(event => {
     })
   }
 
+  function fertilizer(input, value) {
+    return {
+      "type": "immersiveengineering:fertilizer",
+      "growthModifier": value,
+      "input": input
+    }
+  }
+
   let plate_types = ['bullet_casing', 'gear', 'packing_4', 'packing_9', 'plate', 'rod', 'unpacking', 'wire']
   for (let type in plate_types) {
     mold(plate_types[type])
@@ -187,4 +195,9 @@ ServerEvents.recipes(event => {
     },
     "time": 200
   })
+
+  event.remove({type: 'immersiveengineering:fertilizer'})
+  event.custom(fertilizer({item: "kubejs:amethyst_fertilizer"}, 1.3))
+  event.custom(fertilizer({item: "kubejs:industrial_fertilizer"}, 1.6))
+  event.custom(fertilizer({item: "kubejs:organic_fertilizer"}, 2.5))
 })

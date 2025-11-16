@@ -1,5 +1,4 @@
 let quarry_flowers = [
-  'dirt',
   'stone',
   'cobblestone',
   'diorite',
@@ -218,6 +217,7 @@ ServerEvents.recipes(event => {
 
   event.remove({ id: 'productivebees:centrifuge/honeycomb_frosty' })
   event.remove({ id: 'productivebees:centrifuge/honeycomb_silky' })
+  event.remove({ id: 'productivebees:centrifuge/honeycomb_ghostly' })
 
   event.remove({id: 'productivebees:upgrades/base'})
   event.shaped(

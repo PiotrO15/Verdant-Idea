@@ -92,25 +92,4 @@ ServerEvents.recipes(event => {
   })
 
   event.replaceInput({id: 'enchanted:chalice'}, 'enchanted:attuned_stone', '#forge:ingots/silver')
-
-  // Weak essence recipe
-  event.custom({
-    "type": "enchanted:distilling",
-    "cookTime": 300,
-    "ingredients": [
-      {
-        "item": "enchanted:hint_of_rebirth"
-      },
-      {
-        "count": 3,
-        "item": "tconstruct:amethyst_bronze_ingot"
-      }
-    ],
-    "results": [
-      {
-        "item": "biomeblends:biome_blend",
-        "nbt": {blend_type:"wasteland:weak"}
-      }
-    ]
-  })
 })

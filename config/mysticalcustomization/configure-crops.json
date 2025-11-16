@@ -50,9 +50,6 @@
     "mysticalagriculture:osmium": {
         "tier": "mysticalagriculture:5"
     },
-    "mysticalagriculture:slime": {
-        "tier": "mysticalagriculture:5"
-    },
     "mysticalagriculture:fluorite": {
         "tier": "mysticalagriculture:5"
     },
@@ -261,6 +258,15 @@
         "enabled": false
     },
     "mysticalagriculture:cobalt": {
+        "enabled": false
+    },
+    "mysticalagriculture:dye": {
+        "enabled": false
+    },
+    "mysticalagriculture:slime": {
+        "enabled": false
+    },
+    "mysticalagriculture:spider": {
         "enabled": false
     }
 }

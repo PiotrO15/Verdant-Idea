@@ -1,0 +1,6 @@
+{
+  "type": "emi:world_interaction",
+  "left": "item:farmersdelight:rich_soil",
+  "right": "#item:minecraft:hoes",
+  "output": "item:farmersdelight:rich_soil_farmland"
+}

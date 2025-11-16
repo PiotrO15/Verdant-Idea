@@ -71,7 +71,7 @@
     ],
     [
       "minecraft:glow_lichen",
-      "minecraft:trees_badlands",
+      "wasteland:trees_badlands",
       "wasteland:patch_short_dead_grass_small",
       "wasteland:patch_yellow_dead_grass_small",
       "minecraft:brown_mushroom_normal",

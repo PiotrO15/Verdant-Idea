@@ -1,0 +1,12 @@
+{
+  "acidity": "slightly_acidic",
+  "growth_modifier": 0.5,
+  "humidity": "wet",
+  "mods": [],
+  "nutrients": "medium",
+  "variants": [
+    {
+      "block": "wasteland:depleted_soil_farmland"
+    }
+  ]
+}

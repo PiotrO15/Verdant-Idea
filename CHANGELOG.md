@@ -1,3 +1,48 @@
+0.9 changes:
+- updated Wasteland Things
+- added Another Furniture
+- added Construction Wand
+- added 9 new structures that can generate in the overworld
+- revamped The Secret of Life quest line
+- added depleted soil farmland
+- tweaked depleted soil restoration logic
+- changed clover spread logic to make it more blobby and to stop it from spreading infinitely
+- applying compost to depleted soil will now spawn a bunch of clover and wildflowers
+- pasture seeds can be created from petals and clover in a petal apothecary
+- rebalanced soil requirements for some of the plants
+- garden cloche now supports all crops
+- replaced dirt spawning near rivers and underground with depleted soil
+- zombies, zombie villagers and husks now drop iron scrap instead of iron ingots, potatoes and carrots (25% base drop rate)
+- removed meteorite compass and mysterious cube (unused items)
+- water wheel now requires an iron rod instead of a steel ingot
+- colored sheetmetals can now only be crafted from iron and steel sheetmetals
+- many metal blocks can now be cut into iron scrap using a cutting board
+- removed pewter alloying recipe (as it’s not used anywhere)
+- readded organic compost, rich soil is now created from organic compost
+- iron and copper seeds now use the respective ingots in their recipes
+- updated weak essence recipe
+- tweaked amethyst fertilizer recipe
+- fixed frogs always spawning as temperate in ruined/recovering biomes
+- removed dye, spider and slime seeds
+- removed slimy and ghostly bees
+- greenheart sapling and earthslime seeds can now be created using petal apothecary
+- emerald bee is now obtained by giving diamond bee an emerald
+- fixed clover using stone sounds
+- clover is now compostable
+- earth and air essence can no longer be used to craft dirt; instead, it can be used to increase the amount of amethyst fertilizer created
+- fixed sussy bees not creating suspicious blocks with loot in recovering water biomes
+- replaced mushroom stems in dark forests and mushroom fields with dead mushroom stems, which drop mushroom spores when broken
+- quarry bees can no longer create dirt
+- rod of the lands is now considered endgame
+- unified nitrate and niter dust
+- unified garden cloche fertilizers and phytogenic insolator catalysts
+- removed moss block from carpets recipe
+- old industrial fertilizer and phyto-gro are no longer obtainable and are no longer usable
+- mushrooms can now grow on dirt, grass and all depleted soil variants no matter the light level
+- updated main menu panorama
+- fixed trees very rarely spawning in wooded badlands
+- fixed depleted soil loot table and effective tool
+
 0.8 changes:
 - updated Wasteland Things and Biome Blends
 - added depleted, poor and restoring soils, which are a new variant of dirt

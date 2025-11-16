@@ -1098,7 +1098,6 @@
 				""
 				"&3Recovering biomes&r are slightly more &2verdant&r, allowing for &6more plants&r to grow and &6additional animal activity&r."
 			]
-			hide_dependency_lines: true
 			id: "67DAC5B9A54DF15A"
 			rewards: [{
 				count: 8

@@ -1,4 +1,15 @@
 const BaseWateringCanItem = Java.loadClass('com.blakebr0.cucumber.item.BaseWateringCanItem')
+const FakeBlock = Java.loadClass('wasteland.block.FakeBlock')
+const BlockItem = Java.loadClass('net.minecraft.world.item.BlockItem')
+const Properties = Java.loadClass('net.minecraft.world.item.Item$Properties')
+
+let floral_dinner
+let overflowing_nectar
+
+StartupEvents.registry('block', event => {
+  floral_dinner = event.createCustom('floral_dinner', () => new FakeBlock())
+  overflowing_nectar = event.createCustom('overflowing_nectar', () => new FakeBlock())
+})
 
 StartupEvents.registry('item', event => {
   event.create('ender_alloy')
@@ -29,4 +40,12 @@ StartupEvents.registry('item', event => {
   event.create('verdant_nucleus')
 
   event.create('amethyst_fertilizer')
+  event.create('industrial_fertilizer')
+  event.create('organic_fertilizer')
+
+  event.create('organic_binder')
+  event.create('iron_scrap')
+
+  event.createCustom('floral_dinner', () => new BlockItem(floral_dinner.get(), new Properties()))
+  event.createCustom('overflowing_nectar', () => new BlockItem(overflowing_nectar.get(), new Properties()))
 })

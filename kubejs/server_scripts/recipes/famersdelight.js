@@ -1,25 +1,17 @@
+function cuttingBoardRecipe(event, input, output, tool) {
+  event.custom({
+    "type": "farmersdelight:cutting",
+    "ingredients": [
+      format_item(input)
+    ],
+    "result": Array.isArray(output)
+      ? output.map(format_item)
+      : [format_item(output)],
+    "tool": format_item(tool)
+  })
+}
+
 ServerEvents.recipes(event => {
-  event.remove({output: 'farmersdelight:organic_compost'})
-
-  function cuttingBoardRecipe(input, output) {
-    event.custom({
-      "type": "farmersdelight:cutting",
-      "ingredients": [
-        {
-          "item": input
-        }
-      ],
-      "result": [
-        {
-          "item": output
-        }
-      ],
-      "tool": {
-        "tag": "forge:tools/knives"
-      }
-    })
-  }
-
   event.remove({id: 'minecraft:red_dye_from_beetroot'})
-  cuttingBoardRecipe('minecraft:beetroot', 'minecraft:red_dye')
+  cuttingBoardRecipe(event, 'minecraft:beetroot', 'minecraft:red_dye', '#forge:tools/knives')
 })

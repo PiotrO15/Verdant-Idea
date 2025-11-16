@@ -33,6 +33,10 @@ global.removed_items = {
     'iron_casing',
     'black_quartz_ore'
   ],
+  ae2: [
+    'meteorite_compass',
+    'mysterious_cube'
+  ],
   agricraft: [
     'coal_pebble',
     'diamond_shard',
@@ -64,8 +68,8 @@ global.removed_items = {
     'snowbell_seeds',
     'wolfsbane_seeds'
   ],
-  farmersdelight: [
-    'organic_compost'
+  immersiveengineering: [
+    'fertilizer'
   ],
   mekanism: [
     'pellet_antimatter',
@@ -211,8 +215,11 @@ global.removed_items = {
     'warped_bee_nest',
     'crimson_bee_nest',
     'sugarbag_nest',
+    'slimy_nest',
     'nest_locator',
-    'honey_generator'
+    'honey_generator',
+    'comb_ghostly',
+    'honeycomb_ghostly'
   ],
   thermal: [
     'apatite_ore',
@@ -294,7 +301,8 @@ global.removed_items = {
     'device_composter',
     'compost',
     'drill_head',
-    'steel_coin'
+    'steel_coin',
+    'phytogro'
   ],
   tconstruct: [
     'plate_cast',

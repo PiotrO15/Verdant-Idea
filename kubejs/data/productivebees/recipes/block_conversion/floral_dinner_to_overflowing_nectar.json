@@ -1,0 +1,10 @@
+{
+  "type": "productivebees:block_conversion",
+  "bee": "productivebees:dye_bee",
+  "from": {
+    "Name": "kubejs:floral_dinner"
+  },
+  "to": {
+    "Name": "kubejs:overflowing_nectar"
+  }
+}
