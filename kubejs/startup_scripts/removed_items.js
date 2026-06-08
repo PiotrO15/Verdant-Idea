@@ -165,7 +165,8 @@ global.removed_items = {
     'osmium_seeds',
     'ghast_seeds',
     'slime_seeds',
-    'wither_skeleton_seeds'
+    'wither_skeleton_seeds',
+    'mystical_fertilizer'
   ],
   pncepcb: [
     'primitive_unassembled_pcb',

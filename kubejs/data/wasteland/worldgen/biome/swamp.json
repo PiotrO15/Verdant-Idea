@@ -10,7 +10,6 @@
   "effects": {
     "fog_color": 13359325,
     "foliage_color": 10525308,
-    "grass_color_modifier": "swamp",
     "mood_sound": {
       "block_search_extent": 8,
       "offset": 2.0,

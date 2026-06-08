@@ -12,6 +12,13 @@ ServerEvents.tags('item', event => {
   event.add('forge:dusts/saltpeter', 'thermal:niter_dust')
 })
 
+ServerEvents.tags('fluid', event => {
+  event.add('wasteland:fertilizer', ['kubejs:industrial_fertilizer_solution', 'kubejs:organic_fertilizer_solution'])
+
+  event.add('wasteland:industrial_fertilizer', 'kubejs:industrial_fertilizer_solution')
+  event.add('wasteland:organic_fertilizer', 'kubejs:organic_fertilizer_solution')
+})
+
 ServerEvents.recipes(event => {
   // Update pipe recipe
   event.remove({id: 'prettypipes:pipe'})
@@ -203,4 +210,114 @@ ServerEvents.recipes(event => {
   // Earthslime
   event.recipes.botania.petal_apothecary("tconstruct:earth_slime_grass_seeds", ["minecraft:slime_ball", "botania:lime_petal", "minecraft:slime_ball", "botania:lime_petal", "minecraft:slime_ball", "botania:lime_petal"])
   event.recipes.botania.petal_apothecary("tconstruct:earth_slime_sapling", ["minecraft:slime_ball", "botania:lime_petal", "minecraft:slime_ball", "minecraft:oak_sapling", "minecraft:slime_ball", "botania:lime_petal"])
+
+  // Industrial Fertilizer
+  event.custom({
+    "type": "immersiveengineering:mixer",
+    "energy": 3200,
+    "fluid": {
+      "amount": 500,
+      "tag": "minecraft:water"
+    },
+    "inputs": [
+      {
+        "item": "wasteland:compost"
+      }
+    ],
+    "result": {
+      "amount": 1000,
+      "fluid": "kubejs:nitrate_slurry"
+    }
+  })
+
+  event.custom({
+    type: "pneumaticcraft:thermo_plant",
+    exothermic: false,
+    fluid_input: {
+      "type": "pneumaticcraft:fluid",
+      "amount": 1000,
+      "fluid": "kubejs:nitrate_slurry"
+    },
+    "item_output": {
+      "item": "thermal:niter_dust"
+    },
+    "temperature": {
+      "min_temp": 373
+    }
+  })
+  
+  event.custom({
+    "type": "immersiveengineering:mixer",
+    "energy": 3200,
+    "fluid": {
+      "amount": 200,
+      "tag": "minecraft:water"
+    },
+    "inputs": [
+      {
+        "tag": "forge:dusts/niter"
+      },
+      {
+        "tag": "forge:slag"
+      },
+      {
+        "item": "minecraft:bone_meal"
+      }
+    ],
+    "result": {
+      "amount": 1000,
+      "fluid": "kubejs:industrial_fertilizer_solution"
+    }
+  })
+
+  event.custom({
+    "type": "immersiveengineering:bottling_machine",
+    "fluid": {
+      "amount": 1000,
+      "tag": "wasteland:industrial_fertilizer"
+    },
+    "input": {
+      "item": "minecraft:clay_ball"
+    },
+    "results": [
+      {
+        "item": "kubejs:industrial_fertilizer"
+      }
+    ]
+  })
+
+  event.shaped('wasteland:terraforming_drone', [
+    " R ",
+    "RFR",
+    " R "
+  ], {
+    F: 'kubejs:industrial_fertilizer',
+    R: 'pneumaticcraft:turbine_rotor'
+  })
+})
+
+BlockEvents.rightClicked(event =>{
+  if (event.hand != "MAIN_HAND") return;
+
+  if (event.player.isFake()) return;
+
+  if (event.player.mainHandItem.id != "kubejs:industrial_fertilizer") return;
+
+  if (event.block.id != "wasteland:cracked_sand") return;
+
+  const startPos = event.block.pos;
+  for (let y = startPos.y; y >= -64; y--) {
+    let blockBelow = event.level.getBlock(startPos.x, y, startPos.z)
+    if (!blockBelow)
+      break;
+    if (blockBelow.id != "wasteland:cracked_sand")
+      break;
+
+    blockBelow.set("wasteland:depleted_soil");
+  }
+
+  event.level.spawnParticles("minecraft:scrape", false, startPos.x + 0.5, startPos.y + 1.1, startPos.z + 0.25, 0.1, 0.25, 0.5, 8, 1)
+  event.level.playSound(null, startPos.x, startPos.y, startPos.z, "minecraft:block.gravel.place", "blocks", 0.5, 1.0)
+
+  if (!event.player.isCreative()) event.player.mainHandItem.count--
 })

@@ -85,6 +85,9 @@ ServerEvents.recipes(event => {
   // Remove silver from heavy engineering block recipe
   event.replaceInput({id: 'immersiveengineering:crafting/heavy_engineering'}, "#forge:ingots/electrum", "minecraft:gold_ingot")
 
+  // Remove slag block recipe collision, use stonecutter instead
+  event.remove({id: "immersiveengineering:crafting/slag_brick"})
+
   // Update squeezer recipes
   // event.remove({id: 'immersiveengineering:squeezer/wheat_seeds'})
   squeezer_plantoil(agri_seed_partial('minecraft:beetroot'), 60)

@@ -51,10 +51,6 @@ ServerEvents.recipes(event => {
   // Add a recipe for prosperity shards
   event.recipes.botania.mana_infusion("mysticalagriculture:prosperity_shard", "minecraft:amethyst_shard", 250)
 
-  // Change Mystical Fertilizer recipes
-  event.remove({output: 'mysticalagriculture:mystical_fertilizer'})
-  event.shapeless('mysticalagriculture:mystical_fertilizer', ['minecraft:bone_meal', 'botania:fertilizer', 'mysticalagriculture:inferium_essence'])
-
   // Remove all vanilla Mystical Agriculture seeds recipes
   event.remove({type: 'mysticalagriculture:infusion', output: '#forge:seeds'})
   
@@ -117,7 +113,7 @@ ServerEvents.recipes(event => {
     ],
     {
       C: 'kubejs:wooden_watering_can',
-      F: 'mysticalagriculture:mystical_fertilizer',
+      F: 'kubejs:amethyst_fertilizer',
       I: 'minecraft:iron_ingot'
     }
   )

@@ -1,3 +1,30 @@
+0.9.2 changes:
+- slag bricks can now only be crafted in stonecutter
+- fixed a typo in A Mystical Solution quest
+- Not Just Bees? quest no longer requires a moss block, added a tip about it instead
+- improved Pioneer Plants quest description
+- increased altar range from 16 to 24 blocks; you may need to replace existing altar for the change to fully apply
+- hardcore worlds should no longer switch to survival
+- updated Actually Subtractions, Applied Energistics 2, Applied Energistics 2 Wireless Terminals, Applied Mekanistics, Balm, Biome Blends, Corpse, Fancy Menu (3.8.1), FTB Chunks, FTB Library, FTB Quests, FTB Teams, GlobalGameRules, GuideME, Inventory Sorter, JEI, ModernFix, Simple Backups, Waystones
+
+0.9.1 changes:
+- updated PneumaticCraft
+- updated Wasteland Things
+- fixed wrong grass color in swamp biomes
+- removed mystical fertilizer
+- improved some of the quest descriptions
+- ruins now use steel walls instead of deepslate walls
+- tier 1 and 2 seeds can now be grown on normal farmland
+- fixed Nitrate Processing quest still using nitrate
+- Nitrate Processing quest no longer requires creating a crusher as there are new ways to obtain niter
+- fixed distillery recipes sometimes displaying wrong in EMI
+- industrial fertilizer is now obtainable
+- added terraforming drones and purify drone widget
+- fixed sheetmetal slab recipes being broken
+- fixed wooden watering can facing the wrong way in the offhand
+- added 2 new quests to introduce floral dinner and overflowing nectar recipes
+- added a quest introducing terraforming drones
+
 0.9 changes:
 - updated Wasteland Things
 - added Another Furniture

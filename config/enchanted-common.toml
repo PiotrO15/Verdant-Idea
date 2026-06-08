@@ -6,7 +6,7 @@
 ["Altar Options"]
 	#Range of altars
 	#Range: > 1
-	altar_range = 16
+	altar_range = 24
 	#Multiplier for altar power recharge rates
 	#Range: 0.0 ~ 1.7976931348623157E308
 	altar_recharge_rate = 2.0

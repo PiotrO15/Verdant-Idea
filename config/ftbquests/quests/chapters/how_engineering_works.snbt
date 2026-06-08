@@ -534,29 +534,24 @@
 		}
 		{
 			dependencies: ["75CB84E195CA1849"]
-			description: ["Nitrate is a byproduct of crushing sandstone in a crusher. It is used as a catalyst in biodiesel production."]
-			icon: "immersiveengineering:dust_saltpeter"
+			description: [
+				"Niter is used as a &acatalyst&r in biodiesel production and is also required for industrial fertilizer."
+				""
+				"It can be produced by &6crushing sandstone&r in a crusher and by &6processing compost&r."
+			]
+			icon: "thermal:niter_dust"
 			id: "7ABD05B78201DE96"
 			rewards: [{
 				count: 8
 				id: "580989D021498560"
-				item: "immersiveengineering:dust_saltpeter"
+				item: "thermal:niter_dust"
 				type: "item"
 			}]
-			tasks: [
-				{
-					advancement: "immersiveengineering:multiblocks/mb_crusher"
-					criterion: ""
-					id: "49E904EDAB5EB420"
-					title: "Build a Crusher"
-					type: "advancement"
-				}
-				{
-					id: "51951997CBE7F2A2"
-					item: "immersiveengineering:dust_saltpeter"
-					type: "item"
-				}
-			]
+			tasks: [{
+				id: "51951997CBE7F2A2"
+				item: "thermal:niter_dust"
+				type: "item"
+			}]
 			title: "Nitrate Processing"
 			x: 2.0d
 			y: -1.0d
@@ -1117,6 +1112,50 @@
 			title: "Pretty Fluid Pipe"
 			x: -1.0d
 			y: 3.0d
+		}
+		{
+			dependencies: ["6A562D01891F04FA"]
+			description: [
+				"Applying &damethyst fertilizer&r manually might be fun, but it won't be enough to create larger green spaces."
+				""
+				"Luckily, &6terraforming drones&r can be placed next to a fluid tank containing &6industrial fertilizer solution&r to create depleted soil &aautomatically&r!"
+				""
+				"Terraforming drones work up to &a16 blocks&r from where they were placed."
+			]
+			icon: {
+				Count: 1
+				id: "wasteland:terraforming_drone"
+				tag: {
+					"pneumaticcraft:air": 120000
+				}
+			}
+			id: "7A9A7EE5A526EE1E"
+			rewards: [
+				{
+					count: 8
+					id: "59EAC9656C390D5C"
+					item: "thermal:slag"
+					type: "item"
+				}
+				{
+					count: 8
+					id: "1F4E1F1C9418CD83"
+					item: "thermal:niter_dust"
+					type: "item"
+				}
+			]
+			tasks: [{
+				id: "3A5CBBA001677AE9"
+				item: {
+					Count: 1
+					id: "wasteland:terraforming_drone"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Terraformation"
+			x: 6.5d
+			y: -4.0d
 		}
 	]
 	title: "How Engineering Works"

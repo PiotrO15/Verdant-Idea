@@ -36,7 +36,7 @@
     "soil_nutrients": {
       "type": "equal_or_higher",
       "tolerance_factor": 0.2,
-      "value": "very_high"
+      "value": "high"
     }
   },
   "seeds": [

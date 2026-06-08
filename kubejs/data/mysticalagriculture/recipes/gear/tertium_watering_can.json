@@ -1,0 +1,26 @@
+{
+  "type": "cucumber:shaped_transfer_nbt",
+  "transfer_slot": 4,
+  "pattern": [
+    "FGF",
+    "ISI",
+    "FGF"
+  ],
+  "key": {
+    "G": {
+      "item": "mysticalagriculture:tertium_ingot"
+    },
+    "I": {
+      "item": "mysticalagriculture:tertium_ingot"
+    },
+    "S": {
+      "item": "mysticalagriculture:prudentium_watering_can"
+    },
+    "F": {
+      "item": "kubejs:industrial_fertilizer"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:tertium_watering_can"
+  }
+}

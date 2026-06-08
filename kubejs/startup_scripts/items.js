@@ -1,5 +1,5 @@
 const BaseWateringCanItem = Java.loadClass('com.blakebr0.cucumber.item.BaseWateringCanItem')
-const FakeBlock = Java.loadClass('wasteland.block.FakeBlock')
+const FakeBlock = Java.loadClass('wasteland.common.block.FakeBlock')
 const BlockItem = Java.loadClass('net.minecraft.world.item.BlockItem')
 const Properties = Java.loadClass('net.minecraft.world.item.Item$Properties')
 

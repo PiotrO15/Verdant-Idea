@@ -11,6 +11,11 @@
 	quests: [
 		{
 			dependencies: ["4B378F553408A73A"]
+			description: [
+				"Inferium is too weak for most applications, but it can be condensed into &6prudentium&r with an infusion crystal."
+				""
+				"Prudentium can be used to create &6mystical seeds&r capable of producing various &aresources&r."
+			]
 			id: "51D11A68071D136A"
 			rewards: [{
 				count: 12
@@ -29,6 +34,7 @@
 				}
 				type: "item"
 			}]
+			title: "Inferium Infusion"
 			x: 2.5d
 			y: 0.0d
 		}
@@ -148,6 +154,11 @@
 		}
 		{
 			dependencies: ["51D11A68071D136A"]
+			description: [
+				"&6Tertium essence&r is much stronger than prudentium, allowing you to farm even more &avaluable materials&r and &aelemental essence&r."
+				""
+				"Seeds that are tier 3 and higher &6require rich soil farmland&r to grow."
+			]
 			id: "60AB48169195063E"
 			rewards: [{
 				count: 12
@@ -166,6 +177,7 @@
 				}
 				type: "item"
 			}]
+			title: "Prudentium Infusion"
 			x: 6.5d
 			y: 0.0d
 		}
@@ -455,6 +467,7 @@
 				}
 				type: "item"
 			}]
+			title: "Tertium Infusion"
 			x: 11.5d
 			y: 0.0d
 		}
@@ -478,6 +491,7 @@
 				}
 				type: "item"
 			}]
+			title: "Imperium Infusion"
 			x: 16.5d
 			y: 0.0d
 		}
@@ -733,6 +747,7 @@
 				}
 				type: "item"
 			}]
+			title: "Master Infusion"
 			x: 17.5d
 			y: 0.0d
 		}

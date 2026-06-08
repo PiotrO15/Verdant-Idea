@@ -1,0 +1,26 @@
+{
+  "type": "cucumber:shaped_transfer_nbt",
+  "transfer_slot": 4,
+  "pattern": [
+    "FGF",
+    "ISI",
+    "FGF"
+  ],
+  "key": {
+    "G": {
+      "item": "mysticalagriculture:supremium_ingot"
+    },
+    "I": {
+      "item": "mysticalagriculture:supremium_ingot"
+    },
+    "S": {
+      "item": "mysticalagriculture:imperium_watering_can"
+    },
+    "F": {
+      "item": "kubejs:industrial_fertilizer"
+    }
+  },
+  "result": {
+    "item": "mysticalagriculture:supremium_watering_can"
+  }
+}

@@ -43,7 +43,7 @@ ServerEvents.recipes(event => {
   cuttingBoardRecipe(event, '#another_furniture:lamps', '4x minecraft:string', '#minecraft:axes')
 
   // Iron scrap
-  event.replaceInput({mod: 'immersiveengineering'}, '#forge:sheetmetals', '#wasteland:iron_sheetmetals')
+  colors.forEach(color => event.replaceInput({id: `immersiveengineering:crafting/sheetmetal_colored_${color}`}, '#forge:sheetmetals', '#wasteland:iron_sheetmetals'))
 
   event.remove({id: 'tconstruct:smeltery/melting/metal/steel/sheetmetal'})
   event.remove({id: 'tconstruct:smeltery/melting/metal/iron/sheetmetal'})

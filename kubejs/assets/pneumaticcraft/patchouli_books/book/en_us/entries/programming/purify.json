@@ -1,0 +1,19 @@
+{
+  "name": "Purify Widget",
+  "icon": "pneumaticcraft:textures/progwidgets/dig_piece.png",
+  "category": "pneumaticcraft:widget_interact",
+  "advancement": "pneumaticcraft:programmer",
+  "pages": [
+    {
+      "type": "text",
+      "text": "The $(l:tools/drone)Drone/$ will use fertilizer solution in its internal tank to purify cracked sand blocks within the specified $(l:programming/area)Area/$. The order in which the blocks will be purified is similar to the $(l:programming/place)Place/$ widget. Each block purified uses 250 mb of fluid."
+    },
+    {
+      "type": "image",
+      "images": [
+        "pneumaticcraft:textures/progwidgets/dig_piece.png"
+      ],
+      "text": "$(italic)Definitely not just the dig widget texture/$"
+    }
+  ]
+}

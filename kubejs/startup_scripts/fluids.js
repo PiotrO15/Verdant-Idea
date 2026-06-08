@@ -18,4 +18,9 @@ StartupEvents.registry('fluid', event => {
     .thinTexture(0x228267)
     .bucketColor(0x228267)
     .displayName('Organic Fertilizer Solution')
+  
+  event.create('nitrate_slurry')
+    .thinTexture(0x6F4E37)
+    .bucketColor(0x6F4E37)
+    .displayName('Nitrate Slurry')
 })

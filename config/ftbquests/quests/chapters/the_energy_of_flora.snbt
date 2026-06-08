@@ -869,6 +869,8 @@
 				"&6Suspicious sand&r uncovered by sussy bees in &3river and ocean biomes&r might contain some useful loot!"
 				""
 				"It might be worth crafting a &abrush&r, who knows what can be found?"
+				""
+				"&7Tip: Sniffer eggs hatch twice as fast when placed on a moss block!&r"
 			]
 			icon: "minecraft:sniffer_egg"
 			id: "3F1BC26B5C5A7A61"
@@ -892,11 +894,6 @@
 				{
 					id: "3B6D81A98B2201E2"
 					item: "minecraft:sniffer_egg"
-					type: "item"
-				}
-				{
-					id: "216B878B619C2799"
-					item: "minecraft:moss_block"
 					type: "item"
 				}
 			]
@@ -1090,7 +1087,7 @@
 			y: 3.0d
 		}
 		{
-			dependencies: ["76E6ADB613585553"]
+			dependencies: ["2E4CD118D2EE29B7"]
 			description: [
 				"It's no surprise all the plants look lifeless with all the &cdust and pollution&r, but what if these changes could be reversed, even if only partially?"
 				""
@@ -1125,8 +1122,8 @@
 				weak_nbt_match: true
 			}]
 			title: "Air Purifier...?"
-			x: 0.0d
-			y: 2.0d
+			x: -1.5d
+			y: 3.0d
 		}
 		{
 			dependencies: ["3E645D5F929A8EA1"]
@@ -1252,6 +1249,75 @@
 			}]
 			title: "Frogspawn"
 			x: 8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["76E6ADB613585553"]
+			description: [
+				"It's really strange that bees survived the disaster. Maybe their &6nectar&r that has some kind of protective power?"
+				""
+				"Trying to harvest a lot of nectar might be worth a try. To do that, try cooking a &afloral dinner&r in a &6cooking pot&r."
+				""
+				"Cooking pot can be heated by a &6campfire&r."
+			]
+			icon: "kubejs:floral_dinner"
+			id: "4D5D4A855E2852DA"
+			rewards: [{
+				count: 4
+				id: "298BEE673A029470"
+				item: "kubejs:floral_dinner"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "260CA9E8157E5828"
+					item: "farmersdelight:cooking_pot"
+					type: "item"
+				}
+				{
+					id: "26A5837FAF6AD6EA"
+					item: "minecraft:campfire"
+					type: "item"
+				}
+				{
+					id: "00105F5A3D3C5D3C"
+					item: "kubejs:floral_dinner"
+					type: "item"
+				}
+			]
+			title: "Floral Feast"
+			x: 0.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4D5D4A855E2852DA"]
+			description: [
+				"&aFloral dinner&r placed in a &6feeding slab&r can be consumed by &6dye bees&r to produce &aoverflowing nectar&r."
+				""
+				"If you're using a &6simulation upgrade&r, the nectar will be placed in the beehive. If not, it will be dropped on the ground."
+			]
+			icon: "kubejs:overflowing_nectar"
+			id: "2E4CD118D2EE29B7"
+			rewards: [{
+				count: 4
+				id: "20EF788F90B9A187"
+				item: "kubejs:overflowing_nectar"
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "7F51F5B6A7393070"
+					item: "productivebees:feeder"
+					type: "item"
+				}
+				{
+					id: "53441E7C94C8B0F3"
+					item: "kubejs:overflowing_nectar"
+					type: "item"
+				}
+			]
+			title: "Pure Nectar"
+			x: -0.5d
 			y: 3.0d
 		}
 	]
